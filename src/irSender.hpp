@@ -2,6 +2,7 @@
 #define IRSENDER_HPP
 
 #include "hwlib.hpp"
+namespace target = hwlib::target;
 
 class IrSender
 {
@@ -11,9 +12,7 @@ private:
     uint8_t data    = 0;
     uint8_t control = 0;
     
-    namespace target = hwlib::target
-    
-    auto irLed = target::pins::d2_36kHz;
+    target::d2_36kHz irLed = target::d2_36kHz();
 public:
     IrSender(uint8_t player, uint8_t data):
     player(player),
@@ -54,6 +53,6 @@ public:
             }
         }
     }
-}
+};
 
 #endif // IRSENDER_HPP
