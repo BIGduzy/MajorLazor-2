@@ -1,0 +1,4 @@
+#ifndef IRSENDER_HPP
+#define IRSENDER_HPP
+
+#endif // IRSENDER_HPP
