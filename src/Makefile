@@ -9,10 +9,10 @@
 #############################################################################
 
 # source files in this project (main.cpp is automatically assumed)
-SOURCES := irSender.cpp
+SOURCES := irSender.cpp irReceiver.cpp
 
 # header files in this project
-HEADERS := irSender.hpp
+HEADERS := irSender.hpp irReceiver.hpp
 
 # other places to look for files for this project
 SEARCH  := 
