@@ -13,7 +13,9 @@ private:
     uint8_t data    = 0;
     uint8_t control = 0;
 public:
-    IrReceiver:
+    IrReceiver(uint8_t player, uint8_t data):
+    player(player),
+    data(data)
     {}
 
     void test() {
@@ -24,15 +26,29 @@ public:
         receiverVcc.set( 1 );
 
         auto startReceiving = hwlib::now_us();
-        bool receivingIr = false
+        bool receivingIr = false;
+        int delay = 0;
+        int count = 0;
         for(;;){
+            
             if( receiverData.get() == 0 && receivingIr == false ){
                 receivingIr = true;
                 startReceiving = hwlib::now_us();
             }
 			if( receiverData.get() == 1 && receivingIr == true ){
                 receivingIr = false;
-				hwlib::cout << ( hwlib::now_us() - startReceiving );
+                delay = ( hwlib::now_us() - startReceiving );
+                if( delay > 600 && delay < 1000 ){
+                    hwlib::cout << "0";
+                }
+                else if( delay > 1400 && delay < 1800 ){
+                    hwlib::cout << "1";
+                }
+                if (count >= 16) {
+                    hwlib::cout << hwlib::endl;
+                    count = 0;
+                }
+				count++;
             }
 			
         }
