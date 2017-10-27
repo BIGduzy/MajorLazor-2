@@ -3,12 +3,14 @@
 
 #include "hwlib.hpp"
 
-class PLAYER_HPP
+class player
 {
 private:
     int playerId, lives, power;
 public:
-    player():
+    player( int lives = 10, int power = 1 ):
+        lives(lives),
+        power(power)
     {}
     
     int getPlayerId() {
