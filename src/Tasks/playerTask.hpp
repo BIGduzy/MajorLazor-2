@@ -1,19 +1,29 @@
-#ifndef IRPLAYERTASK_HPP
-#define IRPLAYERTASK_HPP
+#ifndef PLAYERTASK_HPP
+#define PLAYERTASK_HPP
 
 #include "hwlib.hpp"
 #include "rtos.hpp"
+#include "oledDiplayTask.hpp"
 
-class IrPlayerTask: public rtos::task<> {
+class PlayerTask: public rtos::task<> {
 private:
-    rtos::channel<int, 5> naampie;
+    OledDisplayTask& display;
 public:
-    IrPlayerTask():
+    PlayerTask(OledDisplayTask& display):
         task("IrPlayerTask"),
-        naampie(this, "naampie")
+        display(display)
     {}
 
-    void main() override;
-}
+    void main() override {
+        while(true){
+            //hwlib::cout << "test1";
+            for(int i = 0; i < 8; i++){
+                display.write(i);
+            }
+            hwlib::wait_ms(1000);
+            
+        }
+    }
+};
 
-#endif // IRPLAYERTASK_HPP
+#endif // PLAYERTASK_HPP

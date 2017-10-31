@@ -1,6 +1,8 @@
 #include "hwlib.hpp"
 #include "irReceiver.hpp"
 #include "irSender.hpp"
+#include "playerTask.hpp"
+#include "oledDiplayTask.hpp"
 #include "rtos.hpp"
 
 
@@ -8,8 +10,12 @@ int main() { //Main receiver
     WDT->WDT_MR = WDT_MR_WDDIS;
     hwlib::wait_ms( 500 );
     
-    IrReceiver receiver(1, 14);
+    //IrReceiver receiver(1, 14);
     
+    OledDisplayTask oledTest;
+
+    PlayerTask test(oledTest);
+        
     rtos::run();
 
     return 0;
