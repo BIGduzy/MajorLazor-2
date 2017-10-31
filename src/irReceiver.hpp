@@ -24,7 +24,7 @@ public:
         ten_us_clock( this, 10, "Ten us clock" )
     {}
 
-    void main() override
+    void main() override;
 };
 
 

@@ -1,6 +1,7 @@
 #include "hwlib.hpp"
+#include "irReceiver.hpp"
 
-void irReceiver::main() override {
+void IrReceiver::main() {
     auto receiverData = target::pin_in( target::pins::d8 );
     auto receiverGround    = target::pin_out( target::pins::d9 );
     auto receiverVcc    = target::pin_out( target::pins::d10 );

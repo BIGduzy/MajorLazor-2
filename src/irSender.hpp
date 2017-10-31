@@ -14,17 +14,17 @@ private:
     
     target::d2_36kHz irLed = target::d2_36kHz();
     
-    void send_signal()
+    void send_signal();
 public:
     IrSender(uint8_t player, uint8_t data):
     player(player),
     data(data)
     {}
     
-    void sendOne()
-    void sendZero()
-    uint16_t generateSignal(uint8_t player, uint8_t data)
-    void send()
+    void sendOne();
+    void sendZero();
+    uint16_t generateSignal(uint8_t player, uint8_t data);
+    void send();
 };
 
 #endif // IRSENDER_HPP
