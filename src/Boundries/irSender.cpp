@@ -1,4 +1,3 @@
-#include "hwlib.hpp"
 #include "irSender.hpp"
 
 void IrSender::send_signal(){

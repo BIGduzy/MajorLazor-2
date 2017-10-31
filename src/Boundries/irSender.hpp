@@ -2,6 +2,7 @@
 #define IRSENDER_HPP
 
 #include "hwlib.hpp"
+
 namespace target = hwlib::target;
 
 class IrSender
@@ -17,8 +18,8 @@ private:
     void send_signal();
 public:
     IrSender(uint8_t player, uint8_t data):
-    player(player),
-    data(data)
+        player(player),
+        data(data)
     {}
     
     void sendOne();

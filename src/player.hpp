@@ -2,13 +2,14 @@
 #define PLAYER_HPP
 
 #include "hwlib.hpp"
+#include "rtos.hpp"
 
-class player
+class player: rtos::task<>
 {
 private:
     int playerId, lives, power;
 public:
-    player( int lives = 10, int power = 1 ):
+    player(int lives = 10, int power = 1):
         lives(lives),
         power(power)
     {}
@@ -25,27 +26,27 @@ public:
         return power;
     }
     
-    void setPlayerId( int value ) {
+    void setPlayerId(int value) {
         playerId = value;
     }
     
-    void setLives( int value ) {
+    void setLives(int value) {
         lives = value;
     }
     
-    void setPower( int value ) {
+    void setPower(int value) {
         power = value;
     }
     
-    void increaseLives( int amount = 1 ) {
+    void increaseLives(int amount = 1) {
         lives += amount;
     }
     
-    void increasePower( int amount = 1 ) {
+    void increasePower(int amount = 1) {
         power += amount;
     }
     
-    int decreaseLives( int amount = 1 ) {
+    int decreaseLives(int amount = 1) {
         if( (lives - amount) < 0 ){
             lives = 0;
         }
@@ -55,7 +56,7 @@ public:
         return lives;
     }
     
-    int decreasePower( int amount = 1 ) {
+    int decreasePower(int amount = 1) {
         if( (power - amount) < 0 ){
             power = 0;
         }

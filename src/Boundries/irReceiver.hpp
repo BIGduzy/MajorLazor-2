@@ -18,10 +18,10 @@ private:
     
 public:
     IrReceiver(uint8_t player, uint8_t data):
-        task( "Ir Receiver" ),
+        task("Ir Receiver"),
         player(player),
         data(data),
-        ten_us_clock( this, 10, "Ten us clock" )
+        ten_us_clock(this, 10, "Ten us clock")
     {}
 
     void main() override;
