@@ -14,7 +14,6 @@ public:
 
     void main() override {
         while(true){
-            //hwlib::cout << "test2";
             int i = naampie.read();
             hwlib::cout << i;
         }
