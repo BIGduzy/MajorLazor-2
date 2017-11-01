@@ -5,15 +5,15 @@
 #include <rtos.hpp>
 #include "oledDiplayTask.hpp"
 
-// NOTE: Maybe more to own file
-struct Messagee {
+// NOTE: Maybe move to own file
+struct Message {
     uint8_t playerId;
     uint8_t commandId;
     uint8_t data;
 
-    Messagee() {}
+    Message() {}
 
-    Messagee(uint8_t playerId, uint8_t commandId, uint8_t data):
+    Message(uint8_t playerId, uint8_t commandId, uint8_t data):
         playerId(playerId),
         commandId(commandId),
         data(data)
@@ -27,6 +27,9 @@ struct Player {
     uint8_t lives;
 
     // ohter stuff...
+    uint8_t hitsBy[200];
+    uint8_t hitsDamage[200];
+    uint8_t hitsByCounter = 0;
 };
 
 class PlayerTask: public rtos::task<> {
@@ -35,8 +38,10 @@ private:
     States state = INITIAL_STATE;
 
     OledDisplayTask& display;
-    rtos::channel<Messagee, 5> messageChannel;
+    rtos::channel<Message, 5> messageChannel;
     uint8_t timeTillStart;
+    uint16_t gameTimer = 0;
+    uint16_t gameTime = 300;
     Player player;
 
 public:
@@ -44,18 +49,20 @@ public:
 
     void main() override;
 
+    // Interface functions
+    void setMessage(uint8_t playerId, uint8_t commandId, uint8_t data);
+
+private:
     // State functions
     void initialState();
     void playState();
     void doneState();
 
-    // Interface functions
-    void setMessage(uint8_t playerId, uint8_t commandId, uint8_t data);
-
     // Intern functions
     void setId(uint8_t data);
     void setDamage(uint8_t data);
     void setLives(uint8_t data);
+    void doDamage(const Message& message);
 };
 
 #endif // PLAYERTASK_HPP
