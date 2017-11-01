@@ -9,7 +9,7 @@
 #############################################################################
 
 # source files in this project (main.cpp is automatically assumed)
-SOURCES := irSender.cpp irReceiver.cpp player.cpp
+SOURCES := irSender.cpp irReceiver.cpp player.cpp playerTask.cpp
 
 # header files in this project
 HEADERS := irSender.hpp irReceiver.hpp player.hpp irWeaponTask.hpp irDetecTask.hpp playerTask.hpp
