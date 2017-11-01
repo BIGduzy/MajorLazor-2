@@ -7,24 +7,25 @@
 #include "irReceiver.hpp"
 #include "playerTask.hpp"
 
-class IrDetecTask: public rtos::task<> {
+class IrDetecTask : public rtos::task<> {
 private:
     PlayerTask& player;
+    IrReceiver& receiver;
 
     uint8_t playerId  = 0;
-    uint8_t data    = 0;
+    uint8_t data      = 0;
 
 public:
-    IrDetecTask(PlayerTask& player, uint8_t playerId, uint8_t data):
+    IrDetecTask(PlayerTask& player, IrReceiver& receiver, uint8_t playerId, uint8_t data):
         task("IrDetecTask"),
         player(player),
+        receiver(receiver),
         playerId(playerId),
         data(data)
-    {
-        IrReceiver receiver(playerId, data);
-    }
+    {}
 
     void main() override {};
+    
 };
 
 #endif // IRDETECTASK_HPP
