@@ -1,0 +1,14 @@
+*codelite*
+.clang
+*/Release/*
+*.mk
+*.o
+*/Doxyfile
+*.exe
+*.swp
+*.elf
+*.bin
+*.ld
+*.map
+*bmptk*
+*.bak
