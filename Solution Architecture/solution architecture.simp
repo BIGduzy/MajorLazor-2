@@ -131,7 +131,7 @@
       </counter>
       <counter>
         <item-type type-id="" type="AbstractElementGroup" />
-        <value>89</value>
+        <value>195</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -185,75 +185,13 @@
     <custom-types />
   </types>
   <items>
-    <item id="di932468249888134799" cid="TSK001" type="concurrency-task" name="PlayerTask" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:12:01">
-      <style class="default" />
-      <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
-    </item>
-    <item id="di755985421707662473" cid="TSK002" type="concurrency-task" name="IrWeaponTask" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:12:12">
-      <style class="default" />
-      <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
-    </item>
     <item id="di181039668504017486" cid="QUE002" type="concurrency-queue" name="oledChannel" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:17:56">
-      <style class="default" />
-      <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
-    </item>
-    <item id="di373148447394704658" cid="TSK003" type="concurrency-task" name="IrSignalTask" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:13:27">
-      <style class="default" />
-      <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
-    </item>
-    <item id="di132897591420809592" cid="CMSG006" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:29:45" from="di134337873275017350" to="di574085328871903423">
-      <style class="default" />
-      <communication-message from="di134337873275017350" to="di574085328871903423">
-        <messages>
-          <message id="s295b84dc3c7e4c4998b781b91c3b29f0413" seq-number="" text="Write()" reverse="false" return-value="" assign-to-variable="">
-            <parameters />
-          </message>
-        </messages>
-      </communication-message>
-    </item>
-    <item id="di730928471366177292" cid="TSK003" type="concurrency-task" name="IrSignalTask" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:13:27">
-      <style class="default" />
-      <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
-    </item>
-    <item id="di374655985217265866" cid="QUE002" type="concurrency-queue" name="oledChannel" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:17:56">
-      <style class="default" />
-      <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
-    </item>
-    <item id="di757836184535179188" cid="TSK005" type="concurrency-task" name="IrDetecTask" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:19:46">
       <style class="default" />
       <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
     </item>
     <item id="di662124009285822044" cid="TSK004" type="concurrency-task" name="OledDisplayTask" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:17:20">
       <style class="default" />
       <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
-    </item>
-    <item id="di174468481439781537" cid="QUE003" type="concurrency-queue" name="dataChannel" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:21:48">
-      <style class="default" />
-      <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
-    </item>
-    <item id="di920814110826460460" cid="QUE004" type="concurrency-queue" name="messageChannel" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:24:53">
-      <style class="default" />
-      <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
-    </item>
-    <item id="di854258290510695991" cid="CMSG006" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:29:45" from="di757836184535179188" to="di174468481439781537">
-      <style class="default" />
-      <communication-message from="di757836184535179188" to="di174468481439781537">
-        <messages>
-          <message id="s295b84dc3c7e4c4998b781b91c3b29f0413" seq-number="" text="Write()" reverse="false" return-value="" assign-to-variable="">
-            <parameters />
-          </message>
-        </messages>
-      </communication-message>
-    </item>
-    <item id="di743982946386912329" cid="CMSG008" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:30:07" from="di373148447394704658" to="di174468481439781537">
-      <style class="default" />
-      <communication-message from="di373148447394704658" to="di174468481439781537">
-        <messages>
-          <message id="s716e363236e742bf9d79125e2f3ece9d827" seq-number="" text="Read()" reverse="false" return-value="" assign-to-variable="">
-            <parameters />
-          </message>
-        </messages>
-      </communication-message>
     </item>
     <item id="di578502583634476054" cid="CMSG014" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:32:35" from="di257277456349977482" to="di181039668504017486">
       <style class="default" />
@@ -275,34 +213,6 @@
         </messages>
       </communication-message>
     </item>
-    <item id="di583804415338561656" cid="CMSG014" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:32:35" from="di932468249888134799" to="di374655985217265866">
-      <style class="default" />
-      <communication-message from="di932468249888134799" to="di374655985217265866">
-        <messages>
-          <message id="sbe302b38e4bd46df83163bd7c480d715289" seq-number="" text="Write()" reverse="false" return-value="" assign-to-variable="">
-            <parameters />
-          </message>
-        </messages>
-      </communication-message>
-    </item>
-    <item id="di782691691943458270" cid="CMSG016" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:34:21" from="di223037621632853944" to="di374655985217265866">
-      <style class="default" />
-      <communication-message from="di223037621632853944" to="di374655985217265866">
-        <messages>
-          <message id="s34ee5d55797a499197055eac7f9ff35e572" seq-number="" text="Read()" reverse="false" return-value="" assign-to-variable="">
-            <parameters />
-          </message>
-        </messages>
-      </communication-message>
-    </item>
-    <item id="di223037621632853944" cid="TSK004" type="concurrency-task" name="OledDisplayTask" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:17:20">
-      <style class="default" />
-      <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
-    </item>
-    <item id="di574085328871903423" cid="QUE003" type="concurrency-queue" name="messageChannel" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:21:48">
-      <style class="default" />
-      <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
-    </item>
     <item id="di134337873275017350" cid="TSK005" type="concurrency-task" name="IrDetecTask" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:19:46">
       <style class="default" />
       <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
@@ -314,36 +224,6 @@
     <item id="di812789228729311330" cid="TSK002" type="concurrency-task" name="IrWeaponTask" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:12:12">
       <style class="default" />
       <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
-    </item>
-    <item id="di279678266658160622" cid="CMSG036" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:38:34" from="di932468249888134799" to="di920814110826460460">
-      <style class="default" />
-      <communication-message from="di932468249888134799" to="di920814110826460460">
-        <messages>
-          <message id="s4f23a980f313499583025b26dee327d1721" seq-number="" text="Read()" reverse="false" return-value="" assign-to-variable="">
-            <parameters />
-          </message>
-        </messages>
-      </communication-message>
-    </item>
-    <item id="di344546746871835626" cid="CMSG038" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:38:46" from="di373148447394704658" to="di920814110826460460">
-      <style class="default" />
-      <communication-message from="di373148447394704658" to="di920814110826460460">
-        <messages>
-          <message id="s7392d5e35ee64fa2ab3f23acc978ef0d78" seq-number="" text="Write()" reverse="false" return-value="" assign-to-variable="">
-            <parameters />
-          </message>
-        </messages>
-      </communication-message>
-    </item>
-    <item id="di609491416349872910" cid="CMSG008" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:30:07" from="di730928471366177292" to="di574085328871903423">
-      <style class="default" />
-      <communication-message from="di730928471366177292" to="di574085328871903423">
-        <messages>
-          <message id="s716e363236e742bf9d79125e2f3ece9d827" seq-number="" text="Read()" reverse="false" return-value="" assign-to-variable="">
-            <parameters />
-          </message>
-        </messages>
-      </communication-message>
     </item>
     <item id="di257277456349977482" cid="TSK001" type="concurrency-task" name="GameLeaderTask" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:12:01">
       <style class="default" />
@@ -359,9 +239,73 @@
         </messages>
       </communication-message>
     </item>
-    <item id="di463040696362417718" cid="CMSG038" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:38:46" from="di730928471366177292" to="di483676848706116414">
+    <item id="di463040696362417718" cid="CMSG038" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:38:46" from="di134337873275017350" to="di483676848706116414">
       <style class="default" />
-      <communication-message from="di730928471366177292" to="di483676848706116414">
+      <communication-message from="di134337873275017350" to="di483676848706116414">
+        <messages>
+          <message id="s7392d5e35ee64fa2ab3f23acc978ef0d78" seq-number="" text="Write()" reverse="false" return-value="" assign-to-variable="">
+            <parameters />
+          </message>
+        </messages>
+      </communication-message>
+    </item>
+    <item id="di407500145140464154" cid="TSK001" type="concurrency-task" name="PlayerTask" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:12:01">
+      <style class="default" />
+      <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
+    </item>
+    <item id="di906090934852071677" cid="TSK002" type="concurrency-task" name="IrWeaponTask" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:12:12">
+      <style class="default" />
+      <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
+    </item>
+    <item id="di601863305286894250" cid="QUE002" type="concurrency-queue" name="oledChannel" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:17:56">
+      <style class="default" />
+      <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
+    </item>
+    <item id="di454605047648045587" cid="TSK005" type="concurrency-task" name="IrDetecTask" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:19:46">
+      <style class="default" />
+      <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
+    </item>
+    <item id="di376120362184881205" cid="QUE004" type="concurrency-queue" name="messageChannel" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:24:53">
+      <style class="default" />
+      <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
+    </item>
+    <item id="di699044886810109297" cid="CMSG014" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:32:35" from="di407500145140464154" to="di601863305286894250">
+      <style class="default" />
+      <communication-message from="di407500145140464154" to="di601863305286894250">
+        <messages>
+          <message id="sbe302b38e4bd46df83163bd7c480d715289" seq-number="" text="Write()" reverse="false" return-value="" assign-to-variable="">
+            <parameters />
+          </message>
+        </messages>
+      </communication-message>
+    </item>
+    <item id="di312744111971424615" cid="CMSG016" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:34:21" from="di326043684169247590" to="di601863305286894250">
+      <style class="default" />
+      <communication-message from="di326043684169247590" to="di601863305286894250">
+        <messages>
+          <message id="s34ee5d55797a499197055eac7f9ff35e572" seq-number="" text="Read()" reverse="false" return-value="" assign-to-variable="">
+            <parameters />
+          </message>
+        </messages>
+      </communication-message>
+    </item>
+    <item id="di326043684169247590" cid="TSK004" type="concurrency-task" name="OledDisplayTask" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:17:20">
+      <style class="default" />
+      <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
+    </item>
+    <item id="di101448785554132278" cid="CMSG036" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:38:34" from="di407500145140464154" to="di376120362184881205">
+      <style class="default" />
+      <communication-message from="di407500145140464154" to="di376120362184881205">
+        <messages>
+          <message id="s66a01e2c027648128aa6e4b68306ce7c153" seq-number="" text="Read()" reverse="false" return-value="" assign-to-variable="">
+            <parameters />
+          </message>
+        </messages>
+      </communication-message>
+    </item>
+    <item id="di761160024231131786" cid="CMSG038" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 10:38:46" from="di454605047648045587" to="di376120362184881205">
+      <style class="default" />
+      <communication-message from="di454605047648045587" to="di376120362184881205">
         <messages>
           <message id="s7392d5e35ee64fa2ab3f23acc978ef0d78" seq-number="" text="Write()" reverse="false" return-value="" assign-to-variable="">
             <parameters />
@@ -384,7 +328,7 @@
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="uml-class" id="p6d5c433592864915a9542738c26b6db0_971509566" name="ClassDiagram Player" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="175,-267" zoom="0.8">
+      <diagram type="uml-class" id="p6d5c433592864915a9542738c26b6db0_971509566" name="ClassDiagram Player" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="0,-267" zoom="0.8">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -520,57 +464,57 @@
           <item id="di817523136993335966" cid="REL001" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 10:59:17" from="di673900580766149599" to="di165648356784706659">
             <style class="default" />
             <relation from="di673900580766149599" to="di165648356784706659">
-              <start-role id="umlar-80f79164-2501-43b0-8706-67a3b9db5679" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-c5e8d6a2-9257-4add-9e21-054c24f3d396" name="" multiplicity="1" navigability="yes" association-type="association" visibility="private" />
+              <start-role id="umlar-8e6ac5bc-3569-42e5-b934-3b5f5fa2c23e" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-7d07062f-6333-484b-9500-770f50b22c0f" name="" multiplicity="1" navigability="yes" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di568548853483448306" cid="REL002" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 10:59:44" from="di673900580766149599" to="di579064802371366565">
             <style class="default" />
             <relation from="di673900580766149599" to="di579064802371366565">
-              <start-role id="umlar-71460cd8-846e-4543-938f-6443ecd0ffc8" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-30cd2f2f-bde0-4cab-811a-683eaaaf0c49" name="" multiplicity="1" navigability="yes" association-type="association" visibility="private" />
+              <start-role id="umlar-746379ea-77f0-4d7a-afde-da73d235f9f9" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-cb578e8b-a981-42af-bacb-124e071f9fab" name="" multiplicity="1" navigability="yes" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di233529460618318148" cid="REL006" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 11:01:49" from="di369030727509139968" to="di165648356784706659">
             <style class="default" />
             <relation from="di369030727509139968" to="di165648356784706659">
-              <start-role id="umlar-fed4f04f-6cbe-46a3-a717-079c620821e7" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
-              <end-role id="umlar-194e5fae-2b2e-4099-9efb-9c90e7a3c685" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-0303dcb4-aa07-4fc9-9c45-88b051b5799e" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="umlar-3b250923-b642-421e-b47a-a943cb541345" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di160030853380337191" cid="REL007" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 11:01:58" from="di712666449111549972" to="di673900580766149599">
             <style class="default" />
             <relation from="di712666449111549972" to="di673900580766149599">
-              <start-role id="umlar-c3e65284-5ab8-4dd5-a8f9-8c3d668d8653" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
-              <end-role id="umlar-f2c73d75-6d27-44b6-a21b-a5d82d3df20e" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-760cd392-da00-4474-8fa5-27843c94c24f" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="umlar-e287cd5e-67dc-47ca-9d08-5c7bf1fd275b" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di330901629956005923" cid="REL008" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 11:02:06" from="di834086520951205257" to="di579064802371366565">
             <style class="default" />
             <relation from="di834086520951205257" to="di579064802371366565">
-              <start-role id="umlar-5a6df0fe-2957-42f3-bdfe-a719f536e801" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
-              <end-role id="umlar-13f0b3d2-1eab-461e-82ac-da43c9ab8c2a" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-cc14e033-dc08-4394-a2a8-e5ee724a3f38" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="umlar-1f73ab7f-55a1-4f4e-a2f7-a3752006132d" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di552311732609638980" cid="REL016" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/25/2017 10:21:07" from="di165648356784706659" to="di802042811192012194">
             <style class="default" />
             <relation from="di165648356784706659" to="di802042811192012194">
-              <start-role id="umlar-e2b9c935-a529-4deb-adb3-64a6124d4d3a" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-45de8a4e-c229-4663-918a-e23a641dda76" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-0f351523-47ed-4934-9243-b75c17dc4e03" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-b2b9b151-b461-4d20-a6f5-8a591389c1f0" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di519037780402983493" cid="REL017" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/25/2017 10:21:14" from="di579064802371366565" to="di802042811192012194">
             <style class="default" />
             <relation from="di579064802371366565" to="di802042811192012194">
-              <start-role id="umlar-a13753ff-269c-490e-ba4c-f1ed1a626173" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-819d8b6c-fc88-46da-91c0-93db457b12ea" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-83f7df17-e534-4cb5-9d40-24f6440495a1" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-5db811e6-0a49-4c92-b3b3-909e513cb2e5" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di369248366148470893" cid="REL011" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 11:03:26" from="di897733104304878071" to="di673900580766149599">
             <style class="default" />
             <relation from="di897733104304878071" to="di673900580766149599">
-              <start-role id="umlar-f3fb9e5b-ebf5-4196-a9d0-0405acdccb00" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
-              <end-role id="umlar-801eef7d-2c47-4ff0-b832-9ead31793309" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-a11deca5-a263-4d08-897e-55c4aec52ca7" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="umlar-233a878d-9d13-40e8-b928-2f44eb278889" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
         </abstract-items>
@@ -779,36 +723,36 @@
           <item id="di773805335806743517" cid="REL001" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 10:59:17" from="di580971791931715176" to="di779650249860628628">
             <style class="default" />
             <relation from="di580971791931715176" to="di779650249860628628">
-              <start-role id="umlar-71737909-0956-48c8-a633-26a0945b68d7" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-efad14eb-7752-45e9-8ba1-1b813927c37f" name="" multiplicity="1" navigability="yes" association-type="association" visibility="private" />
+              <start-role id="umlar-b5a0dab5-47e1-449e-86d4-f69c9db91281" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-4596a1c1-8334-475c-a8c3-578f80120fe5" name="" multiplicity="1" navigability="yes" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di144787901486899175" cid="REL002" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 10:59:44" from="di580971791931715176" to="di354943987859039292">
             <style class="default" />
             <relation from="di580971791931715176" to="di354943987859039292">
-              <start-role id="umlar-bd6b913d-3364-4d48-acf5-64cff74dc31e" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-1e9122e4-f603-4493-810f-7872d837bda8" name="" multiplicity="1" navigability="yes" association-type="association" visibility="private" />
+              <start-role id="umlar-e772528f-9c73-485f-8514-bd0694a46798" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-74beac82-78a1-4eba-b9da-8e4f023af9a7" name="" multiplicity="1" navigability="yes" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di511811108341667050" cid="REL006" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 11:01:49" from="di745070240117835222" to="di779650249860628628">
             <style class="default" />
             <relation from="di745070240117835222" to="di779650249860628628">
-              <start-role id="umlar-cfe741e5-dde4-483a-8384-7a683fee501a" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
-              <end-role id="umlar-ddb7f041-8f51-4145-8d65-0eba92ffbc53" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-691544f9-5928-4b6b-b1c2-d364eb9a24df" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="umlar-ddb504ce-2b6d-4f04-aada-b1072e3be66d" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di230143419283865779" cid="REL007" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 11:01:58" from="di923636824998214931" to="di580971791931715176">
             <style class="default" />
             <relation from="di923636824998214931" to="di580971791931715176">
-              <start-role id="umlar-1bd87372-2662-4ca9-8de8-91a50fd30656" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
-              <end-role id="umlar-7d6e8b12-1117-4891-b2f0-682b5f2eca92" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-d9370408-9fae-4fa1-a582-25c6d72fba0c" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="umlar-e66dd5b8-6c0e-42a7-9a79-4d16ba8ea7ea" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di113127748185459566" cid="REL008" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 11:02:06" from="di276820691449421293" to="di354943987859039292">
             <style class="default" />
             <relation from="di276820691449421293" to="di354943987859039292">
-              <start-role id="umlar-447a68d4-3796-4d76-bebf-e0664d885e7a" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
-              <end-role id="umlar-1cc28599-e18c-4ac6-8435-4a26c837f692" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-09f7a3de-a72c-40c9-ab06-409eee322cf2" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="umlar-b26a6f65-1a51-49b9-be5c-49806db7d4c1" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di276820691449421293" cid="C002" type="class" name="IrReceiver" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 10:55:20">
@@ -823,8 +767,8 @@
           <item id="di200284722594439091" cid="REL011" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 11:03:26" from="di872144241974270595" to="di580971791931715176">
             <style class="default" />
             <relation from="di872144241974270595" to="di580971791931715176">
-              <start-role id="umlar-d6a4e240-f55f-49f0-8f93-57eeb38e91d1" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
-              <end-role id="umlar-5e478c31-c59a-41e9-a559-f49c8c1be075" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-f9f8c832-99cc-49ad-8fec-18114c4429f6" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="umlar-9a78dd1b-c774-4b28-b4a6-75dd33b276fa" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di745070240117835222" cid="C003" type="class" name="IrLed" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 10:55:31">
@@ -839,15 +783,15 @@
           <item id="di371801964165406606" cid="REL016" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/25/2017 10:21:07" from="di779650249860628628" to="di343132772889015668">
             <style class="default" />
             <relation from="di779650249860628628" to="di343132772889015668">
-              <start-role id="umlar-5faff5aa-cf61-4bc2-aea5-afe3f61f176b" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-b6976f98-7f9f-4385-a005-433f0e46f299" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-0a632840-996c-4db8-91bb-6152eb463413" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-97d89522-be82-4de0-aada-305f3a2ecc7a" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di779058005712135129" cid="REL017" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/25/2017 10:21:14" from="di354943987859039292" to="di343132772889015668">
             <style class="default" />
             <relation from="di354943987859039292" to="di343132772889015668">
-              <start-role id="umlar-165a404d-8515-4561-8f1b-5507b075b17e" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-59b2c325-7acb-4e50-8e9c-d8e6f53e9e77" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-788960e9-625b-4fe8-883f-7ce86a4d909f" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-2b946278-7bd2-4896-b334-a480b3fbf6f1" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
         </abstract-items>
@@ -958,7 +902,7 @@
           </item>
         </layer>
       </diagram>
-      <diagram type="concurrency" id="p42d3d6539d8049eba957d79734cace8f_813373863" name="ConcurrencyDiagram Player" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="206,538">
+      <diagram type="concurrency" id="p42d3d6539d8049eba957d79734cace8f_813373863" name="ConcurrencyDiagram Player" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="951,463">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -970,32 +914,36 @@
           </authors>
           <description />
           <creation-date>10/26/2017 10:10:32</creation-date>
-          <change-date>10/26/2017 14:22:01</change-date>
+          <change-date>11/01/2017 15:46:35</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
         <abstract-items>
-          <item id="di627624299903349665" cid="EVF001" type="concurrency-eventflag" name="fireButtonFlag" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:27:15">
+          <item id="di732507026328872488" cid="CMSG001" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:31:29">
             <style class="default" />
-            <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
-          </item>
-          <item id="di908674793996854462" cid="PL003" type="concurrency-pool" name="weaponInfoPool" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:26:24">
-            <style class="default" />
-            <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
-          </item>
-          <item id="di680166914613474000" cid="MTX005" type="concurrency-mutex" name="mutexForWeaponInfoPool" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:27:57">
-            <style class="default" />
-            <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
-          </item>
-          <item id="di293018586391589036" cid="CMSG007" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:32:27" from="di932468249888134799">
-            <style class="default" />
-            <communication-message from="di932468249888134799">
+            <communication-message>
               <messages />
             </communication-message>
           </item>
-          <item id="di469274834266419745" cid="CMSG009" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:32:27" from="di932468249888134799" to="di908674793996854462">
+          <item id="di917529321920254300" cid="CMSG001" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:31:29">
             <style class="default" />
-            <communication-message from="di932468249888134799" to="di908674793996854462">
+            <communication-message>
+              <messages />
+            </communication-message>
+          </item>
+          <item id="di551786627271260635" cid="EVF001" type="concurrency-eventflag" name="fireButtonFlag" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:27:15">
+            <style class="default" />
+            <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
+          </item>
+          <item id="di781701042655118342" cid="CMSG007" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:32:27" from="di407500145140464154">
+            <style class="default" />
+            <communication-message from="di407500145140464154">
+              <messages />
+            </communication-message>
+          </item>
+          <item id="di648968208794475683" cid="CMSG009" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:32:27" from="di407500145140464154" to="di247558998606083207">
+            <style class="default" />
+            <communication-message from="di407500145140464154" to="di247558998606083207">
               <messages>
                 <message id="sf4f510ba61fe4270a7fcb0cacddc1b97282" seq-number="" text="write()" reverse="false" return-value="" assign-to-variable="">
                   <parameters />
@@ -1003,19 +951,21 @@
               </messages>
             </communication-message>
           </item>
-          <item id="di412979872545319223" cid="CMSG001" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:31:29">
+          <item id="di247558998606083207" cid="PL003" type="concurrency-pool" name="weaponInfoPool" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:26:24">
             <style class="default" />
-            <communication-message>
+            <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
+          </item>
+          <item id="di100300740967234544" cid="CMSG010" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:33:05" from="di906090934852071677">
+            <style class="default" />
+            <communication-message from="di906090934852071677">
               <messages />
             </communication-message>
           </item>
-          <item id="di325927610381511104" cid="CMSG010" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:33:05" from="di755985421707662473">
+          <item id="di350657972338812070" cid="MTX005" type="concurrency-mutex" name="mutexForWeaponInfoPool" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:27:57">
             <style class="default" />
-            <communication-message from="di755985421707662473">
-              <messages />
-            </communication-message>
+            <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
           </item>
-          <item id="di104720874849872422" cid="CMSG011" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:33:05" from="di373148447394704658" to="di908674793996854462">
+          <item id="di423225264692462638" cid="CMSG011" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:33:05" from="di906090934852071677" to="di247558998606083207">
             <style style-name="Custom Style" shadow-type="smooth" shadow-offset="1,1" shadow-visible="true" shadow-color="#32000000" gloss-effect="true" wrap-name-text="true" padding="1" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
               <text-style type="name" use-defaults="false" color="#FF000000" font="Segoe UI;10;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
               <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
@@ -1038,17 +988,17 @@
                 </alternate-style>
               </alternate-styles>
             </style>
-            <communication-message from="di373148447394704658" to="di908674793996854462">
+            <communication-message from="di906090934852071677" to="di247558998606083207">
               <messages>
-                <message id="s6a6d7a6c314b451c83139a3a58be0e87476" seq-number="" text="read()" reverse="false" return-value="" assign-to-variable="">
+                <message id="s0ce1e439ed874bf48fc70a0c9d14feb5562" seq-number="" text="Read()" reverse="false" return-value="" assign-to-variable="">
                   <parameters />
                 </message>
               </messages>
             </communication-message>
           </item>
-          <item id="di805568362834014151" cid="CMSG013" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:33:48" from="di908674793996854462" to="di680166914613474000">
+          <item id="di516085037712390270" cid="CMSG013" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:33:48" from="di247558998606083207" to="di350657972338812070">
             <style class="default" />
-            <communication-message from="di908674793996854462" to="di680166914613474000">
+            <communication-message from="di247558998606083207" to="di350657972338812070">
               <messages>
                 <message id="s787b481d82ed49108291f0fac27bc223249" seq-number="" text="wait()" reverse="false" return-value="" assign-to-variable="">
                   <parameters />
@@ -1059,9 +1009,19 @@
               </messages>
             </communication-message>
           </item>
-          <item id="di723626163801613210" cid="CMSG021" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:36:04" from="di373148447394704658" to="di627624299903349665">
+          <item id="di539959755583451654" cid="CMSG017" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:35:05" from="di407500145140464154" to="di551786627271260635">
             <style class="default" />
-            <communication-message from="di373148447394704658" to="di627624299903349665">
+            <communication-message from="di407500145140464154" to="di551786627271260635">
+              <messages>
+                <message id="s546284ab0d8142cb841ef2f04a734c4b168" seq-number="" text="Signal()" reverse="false" return-value="" assign-to-variable="">
+                  <parameters />
+                </message>
+              </messages>
+            </communication-message>
+          </item>
+          <item id="di525503219262752168" cid="CMSG021" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:36:04" from="di906090934852071677" to="di551786627271260635">
+            <style class="default" />
+            <communication-message from="di906090934852071677" to="di551786627271260635">
               <messages>
                 <message id="s00d5cc5950df4788ae7f719ec213f5c0758" seq-number="" text="Wait()" reverse="false" return-value="" assign-to-variable="">
                   <parameters />
@@ -1069,65 +1029,37 @@
               </messages>
             </communication-message>
           </item>
-          <item id="di707881395555525522" cid="CMSG017" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:35:05" from="di932468249888134799" to="di627624299903349665">
+          <item id="di659927290449588134" cid="CMSG022" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:38:32" from="di426197040200514819">
             <style class="default" />
-            <communication-message from="di932468249888134799" to="di627624299903349665">
-              <messages>
-                <message id="s546284ab0d8142cb841ef2f04a734c4b168" seq-number="" text="signal()" reverse="false" return-value="" assign-to-variable="">
-                  <parameters />
-                </message>
-              </messages>
-            </communication-message>
-          </item>
-          <item id="di508729716207467371" cid="CMSG022" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:38:32" from="di373148447394704658">
-            <style class="default" />
-            <communication-message from="di373148447394704658">
+            <communication-message from="di426197040200514819">
               <messages />
             </communication-message>
           </item>
-          <item id="di993941190495508423" cid="QUE005" type="concurrency-queue" name="encodedChannel" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:38:58">
+          <item id="di217849972367448034" cid="CMSG024" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:40:10" from="di426197040200514819">
             <style class="default" />
-            <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
-          </item>
-          <item id="di205786534825954349" cid="CMSG024" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:40:10" from="di373148447394704658">
-            <style class="default" />
-            <communication-message from="di373148447394704658">
+            <communication-message from="di426197040200514819">
               <messages />
             </communication-message>
           </item>
-          <item id="di645462543228093283" cid="CMSG025" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:40:10" from="di373148447394704658" to="di993941190495508423">
-            <style class="default" />
-            <communication-message from="di373148447394704658" to="di993941190495508423">
-              <messages>
-                <message id="s6358bcbe73dd4e58afa75052382a80f2259" seq-number="" text="Write()" reverse="false" return-value="" assign-to-variable="">
-                  <parameters />
-                </message>
-              </messages>
-            </communication-message>
-          </item>
-          <item id="di732507026328872488" cid="CMSG001" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:31:29">
+          <item id="di299295576620009500" cid="CMSG001" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:31:29">
             <style class="default" />
             <communication-message>
               <messages />
             </communication-message>
           </item>
-          <item id="di251394684664346154" cid="CMSG027" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:41:01" from="di993941190495508423" to="di755985421707662473">
-            <style class="default" />
-            <communication-message from="di993941190495508423" to="di755985421707662473">
-              <messages>
-                <message id="sc710bed905cb4e838599c5f235bfe6f7899" seq-number="" text=" Read()" reverse="true" return-value="" assign-to-variable="">
-                  <parameters />
-                </message>
-              </messages>
-            </communication-message>
-          </item>
-          <item id="di103997886431154086" cid="CMSG001" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:31:29">
+          <item id="di813958332752382024" cid="CMSG001" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:31:29">
             <style class="default" />
             <communication-message>
               <messages />
             </communication-message>
           </item>
-          <item id="di917529321920254300" cid="CMSG001" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:31:29">
+          <item id="di373176183881623084" cid="CMSG001" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:31:29">
+            <style class="default" />
+            <communication-message>
+              <messages />
+            </communication-message>
+          </item>
+          <item id="di189204551886973199" cid="CMSG001" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:31:29">
             <style class="default" />
             <communication-message>
               <messages />
@@ -1135,247 +1067,218 @@
           </item>
         </abstract-items>
         <layer id="22dbd5f1aa5449f988c112df6c291a7d" name="Default" visible="true" enabled="true" locked="false">
-          <item id="di932468249888134799" iid="a83ed83201504aa19be002165f084595" creation-date="10/26/2017 10:12:01" order-index="0" type="entity">
-            <layout ax="648.4466" ay="809.7237" awidth="120" aheight="50" x="648.4466" y="809.7237" width="120" height="50" />
-          </item>
-          <item id="di755985421707662473" iid="6639489608ed41528de97746bf1bfeae" creation-date="10/26/2017 10:12:12" order-index="1" type="entity">
-            <layout ax="1070" ay="810" awidth="150" aheight="50" x="1070" y="810" width="150" height="50" />
-          </item>
-          <item id="di373148447394704658" iid="dfd198e536a6417f9fbc3b192c9b8017" creation-date="10/26/2017 10:13:27" order-index="5" type="entity">
-            <layout ax="648.6645" ay="1200.597" awidth="130" aheight="50" x="648.6645" y="1200.597" width="130" height="50" />
-          </item>
-          <item id="di374655985217265866" iid="ecc6340768924d87bc697985f2640cd2" creation-date="10/26/2017 10:17:56" order-index="13" type="entity">
-            <layout ax="678.5545" ay="679.4135" awidth="60" aheight="30" x="678.5545" y="679.4135" width="60" height="30" name-position="0,10" name-anchor="bottom" name-width="96.85979" auto-anchor="true" label-attached="false" />
-          </item>
-          <item id="di757836184535179188" iid="e2712d9f85f74e898c2b1daadbae5f28" creation-date="10/26/2017 10:19:46" order-index="16" type="entity">
-            <layout ax="318.9658" ay="809.8796" awidth="137.7558" aheight="50" x="318.9658" y="809.8796" width="137.7558" height="50" />
-          </item>
-          <item id="di174468481439781537" iid="deaa68d74d0745a482a41a17d62b4318" creation-date="10/26/2017 10:21:48" order-index="20" type="entity">
-            <layout ax="359.0117" ay="1220.323" awidth="57.39825" aheight="20" x="359.0117" y="1220.323" width="57.39825" height="20" name-position="0,10" name-anchor="bottom" name-width="150" auto-anchor="true" label-attached="false" />
-          </item>
-          <item id="di920814110826460460" iid="413c637a9b5644d3ae28fec7bcc6f6ba" creation-date="10/26/2017 10:24:53" order-index="24" type="entity">
-            <layout ax="530" ay="1020" awidth="60" aheight="30" x="530" y="1020" width="60" height="30" name-position="0,10" name-anchor="bottom" name-width="130" auto-anchor="true" label-attached="false" />
-          </item>
-          <item id="di854258290510695991" iid="c19a76dcca954a83bb2168a2e5f63559" creation-date="10/26/2017 10:29:45" order-index="26" type="relation">
-            <layout normal-message-position="2,-40" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="388" y1="860" x2="388" y2="1220" start-border-pos="0.624716325851543" end-border-pos="0.126259561374867" name-position="0,0">
-              <points>
-                <point x="388" y="860" />
-                <point x="388" y="1220" />
-              </points>
-            </layout>
-            <relation from="di757836184535179188" from-iid="e2712d9f85f74e898c2b1daadbae5f28" to="di174468481439781537" to-iid="deaa68d74d0745a482a41a17d62b4318" />
-            <communication-message />
-          </item>
-          <item id="di743982946386912329" iid="2e39905026604820815ef6be52dce234" creation-date="10/26/2017 10:30:07" order-index="28" type="relation">
-            <layout normal-message-position="38,-28" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="649" y1="1227" x2="416" y2="1230" start-border-pos="0.868936157226562" end-border-pos="0.366668701171875" name-position="-70,110">
-              <points>
-                <point x="649" y="1227" />
-                <point x="416" y="1230" />
-              </points>
-            </layout>
-            <relation from="di373148447394704658" from-iid="dfd198e536a6417f9fbc3b192c9b8017" to="di174468481439781537" to-iid="deaa68d74d0745a482a41a17d62b4318" />
-            <communication-message />
-          </item>
-          <item id="di583804415338561656" iid="e345e51244074c4bb8b7a0c8418a494b" creation-date="10/26/2017 10:32:35" order-index="34" type="relation">
-            <layout normal-message-position="30,0" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="708" y1="810" x2="709" y2="709" start-border-pos="0.124438985188802" end-border-pos="0.623587036132813" name-position="0,0">
-              <points>
-                <point x="708" y="810" />
-                <point x="709" y="709" />
-              </points>
-            </layout>
-            <relation from="di932468249888134799" from-iid="a83ed83201504aa19be002165f084595" to="di374655985217265866" to-iid="ecc6340768924d87bc697985f2640cd2" />
-            <communication-message />
-          </item>
-          <item id="di627624299903349665" iid="b9a9907478ee412d9ecbce22f5f977fa" creation-date="10/26/2017 13:27:15" order-index="55" type="entity">
-            <layout ax="690" ay="1020" awidth="40" aheight="40" x="690" y="1020" width="40" height="40" name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" />
-          </item>
-          <item id="di782691691943458270" iid="bc6bead2e922490aad4e59cc98626820" creation-date="10/26/2017 10:34:21" order-index="36" type="relation">
-            <layout normal-message-position="34,-10" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="705" y1="609" x2="708" y2="679" start-border-pos="0.623076135971967" end-border-pos="0.124015299479167" name-position="0,0">
-              <points>
-                <point x="705" y="609" />
-                <point x="708" y="679" />
-              </points>
-            </layout>
-            <relation from="di223037621632853944" from-iid="8c84ee8953cc4e4c992db3a83091b837" to="di374655985217265866" to-iid="ecc6340768924d87bc697985f2640cd2" />
-            <communication-message />
-          </item>
-          <item id="di223037621632853944" iid="8c84ee8953cc4e4c992db3a83091b837" creation-date="10/26/2017 10:17:20" order-index="12" type="entity">
-            <layout ax="618.8281" ay="559.3531" awidth="170" aheight="50" x="618.8281" y="559.3531" width="170" height="50" />
-          </item>
-          <item id="di412979872545319223" iid="5d67529eb63542668baf341656c869f5" creation-date="10/26/2017 13:31:29" order-index="59" type="relation">
-            <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1310" y1="1040" x2="1310" y2="1040" start-border-pos="-1" end-border-pos="-1" name-position="0,0">
-              <points>
-                <point x="1310" y="1040" />
-                <point x="1310" y="1040" />
-              </points>
-            </layout>
-            <relation />
-            <communication-message />
-          </item>
-          <item id="di293018586391589036" iid="46171563940b431f9a26a283d879b1bd" creation-date="10/26/2017 13:32:27" order-index="60" type="relation">
-            <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="768" y1="835" x2="768" y2="835" start-border-pos="0.376381530761719" end-border-pos="-1" name-position="0,0">
-              <points>
-                <point x="768" y="835" />
-                <point x="768" y="835" />
-              </points>
-            </layout>
-            <relation from="di932468249888134799" from-iid="a83ed83201504aa19be002165f084595" />
-            <communication-message />
-          </item>
-          <item id="di469274834266419745" iid="b6e23e0c3bfb45d39f5fb7055f03e122" creation-date="10/26/2017 13:32:27" order-index="61" type="relation">
-            <layout normal-message-position="40,10" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="725" y1="860" x2="836" y2="1020" start-border-pos="0.591296259562174" end-border-pos="0.0384147644042969" name-position="0,0">
-              <points>
-                <point x="725" y="860" />
-                <point x="836" y="1020" />
-              </points>
-            </layout>
-            <relation from="di932468249888134799" from-iid="a83ed83201504aa19be002165f084595" to="di908674793996854462" to-iid="3e859e04515f4908b78874a525585bbd" />
-            <communication-message />
-          </item>
-          <item id="di908674793996854462" iid="3e859e04515f4908b78874a525585bbd" creation-date="10/26/2017 13:26:24" order-index="54" type="entity">
-            <layout ax="830" ay="1020" awidth="40" aheight="40" x="830" y="1020" width="40" height="40" name-position="0,10" name-anchor="bottom" name-width="130" auto-anchor="true" label-attached="false" />
-          </item>
-          <item id="di325927610381511104" iid="ec8c26f1593344a2a95eedd0325cdab2" creation-date="10/26/2017 13:33:05" order-index="62" type="relation">
-            <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1070" y1="835" x2="1070" y2="835" start-border-pos="0.875" end-border-pos="-1" name-position="0,0">
-              <points>
-                <point x="1070" y="835" />
-                <point x="1070" y="835" />
-              </points>
-            </layout>
-            <relation from="di755985421707662473" from-iid="6639489608ed41528de97746bf1bfeae" />
-            <communication-message />
-          </item>
-          <item id="di680166914613474000" iid="026ef8137c0a4289911332fedcc8ecb1" creation-date="10/26/2017 13:27:57" order-index="56" type="entity">
-            <layout ax="970" ay="1010" awidth="40" aheight="50" x="970" y="1010" width="40" height="50" name-position="0,0" name-width="210" auto-anchor="true" label-attached="false" />
-          </item>
-          <item id="di104720874849872422" iid="1c659f90dc9b4e6f81c5676893c11d5d" creation-date="10/26/2017 13:33:05" order-index="63" type="relation">
-            <layout normal-message-position="16,0" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="750" y1="1201" x2="838" y2="1060" start-border-pos="0.194875981257512" end-border-pos="0.702639770507812" name-position="20,70">
-              <points>
-                <point x="750" y="1201" />
-                <point x="838" y="1060" />
-              </points>
-            </layout>
-            <relation from="di373148447394704658" from-iid="dfd198e536a6417f9fbc3b192c9b8017" to="di908674793996854462" to-iid="3e859e04515f4908b78874a525585bbd" />
-            <communication-message />
-          </item>
-          <item id="di805568362834014151" iid="94f69be4c26a406d8dc97c2f32dec05d" creation-date="10/26/2017 13:33:48" order-index="65" type="relation">
-            <layout normal-message-position="-10,2" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="870" y1="1040" x2="970" y2="1036" start-border-pos="0.375" end-border-pos="0.870833129882812" name-position="0,0">
-              <points>
-                <point x="870" y="1040" />
-                <point x="970" y="1036" />
-              </points>
-            </layout>
-            <relation from="di908674793996854462" from-iid="3e859e04515f4908b78874a525585bbd" to="di680166914613474000" to-iid="026ef8137c0a4289911332fedcc8ecb1" />
-            <communication-message />
-          </item>
-          <item id="di279678266658160622" iid="5e7ef081e04a41a6be95618b98876d99" creation-date="10/26/2017 10:38:34" order-index="47" type="relation">
-            <layout normal-message-position="-12,25" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="690" y1="860" x2="571" y2="1020" start-border-pos="0.662930425008138" end-border-pos="0.17124989827474" name-position="0,0">
-              <points>
-                <point x="690" y="860" />
-                <point x="571" y="1020" />
-              </points>
-            </layout>
-            <relation from="di932468249888134799" from-iid="a83ed83201504aa19be002165f084595" to="di920814110826460460" to-iid="413c637a9b5644d3ae28fec7bcc6f6ba" />
-            <communication-message />
-          </item>
-          <item id="di344546746871835626" iid="3ae2f30fe9ae433997af400a659f64d5" creation-date="10/26/2017 10:38:46" order-index="49" type="relation">
-            <layout normal-message-position="1,-20" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="694" y1="1201" x2="572" y2="1050" start-border-pos="0.0868816669170673" end-border-pos="0.574607340494792" name-position="0,0">
-              <points>
-                <point x="694" y="1201" />
-                <point x="572" y="1050" />
-              </points>
-            </layout>
-            <relation from="di373148447394704658" from-iid="dfd198e536a6417f9fbc3b192c9b8017" to="di920814110826460460" to-iid="413c637a9b5644d3ae28fec7bcc6f6ba" />
-            <communication-message />
-          </item>
-          <item id="di707881395555525522" iid="6814c1d8868a4957b1edd45597ed3230" creation-date="10/26/2017 13:35:05" order-index="67" type="relation">
-            <layout normal-message-position="11,10" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="708" y1="860" x2="710" y2="1020" start-border-pos="0.625442632039388" end-border-pos="0.12378044128418" name-position="0,0">
-              <points>
-                <point x="708" y="860" />
-                <point x="710" y="1020" />
-              </points>
-            </layout>
-            <relation from="di932468249888134799" from-iid="a83ed83201504aa19be002165f084595" to="di627624299903349665" to-iid="b9a9907478ee412d9ecbce22f5f977fa" />
-            <communication-message />
-          </item>
-          <item id="di723626163801613210" iid="07a387b7b87f45ae8e664f2ae8a9b291" creation-date="10/26/2017 13:36:04" order-index="70" type="relation">
-            <layout normal-message-position="18,10" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="714" y1="1201" x2="710" y2="1060" start-border-pos="0.125645212026743" end-border-pos="0.621894454956055" name-position="0,0">
-              <points>
-                <point x="714" y="1201" />
-                <point x="710" y="1060" />
-              </points>
-            </layout>
-            <relation from="di373148447394704658" from-iid="dfd198e536a6417f9fbc3b192c9b8017" to="di627624299903349665" to-iid="b9a9907478ee412d9ecbce22f5f977fa" />
-            <communication-message />
-          </item>
-          <item id="di508729716207467371" iid="a78ae8a970144c42bcf66c47e912053a" creation-date="10/26/2017 13:38:32" order-index="71" type="relation">
-            <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="779" y1="1251" x2="779" y2="1251" start-border-pos="0.5" end-border-pos="-1" name-position="0,0">
-              <points>
-                <point x="779" y="1251" />
-                <point x="779" y="1251" />
-              </points>
-            </layout>
-            <relation from="di373148447394704658" from-iid="dfd198e536a6417f9fbc3b192c9b8017" />
-            <communication-message />
-          </item>
-          <item id="di993941190495508423" iid="22bb249c3ae24576a313b9488562f39d" creation-date="10/26/2017 13:38:58" order-index="72" type="entity">
-            <layout ax="1100" ay="1210" awidth="70" aheight="30" x="1100" y="1210" width="70" height="30" name-position="10,10" name-anchor="bottom" name-width="140" auto-anchor="true" label-attached="false" />
-          </item>
-          <item id="di205786534825954349" iid="a081f583bc2c4aac936b283322795db5" creation-date="10/26/2017 13:40:10" order-index="73" type="relation">
-            <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="714" y1="1251" x2="714" y2="1251" start-border-pos="0.624354787973257" end-border-pos="-1" name-position="0,0">
-              <points>
-                <point x="714" y="1251" />
-                <point x="714" y="1251" />
-              </points>
-            </layout>
-            <relation from="di373148447394704658" from-iid="dfd198e536a6417f9fbc3b192c9b8017" />
-            <communication-message />
-          </item>
-          <item id="di645462543228093283" iid="0a56877b41e844d2913bd2c66617fa04" creation-date="10/26/2017 13:40:10" order-index="74" type="relation">
-            <layout normal-message-position="-10,4" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="779" y1="1226" x2="1100" y2="1225" start-border-pos="0.37701416015625" end-border-pos="0.875" name-position="-140,160">
-              <points>
-                <point x="779" y="1226" />
-                <point x="1100" y="1225" />
-              </points>
-            </layout>
-            <relation from="di373148447394704658" from-iid="dfd198e536a6417f9fbc3b192c9b8017" to="di993941190495508423" to-iid="22bb249c3ae24576a313b9488562f39d" />
-            <communication-message />
-          </item>
-          <item id="di251394684664346154" iid="3bbb6bc9b7af40e483830fe6a41d70d0" creation-date="10/26/2017 13:41:01" order-index="76" type="relation">
-            <layout normal-message-position="58,5" reverse-message-position="-2,25" line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1135" y1="1210" x2="1140" y2="860" start-border-pos="0.125733729771205" end-border-pos="0.633333333333333" name-position="0,0">
-              <points>
-                <point x="1135" y="1210" />
-                <point x="1140" y="860" />
-              </points>
-            </layout>
-            <relation from="di993941190495508423" from-iid="22bb249c3ae24576a313b9488562f39d" to="di755985421707662473" to-iid="6639489608ed41528de97746bf1bfeae" />
-            <communication-message />
-          </item>
           <item id="di732507026328872488" iid="d10ab53321eb435e87948cad08f2b66f" creation-date="10/26/2017 13:31:29" order-index="59" type="relation">
-            <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="2060" y1="1040" x2="2060" y2="1040" start-border-pos="-1" end-border-pos="-1" name-position="0,0">
+            <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1680" y1="1110" x2="1680" y2="1110" start-border-pos="-1" end-border-pos="-1" name-position="0,0">
               <points>
-                <point x="2060" y="1040" />
-                <point x="2060" y="1040" />
-              </points>
-            </layout>
-            <relation />
-            <communication-message />
-          </item>
-          <item id="di103997886431154086" iid="0b128ce1188241078a5d2040e5d700a9" creation-date="10/26/2017 13:31:29" order-index="59" type="relation">
-            <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1310" y1="850" x2="1310" y2="850" start-border-pos="-1" end-border-pos="-1" name-position="0,0">
-              <points>
-                <point x="1310" y="850" />
-                <point x="1310" y="850" />
+                <point x="1680" y="1110" />
+                <point x="1680" y="1110" />
               </points>
             </layout>
             <relation />
             <communication-message />
           </item>
           <item id="di917529321920254300" iid="a52c3131c8e34940897d706522ba4268" creation-date="10/26/2017 13:31:29" order-index="59" type="relation">
-            <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="2060" y1="870" x2="2060" y2="870" start-border-pos="-1" end-border-pos="-1" name-position="0,0">
+            <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1680" y1="940" x2="1680" y2="940" start-border-pos="-1" end-border-pos="-1" name-position="0,0">
               <points>
-                <point x="2060" y="870" />
-                <point x="2060" y="870" />
+                <point x="1680" y="940" />
+                <point x="1680" y="940" />
+              </points>
+            </layout>
+            <relation />
+            <communication-message />
+          </item>
+          <item id="di407500145140464154" iid="e71bca7f4d0e4eceaca384a1f6a0d2c7" creation-date="10/26/2017 10:12:01" order-index="0" type="entity">
+            <layout ax="1439.481" ay="880.3706" awidth="120" aheight="50" x="1439.481" y="880.3706" width="120" height="50" />
+          </item>
+          <item id="di906090934852071677" iid="39919b34993f49d992f85c380611e127" creation-date="10/26/2017 10:12:12" order-index="1" type="entity">
+            <layout ax="1870" ay="880" awidth="150" aheight="50" x="1870" y="880" width="150" height="50" />
+          </item>
+          <item id="di601863305286894250" iid="da67aea9ac4c4b418f33d016c6b540f2" creation-date="10/26/2017 10:17:56" order-index="13" type="entity">
+            <layout ax="1469.589" ay="750.0604" awidth="60" aheight="30" x="1469.589" y="750.0604" width="60" height="30" name-position="0,10" name-anchor="bottom" name-width="96.85979" auto-anchor="true" label-attached="false" />
+          </item>
+          <item id="di454605047648045587" iid="216929f29aa748b0bad1d06ddcd306e1" creation-date="10/26/2017 10:19:46" order-index="16" type="entity">
+            <layout ax="1040" ay="880" awidth="137.7559" aheight="50" x="1040" y="880" width="137.7559" height="50" />
+          </item>
+          <item id="di376120362184881205" iid="5e542aafb0364857847e0dd371bdb7dc" creation-date="10/26/2017 10:24:53" order-index="24" type="entity">
+            <layout ax="1270" ay="890" awidth="60" aheight="30" x="1270" y="890" width="60" height="30" name-position="0,10" name-anchor="bottom" name-width="130" auto-anchor="true" label-attached="false" />
+          </item>
+          <item id="di699044886810109297" iid="697a426d8a30481d9be9552b21807a91" creation-date="10/26/2017 10:32:35" order-index="34" type="relation">
+            <layout normal-message-position="30,0" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1499" y1="880" x2="1500" y2="780" start-border-pos="0.124370320638021" end-border-pos="0.62373301188151" name-position="0,0">
+              <points>
+                <point x="1499" y="880" />
+                <point x="1500" y="780" />
+              </points>
+            </layout>
+            <relation from="di407500145140464154" from-iid="e71bca7f4d0e4eceaca384a1f6a0d2c7" to="di601863305286894250" to-iid="da67aea9ac4c4b418f33d016c6b540f2" />
+            <communication-message />
+          </item>
+          <item id="di551786627271260635" iid="6f654ce81fac4577a65c64038b33b68f" creation-date="10/26/2017 13:27:15" order-index="55" type="entity">
+            <layout ax="1670" ay="1040" awidth="40" aheight="40" x="1670" y="1040" width="40" height="40" name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" />
+          </item>
+          <item id="di312744111971424615" iid="c7e2b1e7a4d04961afc09b40a48d3947" creation-date="10/26/2017 10:34:21" order-index="36" type="relation">
+            <layout normal-message-position="34,-10" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1504" y1="670" x2="1501" y2="750" start-border-pos="0.62653180290671" end-border-pos="0.129317728678385" name-position="0,0">
+              <points>
+                <point x="1504" y="670" />
+                <point x="1501" y="750" />
+              </points>
+            </layout>
+            <relation from="di326043684169247590" from-iid="ff434b43cd3a42bc8144bbe2a272d5d6" to="di601863305286894250" to-iid="da67aea9ac4c4b418f33d016c6b540f2" />
+            <communication-message />
+          </item>
+          <item id="di326043684169247590" iid="ff434b43cd3a42bc8144bbe2a272d5d6" creation-date="10/26/2017 10:17:20" order-index="12" type="entity">
+            <layout ax="1420" ay="620" awidth="170" aheight="50" x="1420" y="620" width="170" height="50" />
+          </item>
+          <item id="di659927290449588134" iid="679f01de71d64de1aae931420c364807" creation-date="10/26/2017 13:38:32" order-index="71" type="relation">
+            <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1950" y1="1251" x2="1950.034" y2="1251.647" start-border-pos="0.5" end-border-pos="-1" name-position="0,0">
+              <points>
+                <point x="1950" y="1251" />
+                <point x="1950.034" y="1251.647" />
+              </points>
+            </layout>
+            <relation from="di426197040200514819" from-iid="9175acfed5f640a3b9f3a236b81df239" />
+            <communication-message />
+          </item>
+          <item id="di217849972367448034" iid="7449cbe9410b4d278494141b2b7966de" creation-date="10/26/2017 13:40:10" order-index="73" type="relation">
+            <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1885" y1="1251" x2="1885.034" y2="1251.647" start-border-pos="0.624354787973257" end-border-pos="-1" name-position="0,0">
+              <points>
+                <point x="1885" y="1251" />
+                <point x="1885.034" y="1251.647" />
+              </points>
+            </layout>
+            <relation from="di426197040200514819" from-iid="9175acfed5f640a3b9f3a236b81df239" />
+            <communication-message />
+          </item>
+          <item id="di813958332752382024" iid="02d6a7fb573e4782ae20aaaed7b45c0a" creation-date="10/26/2017 13:31:29" order-index="59" type="relation">
+            <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="3231.034" y1="1040.647" x2="3231.034" y2="1040.647" start-border-pos="-1" end-border-pos="-1" name-position="0,0">
+              <points>
+                <point x="3231.034" y="1040.647" />
+                <point x="3231.034" y="1040.647" />
+              </points>
+            </layout>
+            <relation />
+            <communication-message />
+          </item>
+          <item id="di189204551886973199" iid="823c6b51dbce4d9089a42a2c470fc93c" creation-date="10/26/2017 13:31:29" order-index="59" type="relation">
+            <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="3231.034" y1="870.6469" x2="3231.034" y2="870.6469" start-border-pos="-1" end-border-pos="-1" name-position="0,0">
+              <points>
+                <point x="3231.034" y="870.6469" />
+                <point x="3231.034" y="870.6469" />
+              </points>
+            </layout>
+            <relation />
+            <communication-message />
+          </item>
+          <item id="di781701042655118342" iid="92e0b797af3a4e4b8053e1cf7047863d" creation-date="10/26/2017 13:32:27" order-index="60" type="relation">
+            <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1559" y1="906" x2="1559.034" y2="905.6469" start-border-pos="0.376381530761719" end-border-pos="-1" name-position="0,0">
+              <points>
+                <point x="1559" y="906" />
+                <point x="1559.034" y="905.6469" />
+              </points>
+            </layout>
+            <relation from="di407500145140464154" from-iid="e71bca7f4d0e4eceaca384a1f6a0d2c7" />
+            <communication-message />
+          </item>
+          <item id="di648968208794475683" iid="cbf7775dc3a142488870ef7057124a4e" creation-date="10/26/2017 13:32:27" order-index="61" type="relation">
+            <layout normal-message-position="-14,2" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1559" y1="906" x2="1690" y2="910" start-border-pos="0.380256052418217" end-border-pos="0.877962112426758" name-position="0,0">
+              <points>
+                <point x="1559" y="906" />
+                <point x="1690" y="910" />
+              </points>
+            </layout>
+            <relation from="di407500145140464154" from-iid="e71bca7f4d0e4eceaca384a1f6a0d2c7" to="di247558998606083207" to-iid="6fb4c3bd53864819a3347530b9123c0e" />
+            <communication-message />
+          </item>
+          <item id="di247558998606083207" iid="6fb4c3bd53864819a3347530b9123c0e" creation-date="10/26/2017 13:26:24" order-index="54" type="entity">
+            <layout ax="1690" ay="890" awidth="40" aheight="40" x="1690" y="890" width="40" height="40" name-position="0,10" name-anchor="bottom" name-width="130" auto-anchor="true" label-attached="false" />
+          </item>
+          <item id="di100300740967234544" iid="0429f86796a34119b719562161d47263" creation-date="10/26/2017 13:33:05" order-index="62" type="relation">
+            <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1870" y1="905" x2="1861.034" y2="905.6469" start-border-pos="0.875" end-border-pos="-1" name-position="0,0">
+              <points>
+                <point x="1870" y="905" />
+                <point x="1861.034" y="905.6469" />
+              </points>
+            </layout>
+            <relation from="di906090934852071677" from-iid="39919b34993f49d992f85c380611e127" />
+            <communication-message />
+          </item>
+          <item id="di350657972338812070" iid="5654d8767b4b4aeba7c6cd301883f572" creation-date="10/26/2017 13:27:57" order-index="56" type="entity">
+            <layout ax="1710" ay="780" awidth="40" aheight="50" x="1710" y="780" width="40" height="50" name-position="0,0" name-width="210" auto-anchor="true" label-attached="false" />
+          </item>
+          <item id="di423225264692462638" iid="326d5ecf38f5455dbb860e79565d2d0d" creation-date="10/26/2017 13:33:05" order-index="63" type="relation">
+            <layout normal-message-position="14,2" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1870" y1="907" x2="1730" y2="910" start-border-pos="0.867021179199219" end-border-pos="0.372340393066406" name-position="20,70">
+              <points>
+                <point x="1870" y="907" />
+                <point x="1730" y="910" />
+              </points>
+            </layout>
+            <relation from="di906090934852071677" from-iid="39919b34993f49d992f85c380611e127" to="di247558998606083207" to-iid="6fb4c3bd53864819a3347530b9123c0e" />
+            <communication-message />
+          </item>
+          <item id="di516085037712390270" iid="79f4c6013d86412384e91d16e92f9eaa" creation-date="10/26/2017 13:33:48" order-index="65" type="relation">
+            <layout normal-message-position="5,-20" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1730" y1="910" x2="1730" y2="830" start-border-pos="0.375" end-border-pos="0.625" name-position="0,0">
+              <points>
+                <point x="1730" y="910" />
+                <point x="1730" y="830" />
+              </points>
+            </layout>
+            <relation from="di247558998606083207" from-iid="6fb4c3bd53864819a3347530b9123c0e" to="di350657972338812070" to-iid="5654d8767b4b4aeba7c6cd301883f572" />
+            <communication-message />
+          </item>
+          <item id="di101448785554132278" iid="dbd996320e36426789ce8ebce1830a93" creation-date="10/26/2017 10:38:34" order-index="47" type="relation">
+            <layout normal-message-position="16,-35" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1439" y1="905" x2="1330" y2="905" start-border-pos="0.876853037021869" end-border-pos="0.375" name-position="0,0">
+              <points>
+                <point x="1439" y="905" />
+                <point x="1330" y="905" />
+              </points>
+            </layout>
+            <relation from="di407500145140464154" from-iid="e71bca7f4d0e4eceaca384a1f6a0d2c7" to="di376120362184881205" to-iid="5e542aafb0364857847e0dd371bdb7dc" />
+            <communication-message />
+          </item>
+          <item id="di761160024231131786" iid="f83a931bf504417db2f1c119f3f4fa9b" creation-date="10/26/2017 10:38:46" order-index="49" type="relation">
+            <layout normal-message-position="-24,-5" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1178" y1="905" x2="1270" y2="905" start-border-pos="0.375" end-border-pos="0.875" name-position="0,0">
+              <points>
+                <point x="1178" y="905" />
+                <point x="1270" y="905" />
+              </points>
+            </layout>
+            <relation from="di454605047648045587" from-iid="216929f29aa748b0bad1d06ddcd306e1" to="di376120362184881205" to-iid="5e542aafb0364857847e0dd371bdb7dc" />
+            <communication-message />
+          </item>
+          <item id="di539959755583451654" iid="dd081c44874641a787fe21b3554399fb" creation-date="10/26/2017 13:35:05" order-index="67" type="relation">
+            <layout normal-message-position="-20,23" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1530" y1="930" x2="1670" y2="1044" start-border-pos="0.561821746826172" end-border-pos="0.976439666748047" name-position="0,0">
+              <points>
+                <point x="1530" y="930" />
+                <point x="1670" y="1044" />
+              </points>
+            </layout>
+            <relation from="di407500145140464154" from-iid="e71bca7f4d0e4eceaca384a1f6a0d2c7" to="di551786627271260635" to-iid="6f654ce81fac4577a65c64038b33b68f" />
+            <communication-message />
+          </item>
+          <item id="di525503219262752168" iid="fabae620fc084ff5ae4d0eb0844a4e12" creation-date="10/26/2017 13:36:04" order-index="70" type="relation">
+            <layout normal-message-position="18,10" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1904" y1="930" x2="1710" y2="1048" start-border-pos="0.693548380533854" end-border-pos="0.299019622802734" name-position="0,0">
+              <points>
+                <point x="1904" y="930" />
+                <point x="1710" y="1048" />
+              </points>
+            </layout>
+            <relation from="di906090934852071677" from-iid="39919b34993f49d992f85c380611e127" to="di551786627271260635" to-iid="6f654ce81fac4577a65c64038b33b68f" />
+            <communication-message />
+          </item>
+          <item id="di299295576620009500" iid="f7e820a9ecc0488faac6de289f638479" creation-date="10/26/2017 13:31:29" order-index="59" type="relation">
+            <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="2101.034" y1="1110.647" x2="2101.034" y2="1110.647" start-border-pos="-1" end-border-pos="-1" name-position="0,0">
+              <points>
+                <point x="2101.034" y="1110.647" />
+                <point x="2101.034" y="1110.647" />
+              </points>
+            </layout>
+            <relation />
+            <communication-message />
+          </item>
+          <item id="di373176183881623084" iid="c0dc1bec591648498a29c052b88bf8ff" creation-date="10/26/2017 13:31:29" order-index="59" type="relation">
+            <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="2101.034" y1="920.6469" x2="2101.034" y2="920.6469" start-border-pos="-1" end-border-pos="-1" name-position="0,0">
+              <points>
+                <point x="2101.034" y="920.6469" />
+                <point x="2101.034" y="920.6469" />
               </points>
             </layout>
             <relation />
@@ -1383,7 +1286,7 @@
           </item>
         </layer>
       </diagram>
-      <diagram type="uml-statechart" id="p258cef5197eb453ea273a0f537a09840_936302255" name="StateMachineDiagram PlayerTask" order-index="3" overview-order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" show-frame="false" view-location="57,-69" zoom="0.6">
+      <diagram type="uml-statechart" id="p258cef5197eb453ea273a0f537a09840_936302255" name="StateMachineDiagram PlayerTask" order-index="3" overview-order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" show-frame="false" view-location="-4,-138" zoom="1.2">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -1915,7 +1818,7 @@
           </item>
         </layer>
       </diagram>
-      <diagram type="concurrency" id="pd40b7fcc21fa4f20a0c7f7709e869105_923141267" name="ConcurrencyDiagram GameLeader" order-index="4" overview-order-index="2" uid="" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="247,536">
+      <diagram type="concurrency" id="pd40b7fcc21fa4f20a0c7f7709e869105_923141267" name="ConcurrencyDiagram GameLeader" order-index="4" overview-order-index="2" uid="" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="0,463">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -1927,7 +1830,7 @@
           </authors>
           <description />
           <creation-date>10/26/2017 14:23:00</creation-date>
-          <change-date>10/26/2017 14:38:35</change-date>
+          <change-date>11/01/2017 15:45:40</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
@@ -1960,7 +1863,7 @@
             <style class="default" />
             <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
           </item>
-          <item id="di715481579277063665" cid="CMSG011" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:33:05" from="di730928471366177292" to="di884882483801236066">
+          <item id="di715481579277063665" cid="CMSG011" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:33:05" from="di812789228729311330" to="di884882483801236066">
             <style style-name="Custom Style" shadow-type="smooth" shadow-offset="1,1" shadow-visible="true" shadow-color="#32000000" gloss-effect="true" wrap-name-text="true" padding="1" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
               <text-style type="name" use-defaults="false" color="#FF000000" font="Segoe UI;10;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
               <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
@@ -1983,7 +1886,7 @@
                 </alternate-style>
               </alternate-styles>
             </style>
-            <communication-message from="di730928471366177292" to="di884882483801236066">
+            <communication-message from="di812789228729311330" to="di884882483801236066">
               <messages>
                 <message id="s6a6d7a6c314b451c83139a3a58be0e87476" seq-number="" text="read()" reverse="false" return-value="" assign-to-variable="">
                   <parameters />
@@ -2014,9 +1917,9 @@
               </messages>
             </communication-message>
           </item>
-          <item id="di737610231342251734" cid="CMSG021" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:36:04" from="di730928471366177292" to="di434137852644879359">
+          <item id="di737610231342251734" cid="CMSG021" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:36:04" from="di812789228729311330" to="di434137852644879359">
             <style class="default" />
-            <communication-message from="di730928471366177292" to="di434137852644879359">
+            <communication-message from="di812789228729311330" to="di434137852644879359">
               <messages>
                 <message id="s00d5cc5950df4788ae7f719ec213f5c0758" seq-number="" text="Wait()" reverse="false" return-value="" assign-to-variable="">
                   <parameters />
@@ -2030,34 +1933,10 @@
               <messages />
             </communication-message>
           </item>
-          <item id="di227041244324203204" cid="QUE005" type="concurrency-queue" name="encodedChannel" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:38:58">
-            <style class="default" />
-            <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
-          </item>
           <item id="di310296978743496017" cid="CMSG024" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:40:10" from="di730928471366177292">
             <style class="default" />
             <communication-message from="di730928471366177292">
               <messages />
-            </communication-message>
-          </item>
-          <item id="di879006847612398095" cid="CMSG025" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:40:10" from="di730928471366177292" to="di227041244324203204">
-            <style class="default" />
-            <communication-message from="di730928471366177292" to="di227041244324203204">
-              <messages>
-                <message id="s6358bcbe73dd4e58afa75052382a80f2259" seq-number="" text="Write()" reverse="false" return-value="" assign-to-variable="">
-                  <parameters />
-                </message>
-              </messages>
-            </communication-message>
-          </item>
-          <item id="di224739849751503937" cid="CMSG027" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:41:01" from="di227041244324203204" to="di812789228729311330">
-            <style class="default" />
-            <communication-message from="di227041244324203204" to="di812789228729311330">
-              <messages>
-                <message id="sc710bed905cb4e838599c5f235bfe6f7899" seq-number="" text=" Read()" reverse="true" return-value="" assign-to-variable="">
-                  <parameters />
-                </message>
-              </messages>
             </communication-message>
           </item>
           <item id="di167187320545106427" cid="CMSG001" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 13:31:29">
@@ -2089,43 +1968,14 @@
           <item id="di257277456349977482" iid="7ec71b8f42324a3da640cb0d9e668fdf" creation-date="10/26/2017 10:12:01" order-index="0" type="entity">
             <layout ax="600" ay="810" awidth="220" aheight="50" x="600" y="810" width="220" height="50" />
           </item>
-          <item id="di812789228729311330" iid="b7cc7e56e3fb4a1382632a79669a148e" creation-date="10/26/2017 10:12:12" order-index="1" type="entity">
-            <layout ax="1070" ay="810" awidth="150" aheight="50" x="1070" y="810" width="150" height="50" />
-          </item>
-          <item id="di730928471366177292" iid="f740003203ba432888ded2ab2d2991be" creation-date="10/26/2017 10:13:27" order-index="5" type="entity">
-            <layout ax="648.6645" ay="1200.597" awidth="130" aheight="50" x="648.6645" y="1200.597" width="130" height="50" />
-          </item>
           <item id="di181039668504017486" iid="ed932eda91d245f3a3fbce3bbbc314b8" creation-date="10/26/2017 10:17:56" order-index="13" type="entity">
             <layout ax="678.5545" ay="679.4135" awidth="60" aheight="30" x="678.5545" y="679.4135" width="60" height="30" name-position="0,10" name-anchor="bottom" name-width="96.85979" auto-anchor="true" label-attached="false" />
           </item>
           <item id="di134337873275017350" iid="76084d170b9140509a117c9df1b9d4ab" creation-date="10/26/2017 10:19:46" order-index="16" type="entity">
-            <layout ax="318.9658" ay="809.8796" awidth="137.7558" aheight="50" x="318.9658" y="809.8796" width="137.7558" height="50" />
-          </item>
-          <item id="di574085328871903423" iid="7f7e4ff3a9ed4716a0749beaca98178e" creation-date="10/26/2017 10:21:48" order-index="20" type="entity">
-            <layout ax="359.0117" ay="1220.323" awidth="57.39825" aheight="20" x="359.0117" y="1220.323" width="57.39825" height="20" name-position="0,10" name-anchor="bottom" name-width="150" auto-anchor="true" label-attached="false" />
+            <layout ax="220" ay="810" awidth="137.7558" aheight="50" x="220" y="810" width="137.7558" height="50" />
           </item>
           <item id="di483676848706116414" iid="0012d95f4c124b5db6ff32b95b1dc5a0" creation-date="10/26/2017 10:24:53" order-index="24" type="entity">
-            <layout ax="530" ay="1020" awidth="60" aheight="30" x="530" y="1020" width="60" height="30" name-position="0,10" name-anchor="bottom" name-width="130" auto-anchor="true" label-attached="false" />
-          </item>
-          <item id="di132897591420809592" iid="42c79b8084fb4a2993e8cc0fbc5bc161" creation-date="10/26/2017 10:29:45" order-index="26" type="relation">
-            <layout normal-message-position="2,-40" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="388" y1="860" x2="388" y2="1220" start-border-pos="0.624716325851543" end-border-pos="0.126259561374867" name-position="0,0">
-              <points>
-                <point x="388" y="860" />
-                <point x="388" y="1220" />
-              </points>
-            </layout>
-            <relation from="di134337873275017350" from-iid="76084d170b9140509a117c9df1b9d4ab" to="di574085328871903423" to-iid="7f7e4ff3a9ed4716a0749beaca98178e" />
-            <communication-message />
-          </item>
-          <item id="di609491416349872910" iid="23ec58358ea34ad9a81c787765c514e8" creation-date="10/26/2017 10:30:07" order-index="28" type="relation">
-            <layout normal-message-position="38,-28" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="649" y1="1227" x2="416" y2="1230" start-border-pos="0.868936157226562" end-border-pos="0.366668701171875" name-position="-70,110">
-              <points>
-                <point x="649" y="1227" />
-                <point x="416" y="1230" />
-              </points>
-            </layout>
-            <relation from="di730928471366177292" from-iid="f740003203ba432888ded2ab2d2991be" to="di574085328871903423" to-iid="7f7e4ff3a9ed4716a0749beaca98178e" />
-            <communication-message />
+            <layout ax="440" ay="820" awidth="60" aheight="30" x="440" y="820" width="60" height="30" name-position="0,10" name-anchor="bottom" name-width="130" auto-anchor="true" label-attached="false" />
           </item>
           <item id="di578502583634476054" iid="0d64c65625b946b0bf12b990535f145b" creation-date="10/26/2017 10:32:35" order-index="34" type="relation">
             <layout normal-message-position="30,0" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="710" y1="810" x2="709" y2="709" start-border-pos="0.124798514626243" end-border-pos="0.622700500488281" name-position="0,0">
@@ -2138,7 +1988,7 @@
             <communication-message />
           </item>
           <item id="di434137852644879359" iid="082bf83b2f4f4e51beb5d8b32b7d9c4c" creation-date="10/26/2017 13:27:15" order-index="55" type="entity">
-            <layout ax="690" ay="1020" awidth="40" aheight="40" x="690" y="1020" width="40" height="40" name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" />
+            <layout ax="950" ay="960" awidth="40" aheight="40" x="950" y="960" width="40" height="40" name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" />
           </item>
           <item id="di225237633161285291" iid="2f866a2a1fd04bcabb57257be6d17bc4" creation-date="10/26/2017 10:34:21" order-index="36" type="relation">
             <layout normal-message-position="34,-10" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="705" y1="609" x2="708" y2="679" start-border-pos="0.623076135971967" end-border-pos="0.124015299479167" name-position="0,0">
@@ -2154,22 +2004,22 @@
             <layout ax="618.8281" ay="559.3531" awidth="170" aheight="50" x="618.8281" y="559.3531" width="170" height="50" />
           </item>
           <item id="di745885459587742050" iid="bffcf54fd0514caaa84a30bec482d336" creation-date="10/26/2017 13:32:27" order-index="61" type="relation">
-            <layout normal-message-position="40,10" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="727" y1="860" x2="836" y2="1020" start-border-pos="0.605598657781428" end-border-pos="0.0396339416503906" name-position="0,0">
+            <layout normal-message-position="-25,1" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="820" y1="837" x2="950" y2="840" start-border-pos="0.385576782226563" end-border-pos="0.877404022216797" name-position="0,0">
               <points>
-                <point x="727" y="860" />
-                <point x="836" y="1020" />
+                <point x="820" y="837" />
+                <point x="950" y="840" />
               </points>
             </layout>
             <relation from="di257277456349977482" from-iid="7ec71b8f42324a3da640cb0d9e668fdf" to="di884882483801236066" to-iid="a4372d8349df45cc8798a3563878f2c2" />
             <communication-message />
           </item>
           <item id="di884882483801236066" iid="a4372d8349df45cc8798a3563878f2c2" creation-date="10/26/2017 13:26:24" order-index="54" type="entity">
-            <layout ax="830" ay="1020" awidth="40" aheight="40" x="830" y="1020" width="40" height="40" name-position="0,10" name-anchor="bottom" name-width="130" auto-anchor="true" label-attached="false" />
+            <layout ax="950" ay="820" awidth="40" aheight="40" x="950" y="820" width="40" height="40" name-position="0,10" name-anchor="bottom" name-width="130" auto-anchor="true" label-attached="false" />
           </item>
           <item id="di308799417300274608" iid="cfdb0eaef69c49b39effecc09e5d1689" creation-date="10/26/2017 13:33:05" order-index="62" type="relation">
-            <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1070" y1="835" x2="1070" y2="835" start-border-pos="0.875" end-border-pos="-1" name-position="0,0">
+            <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1120" y1="835" x2="1070" y2="835" start-border-pos="0.875" end-border-pos="-1" name-position="0,0">
               <points>
-                <point x="1070" y="835" />
+                <point x="1120" y="835" />
                 <point x="1070" y="835" />
               </points>
             </layout>
@@ -2177,66 +2027,66 @@
             <communication-message />
           </item>
           <item id="di432975085814329461" iid="12cbb6e051db40999238c857c7890950" creation-date="10/26/2017 13:27:57" order-index="56" type="entity">
-            <layout ax="970" ay="1010" awidth="40" aheight="50" x="970" y="1010" width="40" height="50" name-position="0,0" name-width="190" auto-anchor="true" label-attached="false" />
+            <layout ax="950" ay="670" awidth="40" aheight="50" x="950" y="670" width="40" height="50" name-position="0,0" name-width="190" auto-anchor="true" label-attached="false" />
           </item>
           <item id="di715481579277063665" iid="05875271b7414182a00f67e84bb59d58" creation-date="10/26/2017 13:33:05" order-index="63" type="relation">
-            <layout normal-message-position="16,0" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="750" y1="1201" x2="838" y2="1060" start-border-pos="0.194875981257512" end-border-pos="0.702639770507812" name-position="20,70">
+            <layout normal-message-position="16,0" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1120" y1="837" x2="990" y2="840" start-border-pos="0.866666564941406" end-border-pos="0.372222137451172" name-position="20,70">
               <points>
-                <point x="750" y="1201" />
-                <point x="838" y="1060" />
+                <point x="1120" y="837" />
+                <point x="990" y="840" />
               </points>
             </layout>
-            <relation from="di730928471366177292" from-iid="f740003203ba432888ded2ab2d2991be" to="di884882483801236066" to-iid="a4372d8349df45cc8798a3563878f2c2" />
+            <relation from="di812789228729311330" from-iid="b7cc7e56e3fb4a1382632a79669a148e" to="di884882483801236066" to-iid="a4372d8349df45cc8798a3563878f2c2" />
             <communication-message />
           </item>
           <item id="di300587773279009956" iid="62630526abe2430699ac047119ffd00e" creation-date="10/26/2017 13:33:48" order-index="65" type="relation">
-            <layout normal-message-position="-10,2" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="870" y1="1040" x2="970" y2="1036" start-border-pos="0.375" end-border-pos="0.870833129882812" name-position="0,0">
+            <layout normal-message-position="-10,2" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="990" y1="840" x2="973" y2="720" start-border-pos="0.375" end-border-pos="0.603448104858398" name-position="0,0">
               <points>
-                <point x="870" y="1040" />
-                <point x="970" y="1036" />
+                <point x="990" y="840" />
+                <point x="973" y="720" />
               </points>
             </layout>
             <relation from="di884882483801236066" from-iid="a4372d8349df45cc8798a3563878f2c2" to="di432975085814329461" to-iid="12cbb6e051db40999238c857c7890950" />
             <communication-message />
           </item>
           <item id="di583169021738110532" iid="eccfa555d0e64b2088654295ca92569f" creation-date="10/26/2017 10:38:34" order-index="47" type="relation">
-            <layout normal-message-position="-12,25" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="691" y1="860" x2="571" y2="1020" start-border-pos="0.646306818181818" end-border-pos="0.171875" name-position="0,0">
+            <layout normal-message-position="20,-55" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="600" y1="835" x2="500" y2="835" start-border-pos="0.875" end-border-pos="0.375" name-position="0,0">
               <points>
-                <point x="691" y="860" />
-                <point x="571" y="1020" />
+                <point x="600" y="835" />
+                <point x="500" y="835" />
               </points>
             </layout>
             <relation from="di257277456349977482" from-iid="7ec71b8f42324a3da640cb0d9e668fdf" to="di483676848706116414" to-iid="0012d95f4c124b5db6ff32b95b1dc5a0" />
             <communication-message />
           </item>
           <item id="di463040696362417718" iid="eec4fcd9bad14641bf777e12d3d787c2" creation-date="10/26/2017 10:38:46" order-index="49" type="relation">
-            <layout normal-message-position="1,-20" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="694" y1="1201" x2="572" y2="1050" start-border-pos="0.0868816669170673" end-border-pos="0.574607340494792" name-position="0,0">
+            <layout normal-message-position="-54,5" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="358" y1="835" x2="440" y2="835" start-border-pos="0.375" end-border-pos="0.875" name-position="0,0">
               <points>
-                <point x="694" y="1201" />
-                <point x="572" y="1050" />
+                <point x="358" y="835" />
+                <point x="440" y="835" />
               </points>
             </layout>
-            <relation from="di730928471366177292" from-iid="f740003203ba432888ded2ab2d2991be" to="di483676848706116414" to-iid="0012d95f4c124b5db6ff32b95b1dc5a0" />
+            <relation from="di134337873275017350" from-iid="76084d170b9140509a117c9df1b9d4ab" to="di483676848706116414" to-iid="0012d95f4c124b5db6ff32b95b1dc5a0" />
             <communication-message />
           </item>
           <item id="di270745019335120419" iid="62b743689b284416a4ec611e277ddc3a" creation-date="10/26/2017 13:35:05" order-index="67" type="relation">
-            <layout normal-message-position="11,10" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="710" y1="860" x2="710" y2="1020" start-border-pos="0.625" end-border-pos="0.125" name-position="0,0">
+            <layout normal-message-position="11,10" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="755" y1="860" x2="950" y2="969" start-border-pos="0.574059573086825" end-border-pos="0.944711303710937" name-position="0,0">
               <points>
-                <point x="710" y="860" />
-                <point x="710" y="1020" />
+                <point x="755" y="860" />
+                <point x="950" y="969" />
               </points>
             </layout>
             <relation from="di257277456349977482" from-iid="7ec71b8f42324a3da640cb0d9e668fdf" to="di434137852644879359" to-iid="082bf83b2f4f4e51beb5d8b32b7d9c4c" />
             <communication-message />
           </item>
           <item id="di737610231342251734" iid="f758b87de86a466aa68fadece1da9137" creation-date="10/26/2017 13:36:04" order-index="70" type="relation">
-            <layout normal-message-position="18,10" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="714" y1="1201" x2="710" y2="1060" start-border-pos="0.125645212026743" end-border-pos="0.621894454956055" name-position="0,0">
+            <layout normal-message-position="18,10" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1156" y1="860" x2="990" y2="967" start-border-pos="0.689655151367187" end-border-pos="0.294444274902344" name-position="0,0">
               <points>
-                <point x="714" y="1201" />
-                <point x="710" y="1060" />
+                <point x="1156" y="860" />
+                <point x="990" y="967" />
               </points>
             </layout>
-            <relation from="di730928471366177292" from-iid="f740003203ba432888ded2ab2d2991be" to="di434137852644879359" to-iid="082bf83b2f4f4e51beb5d8b32b7d9c4c" />
+            <relation from="di812789228729311330" from-iid="b7cc7e56e3fb4a1382632a79669a148e" to="di434137852644879359" to-iid="082bf83b2f4f4e51beb5d8b32b7d9c4c" />
             <communication-message />
           </item>
           <item id="di109869931179463992" iid="24d873f7101a4a79b72a9b12b96dae79" creation-date="10/26/2017 13:38:32" order-index="71" type="relation">
@@ -2249,9 +2099,6 @@
             <relation from="di730928471366177292" from-iid="f740003203ba432888ded2ab2d2991be" />
             <communication-message />
           </item>
-          <item id="di227041244324203204" iid="e893ec87a31b42819d957baac42da89d" creation-date="10/26/2017 13:38:58" order-index="72" type="entity">
-            <layout ax="1100" ay="1210" awidth="70" aheight="30" x="1100" y="1210" width="70" height="30" name-position="10,10" name-anchor="bottom" name-width="140" auto-anchor="true" label-attached="false" />
-          </item>
           <item id="di310296978743496017" iid="5fc56a1cb7be4bd49b8f8febc34bc539" creation-date="10/26/2017 13:40:10" order-index="73" type="relation">
             <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="714" y1="1251" x2="714" y2="1251" start-border-pos="0.624354787973257" end-border-pos="-1" name-position="0,0">
               <points>
@@ -2260,26 +2107,6 @@
               </points>
             </layout>
             <relation from="di730928471366177292" from-iid="f740003203ba432888ded2ab2d2991be" />
-            <communication-message />
-          </item>
-          <item id="di879006847612398095" iid="7b800616a9284b3db4af612e7f1ef01b" creation-date="10/26/2017 13:40:10" order-index="74" type="relation">
-            <layout normal-message-position="-10,4" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="779" y1="1226" x2="1100" y2="1225" start-border-pos="0.37701416015625" end-border-pos="0.875" name-position="-140,160">
-              <points>
-                <point x="779" y="1226" />
-                <point x="1100" y="1225" />
-              </points>
-            </layout>
-            <relation from="di730928471366177292" from-iid="f740003203ba432888ded2ab2d2991be" to="di227041244324203204" to-iid="e893ec87a31b42819d957baac42da89d" />
-            <communication-message />
-          </item>
-          <item id="di224739849751503937" iid="f67e5cb29cb3441e857b0d41b137ca2b" creation-date="10/26/2017 13:41:01" order-index="76" type="relation">
-            <layout normal-message-position="58,5" reverse-message-position="-2,25" line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1135" y1="1210" x2="1140" y2="860" start-border-pos="0.125733729771205" end-border-pos="0.633333333333333" name-position="0,0">
-              <points>
-                <point x="1135" y="1210" />
-                <point x="1140" y="860" />
-              </points>
-            </layout>
-            <relation from="di227041244324203204" from-iid="e893ec87a31b42819d957baac42da89d" to="di812789228729311330" to-iid="b7cc7e56e3fb4a1382632a79669a148e" />
             <communication-message />
           </item>
           <item id="di167187320545106427" iid="ace7ccd832c64d7d866ffd7f30f715f1" creation-date="10/26/2017 13:31:29" order-index="59" type="relation">
@@ -2321,6 +2148,9 @@
             </layout>
             <relation />
             <communication-message />
+          </item>
+          <item id="di812789228729311330" iid="b7cc7e56e3fb4a1382632a79669a148e" creation-date="10/26/2017 10:12:12" order-index="1" type="entity">
+            <layout ax="1120" ay="810" awidth="150" aheight="50" x="1120" y="810" width="150" height="50" />
           </item>
         </layer>
       </diagram>
