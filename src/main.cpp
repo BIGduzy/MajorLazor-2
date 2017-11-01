@@ -1,42 +1,27 @@
 #include "hwlib.hpp"
-#include "irReceiver.hpp"
+#include "rtos.hpp"
+
+#include "irDetecTask.hpp"
 #include "irSender.hpp"
 #include "playerTask.hpp"
 #include "oledDiplayTask.hpp"
-#include "rtos.hpp"
 
 
-int main() { //Main receiver
-    WDT->WDT_MR = WDT_MR_WDDIS;
-    hwlib::wait_ms( 500 );
-    
-    //IrReceiver receiver(1, 14);
-    
-    OledDisplayTask oledTest;
-
-    PlayerTask test(oledTest);
-        
-    rtos::run();
-
-    return 0;
-}
-
-
-/*
-int main() { //Main sender
+int main() {
     WDT->WDT_MR = WDT_MR_WDDIS;
     hwlib::wait_ms( 500 );
     
     IrSender sender(5, 24);
-    auto sw = hwlib::target::pin_in( hwlib::target::pins::d43 );
-    auto sw2 = hwlib::target::pin_in( hwlib::target::pins::d44 );
+    
+    OledDisplayTask oledTest;
 
-
-    for(;;) {
-        sender.send();
-        hwlib::wait_ms(1000);
-    }
+    PlayerTask test(oledTest);
+    
+    IrReceiver receiver(1, 14);
+    
+    IrDetecTask detector(test, receiver, 1, 14);
+ 
+    rtos::run();
 
     return 0;
 }
-*/

@@ -1,4 +1,12 @@
+#include "hwlib.hpp"
 #include "irSender.hpp"
+
+void IrSender::main() {
+    for(;;){
+            send();
+            hwlib::wait_ms(1000);
+        }
+}
 
 void IrSender::send_signal(){
     for( int i = 15; i >= 0; --i) {
@@ -14,14 +22,14 @@ void IrSender::send_signal(){
 
 void IrSender::sendOne() {
     irLed.set(1);
-    hwlib::wait_us(1600);//Vervang met rtos!
+    hwlib::wait_us(1600);
     irLed.set(0);
     hwlib::wait_us(800);
 }
 
 void IrSender::sendZero() {
     irLed.set(1);
-    hwlib::wait_us(800);//Vervang met rtos!
+    hwlib::wait_us(800);
     irLed.set(0);
     hwlib::wait_us(1600);
 }
@@ -39,7 +47,7 @@ uint16_t IrSender::generateSignal(uint8_t player, uint8_t data) {
 void IrSender::send() {
     signal = generateSignal(player, data);
     send_signal();
-    hwlib::wait_ms(3); //Vervang met rtos!
+    hwlib::wait_ms(3);
     send_signal();
     hwlib::wait_ms(4);
 }

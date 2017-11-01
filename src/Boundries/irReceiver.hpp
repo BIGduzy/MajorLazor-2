@@ -6,8 +6,7 @@
 
 namespace target = hwlib::target;
 
-class IrReceiver : public rtos::task<>
-{
+class IrReceiver : public rtos::task<> {
 private:
     uint16_t signal = 0;
     uint8_t player  = 0;
@@ -26,6 +25,5 @@ public:
 
     void main() override;
 };
-
 
 #endif // IRRECEIVER_HPP

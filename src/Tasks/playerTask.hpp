@@ -15,13 +15,8 @@ public:
     {}
 
     void main() override {
-        while(true){
-            //hwlib::cout << "test1";
-            for(int i = 0; i < 8; i++){
-                display.write(i);
-            }
-            hwlib::wait_ms(1000);
-            
+        for(;;){
+            hwlib::wait_ms(10000);
         }
     }
 };
