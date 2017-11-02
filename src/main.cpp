@@ -5,7 +5,7 @@
 #include "irSender.hpp"
 #include "playerTask.hpp"
 #include "oledDiplayTask.hpp"
-#include "oledDispaly.hpp"
+#include "oledDisplay.hpp"
 
 
 int main() {
