@@ -1,5 +1,5 @@
-#include "hwlib.hpp"
-#include "rtos.hpp"
+#include <hwlib.hpp>
+#include <rtos.hpp>
 
 #include "irDetecTask.hpp"
 #include "irSender.hpp"
