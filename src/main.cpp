@@ -5,6 +5,7 @@
 #include "irSender.hpp"
 #include "playerTask.hpp"
 #include "oledDiplayTask.hpp"
+#include "oledDispaly.hpp"
 
 
 int main() {
@@ -13,13 +14,15 @@ int main() {
     
     IrSender sender(5, 24);
     
-    OledDisplayTask oledTest;
+    OledDisplayTask oledDisplay;
 
-    PlayerTask test(oledTest);
+    PlayerTask player(oledDisplay);
     
     IrReceiver receiver(1, 14);
     
-    IrDetecTask detector(test, receiver, 1, 14);
+    IrDetecTask detector(player, receiver, 1, 14);
+    
+    OledDisplay display();
  
     rtos::run();
 
