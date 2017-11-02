@@ -8,12 +8,12 @@
 // NOTE: Maybe move to own file
 struct Message {
     uint8_t playerId;
-    uint8_t commandId;
+    bool commandId;
     uint8_t data;
 
     Message() {}
 
-    Message(uint8_t playerId, uint8_t commandId, uint8_t data):
+    Message(uint8_t playerId, bool commandId, uint8_t data):
         playerId(playerId),
         commandId(commandId),
         data(data)
@@ -50,7 +50,7 @@ public:
     void main() override;
 
     // Interface functions
-    void setMessage(uint8_t playerId, uint8_t commandId, uint8_t data);
+    void setMessage(uint8_t playerId, bool commandId, uint8_t data);
 
 private:
     // State functions

@@ -30,7 +30,7 @@ void PlayerTask::main() {
 * Interface functions
 */
 
-void PlayerTask::setMessage(uint8_t playerId, uint8_t commandId, uint8_t data) {
+void PlayerTask::setMessage(uint8_t playerId, bool commandId, uint8_t data) {
     auto message = Message(playerId, commandId, data);
     messageChannel.write(message);
 }
