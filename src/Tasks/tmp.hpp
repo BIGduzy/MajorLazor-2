@@ -37,6 +37,19 @@ public:
             // Start game
             plyerTask.setMessage(0, 0, 0);
 
+            // Kill player
+            for (uint8_t i = 0; i < 3; ++i) {
+                wait(clock);
+                hwlib::cout << "Preparing to fire!" << hwlib::endl;
+                wait(clock);
+                hwlib::cout << "3" << hwlib::endl;
+                hwlib::cout << "2" << hwlib::endl;
+                hwlib::cout << "1" << hwlib::endl;
+                wait(clock);
+                hwlib::cout << "Boooooom!" << hwlib::endl;
+                plyerTask.setMessage(1, 0, 2);
+            }
+
             // This task is done
             while(true) wait(clock);
         }

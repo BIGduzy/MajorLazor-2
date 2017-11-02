@@ -3,7 +3,8 @@
 PlayerTask::PlayerTask(OledDisplayTask& display):
     task("IrPlayerTask"),
     display(display),
-    messageChannel(this, "messageChannel")
+    messageChannel(this, "messageChannel"),
+    gameTimer(this, "gameTimer")
 {}
 
 void PlayerTask::main() {
@@ -91,25 +92,33 @@ void PlayerTask::initialState() {
 void PlayerTask::playState() {
     hwlib::cout << "Play state" << hwlib::endl;
 
-    // // TODO: Remove me
-    // for(int i = 0; i < 8; i++) {
-    //     display.write(i);
-    // }
-    // hwlib::wait_ms(1000);
+    gameTimer.set(timeTillStart * 1000 * 1000); // * 1000'000 to convert to microsecs
+    wait(gameTimer);
 
-    // // TODO: Use clock and not intergers for timer
-    // while (player.lives > 0 && gameTimer < gameTime) {
-    //     // TODO: is this how you wait on a channel?
-    //     auto evt = wait(messageChannel);
-    //     auto message = messageChannel.read();
+    hwlib::cout << "Game start!" << hwlib::endl;
 
-    //     // If message is not from player its a damage hit
-    //     if (message.playerId != 0) {
-    //         doDamage(message);
-    //     }
-    // }
+    gameTimer.set(gameTime);
+    while (player.lives > 0) {
+        auto evt = wait(messageChannel + gameTimer);
+        if (evt == gameTimer) {
+            // Game time over
+            hwlib::cout << "Time up!" << hwlib::endl;
+            break;
+        }
 
-    // state = DONE_STATE;
+        auto message = messageChannel.read();
+
+        // If message is from a player other than yourself its a damage hit
+        if (message.playerId != 0 && message.playerId != player.id) {
+            doDamage(message);
+            hwlib::cout << "Lives left: " << (int)player.lives << hwlib::endl;
+        }
+    }
+
+    // TODO: Display gameover on display
+    hwlib::cout << "Game over!" << hwlib::endl;
+
+    state = DONE_STATE;
 }
 
 void PlayerTask::doneState() {
@@ -117,6 +126,7 @@ void PlayerTask::doneState() {
 
     // TODO: Send to pc
     // Wait for connection
+    while(true) {}
     // Send data
     state = INITIAL_STATE;
 }

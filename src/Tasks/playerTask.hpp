@@ -24,7 +24,7 @@ struct Message {
 struct Player {
     uint8_t id;
     uint8_t damage;
-    uint8_t lives;
+    int8_t lives;
 
     // ohter stuff...
     uint8_t hitsBy[200];
@@ -37,12 +37,14 @@ private:
     enum States { INITIAL_STATE, PLAY_STATE, DONE_STATE };
     States state = INITIAL_STATE;
 
-    OledDisplayTask& display;
-    rtos::channel<Message, 5> messageChannel;
-    uint8_t timeTillStart = 0;
-    uint16_t gameTimer = 0;
-    uint16_t gameTime = 300;
     Player player;
+    OledDisplayTask& display;
+
+    rtos::channel<Message, 5> messageChannel;
+    rtos::timer gameTimer;
+
+    uint8_t timeTillStart = 0; // Time in seconds
+    unsigned long gameTime = 60 * 1000 * 1000; // 1 minute (timer in micro sec)
 
 public:
     PlayerTask(OledDisplayTask& display);
