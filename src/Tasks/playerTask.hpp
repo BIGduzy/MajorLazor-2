@@ -39,7 +39,7 @@ private:
 
     OledDisplayTask& display;
     rtos::channel<Message, 5> messageChannel;
-    uint8_t timeTillStart;
+    uint8_t timeTillStart = 0;
     uint16_t gameTimer = 0;
     uint16_t gameTime = 300;
     Player player;

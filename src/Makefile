@@ -12,7 +12,7 @@
 SOURCES := irSender.cpp irReceiver.cpp player.cpp playerTask.cpp
 
 # header files in this project
-HEADERS := irSender.hpp irReceiver.hpp player.hpp irWeaponTask.hpp irDetecTask.hpp playerTask.hpp
+HEADERS := tmp.hpp irSender.hpp irReceiver.hpp player.hpp irWeaponTask.hpp irDetecTask.hpp playerTask.hpp
 
 # other places to look for files for this project
 SEARCH  := ./Tasks ./Boundries

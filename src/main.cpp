@@ -1,7 +1,6 @@
 #include "hwlib.hpp"
-#include "irReceiver.hpp"
-#include "irSender.hpp"
 #include "playerTask.hpp"
+#include "tmp.hpp"
 #include "oledDiplayTask.hpp"
 #include "rtos.hpp"
 
@@ -15,6 +14,8 @@ int main() { //Main receiver
     OledDisplayTask oledTest;
 
     PlayerTask test(oledTest);
+    TmpTask tmp(test);
+
         
     rtos::run();
 
