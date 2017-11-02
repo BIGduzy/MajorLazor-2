@@ -24,7 +24,13 @@ public:
         data(data)
     {}
 
-    void main() override {};
+    void main() override {
+        for(;;){
+            hwlib::cout << "Test";
+            receiver.test();
+            hwlib::wait_ms(1000);
+        }
+    };
     
 };
 

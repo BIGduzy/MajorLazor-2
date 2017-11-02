@@ -24,6 +24,8 @@ public:
     {}
 
     void main() override;
+    
+    void test() { hwlib::cout << data; };
 };
 
 #endif // IRRECEIVER_HPP

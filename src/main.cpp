@@ -5,7 +5,7 @@
 #include "irSender.hpp"
 #include "playerTask.hpp"
 #include "tmp.hpp"
-#include "oledDiplayTask.hpp"
+#include "oledDisplayTask.hpp"
 
 int main() {
     WDT->WDT_MR = WDT_MR_WDDIS;
@@ -14,8 +14,9 @@ int main() {
     IrSender sender(5, 24);
     
     OledDisplayTask oledDisplay;
-    PlayerTask test(oledDisplay);
-    TmpTask tmp(test);
+    
+    //PlayerTask test(oledDisplay);
+    //TmpTask tmp(test);
 
         
     rtos::run();

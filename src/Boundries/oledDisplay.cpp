@@ -1,7 +1,7 @@
 #include "hwlib.hpp"
 #include "oledDisplay.hpp"
 
-void oledDisplay::clear(bool flush) {
+void OledDisplay::clear(bool flush) {
     display.clear();
     if(flush){
         display.flush();
