@@ -1,30 +1,30 @@
 #ifndef IRDETECTASK_HPP
 #define IRDETECTASK_HPP
 
-#include "hwlib.hpp"
-#include "rtos.hpp"
+#include <hwlib.hpp>
+#include <rtos.hpp>
 
 #include "irReceiver.hpp"
+#include "irSignal.hpp"
 #include "playerTask.hpp"
 
 class IrDetecTask : public rtos::task<> {
 private:
-    PlayerTask& player;
-    IrReceiver& receiver;
+    PlayerTask& playerTask;
+    IrReceiver irReceiver;
+    IrSignal irSignal;
 
-    uint8_t playerId  = 0;
-    uint8_t data      = 0;
+    rtos::clock ten_us_clock;
 
 public:
-    IrDetecTask(PlayerTask& player, IrReceiver& receiver, uint8_t playerId, uint8_t data):
-        task("IrDetecTask"),
-        player(player),
-        receiver(receiver),
-        playerId(playerId),
-        data(data)
-    {}
+    IrDetecTask(
+        PlayerTask& playerTask,
+        hwlib::pin_in& dataPin,
+        hwlib::pin_out& groundPin,
+        hwlib::pin_out& vccPin
+    );
 
-    void main() override {};
+    void main() override;
     
 };
 

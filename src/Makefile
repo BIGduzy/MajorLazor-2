@@ -9,13 +9,13 @@
 #############################################################################
 
 # source files in this project (main.cpp is automatically assumed)
-SOURCES := irSender.cpp irReceiver.cpp player.cpp playerTask.cpp
+SOURCES := irSender.cpp player.cpp playerTask.cpp irDetecTask.cpp
 
 # header files in this project
-HEADERS := tmp.hpp irSender.hpp irReceiver.hpp player.hpp irWeaponTask.hpp irDetecTask.hpp playerTask.hpp
+HEADERS := message.hpp irSignal.hpp tmp.hpp irSender.hpp irReceiver.hpp player.hpp irWeaponTask.hpp irDetecTask.hpp playerTask.hpp
 
 # other places to look for files for this project
-SEARCH  := ./Tasks ./Boundries
+SEARCH  := ./Tasks ./Boundries ./Application-Logics ./Entities
 
 # set RELATIVE to the next higher directory 
 # and defer to the appropriate Makefile.* there

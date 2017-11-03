@@ -14,8 +14,20 @@ int main() {
     IrSender sender(5, 24);
     
     OledDisplayTask oledDisplay;
-    PlayerTask test(oledDisplay);
-    TmpTask tmp(test);
+    PlayerTask playerTask(oledDisplay);
+    TmpTask tmp(playerTask);
+
+    
+    auto receiverData   = hwlib::target::pin_in(hwlib::target::pins::d8);
+    auto receiverGround = hwlib::target::pin_out(hwlib::target::pins::d9);
+    auto receiverVcc    = hwlib::target::pin_out(hwlib::target::pins::d10);
+
+    IrDetecTask IrDetecTask(
+        playerTask,
+        receiverData,
+        receiverGround,
+        receiverVcc
+    );
 
         
     rtos::run();
