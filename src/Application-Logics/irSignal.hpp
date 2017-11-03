@@ -18,8 +18,12 @@ public:
         return signal;
     }
 
-    void decode(uint16_t message) {
-        setMessage((message >> 10) & 0x1F, (message >> 9) & 0x01, (message >> 5) & 0xF);
+    auto decode(uint16_t message) {
+        if(((message >> 10 & 0x1F) ^ (messsage >> 5 & 0x1F)) != (message & 0x1F)) {
+            return false;
+        } else {
+            return struct{((message >> 10) & 0x1F, (message >> 9) & 0x01, (message >> 5) & 0xF)};
+        }
     }
 }
 
