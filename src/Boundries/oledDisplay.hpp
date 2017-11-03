@@ -18,19 +18,24 @@ private:
     hwlib::window_ostream displayOstream = hwlib::window_ostream( display, font );
 
 
-    void infoDisplay();
+    
 
 public:
     OledDisplay()
     {
         clear();
-        infoDisplay();
+        layoutPlaystate();
     }
 
-    void clear(bool flush = false);
+    void layoutInitialstate();
+    void layoutPlaystate();
+    void layoutDonestate();
     
-    void dataDisplay(int playerId, int lives, int power, int time);
+    void dataInitialstate();
+    void dataPlaystate(int time, int playerId, int lives, int power);
+    void dataDonestate();
 
+    void clear(bool flush = false);
 };
 
 #endif // OLEDDISPLAY_HPP
