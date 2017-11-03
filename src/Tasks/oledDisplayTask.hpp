@@ -7,20 +7,20 @@
 #include "oledDisplay.hpp"
 
 struct displayData {
+    uint8_t time;
     uint8_t playerId;
     uint8_t lives;
     uint8_t power;
-    uint8_t time;
     
     displayData() {}
     
-    displayData(uint8_t playerId, uint8_t lives, uint8_t power, uint8_t time):
+    displayData(uint8_t time, uint8_t playerId, uint8_t lives, uint8_t power):
+        time(time),
         playerId(playerId),
         lives(lives),
         /*kills(kills),  //To implement later
         streak(streak),*/
-        power(power),
-        time(time)
+        power(power)
     {}
     
 };
@@ -37,7 +37,7 @@ public:
 
     void main() override;
     
-    void setDisplay(uint8_t playerId, uint8_t lives, uint8_t power, uint8_t time);
+    void setDisplay(uint8_t time, uint8_t playerId, uint8_t lives, uint8_t power);
 };
 
 #endif // OLEDDISPLAYTASK_HPP

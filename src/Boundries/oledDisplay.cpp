@@ -2,7 +2,7 @@
 
 #include "oledDisplay.hpp"
 
-void OledDisplay::infoDisplay() {
+void OledDisplay::layoutPlaystate() {
     displayOstream 
     << "\t0101" <<"ID:" << "\t0701" << "Lives:"
     << "\t0103" << "Kills:--" << "\t1103" << "Time:"
@@ -35,16 +35,16 @@ void OledDisplay::infoDisplay() {
     }
 }
 
+void OledDisplay::dataPlaystate(int time, int playerId, int lives, int power) {
+    displayOstream 
+    << "\t0401" << playerId << "\t1301" << lives
+    << "\t0704" << power << "\t1204" << time
+    << hwlib::flush;
+}
+
 void OledDisplay::clear(bool flush) {
     display.clear();
     if(flush){
         display.flush();
     }
-}
-
-void OledDisplay::dataDisplay(int playerId, int lives, int power, int time) {
-    displayOstream 
-    << "\t0401" << playerId << "\t1301" << lives
-    << "\t0704" << power << "\t1204" << time
-    << hwlib::flush;
 }
