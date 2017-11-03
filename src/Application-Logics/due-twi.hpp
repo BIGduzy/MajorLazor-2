@@ -137,7 +137,7 @@ namespace due
 			// Set clock waveform generator register 
 			TWI0->TWI_CWGR = TWI_CWGR_CLDIV1(dwClDiv) | TWI_CWGR_CHDIV1(dwClDiv) | TWI_CWGR_CKDIV1(dwCkDiv);
 		
-			hwlib::cout << dwClDiv << "\n" << hwlib::endl;
+			//hwlib::cout << dwClDiv << "\n" << hwlib::endl;
 
 			//TWI0->TWI_CWGR = 0;
 			//TWI0->TWI_CWGR = (dwCkDiv << 16) | (dwClDiv << 8) | dwClDiv;

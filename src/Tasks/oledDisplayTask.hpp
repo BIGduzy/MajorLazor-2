@@ -35,12 +35,7 @@ public:
         oledChannel(this, "oledChannel")
     {}
 
-    void main() override {
-        display.test();
-        while(true){
-            auto data = oledChannel.read();
-        }
-    }
+    void main() override;
     
     void setDisplay(uint8_t playerId, uint8_t lives, uint8_t power, uint8_t time);
 };

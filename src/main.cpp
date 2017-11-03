@@ -17,7 +17,8 @@ int main() {
     
     //PlayerTask test(oledDisplay);
     //TmpTask tmp(test);
-
+    
+    oledDisplay.setDisplay(11, 12, 13, 123);
         
     rtos::run();
 
