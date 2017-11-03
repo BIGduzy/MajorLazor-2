@@ -22,16 +22,13 @@ private:
 
 public:
     OledDisplay()
-    {
-        clear();
-        layoutPlaystate();
-    }
+    {}
 
     void layoutInitialstate();
     void layoutPlaystate();
     void layoutDonestate();
     
-    void dataInitialstate();
+    void dataInitialstate(int time);
     void dataPlaystate(int time, int playerId, int lives, int power);
     void dataDonestate();
 
