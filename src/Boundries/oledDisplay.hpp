@@ -1,31 +1,36 @@
 #ifndef OLEDDISPLAY_HPP
 #define OLEDDISPLAY_HPP
 
-#include "hwlib.hpp"
+#include <hwlib.hpp>
+
+#include "due-twi.hpp"
 
 namespace target = hwlib::target;
 
 class OledDisplay {
 private:
-   target::pin_oc scl = target::pin_oc( target::pins::scl );
-   target::pin_oc sda = target::pin_oc( target::pins::sda );
-   
-   hwlib::i2c_bus_bit_banged_scl_sda i2c_bus = hwlib::i2c_bus_bit_banged_scl_sda( scl,sda );
-   
-   hwlib::glcd_oled display = hwlib::glcd_oled( i2c_bus, 0x3c );
 
+    target::twi_bus_due twi_bus;
+
+    hwlib::glcd_oled display = hwlib::glcd_oled( twi_bus, 0x3c );
+
+    hwlib::font_default_8x8 font = hwlib::font_default_8x8();
+    hwlib::window_ostream displayOstream = hwlib::window_ostream( display, font );
+
+
+    void infoDisplay();
 
 public:
-    OledDisplay(target::pin_oc scl, target::pin_oc sda, hwlib::i2c_bus_bit_banged_scl_sda i2c_bus, hwlib::glcd_oled display):
-        scl(scl),
-        sda(sda),
-        i2c_bus(i2c_bus),
-        display(display)
+    OledDisplay()
     {
-        display.clear();
+        clear();
+        infoDisplay();
     }
 
     void clear(bool flush = false);
+    
+    void dataDisplay(int playerId, int lives, int power, int time);
+
 };
 
 #endif // OLEDDISPLAY_HPP

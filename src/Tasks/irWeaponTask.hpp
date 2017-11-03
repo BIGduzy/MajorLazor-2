@@ -13,6 +13,6 @@ public:
     {}
 
     void main() override;
-}
+};
 
 #endif // IRWEAPONTASK_HPP

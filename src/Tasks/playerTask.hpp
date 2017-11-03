@@ -3,7 +3,7 @@
 
 #include <hwlib.hpp>
 #include <rtos.hpp>
-#include "oledDiplayTask.hpp"
+#include "oledDisplayTask.hpp"
 
 // NOTE: Maybe move to own file
 struct Message {
