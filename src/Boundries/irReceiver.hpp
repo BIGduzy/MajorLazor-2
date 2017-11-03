@@ -20,15 +20,9 @@ public:
         
     };
 
-<<<<<<< HEAD
-    void main() override;
-    
-    void test() { hwlib::cout << data; };
-=======
     bool get() {
         return dataPin.get();
     };
->>>>>>> IrDetecTask
 };
 
 #endif // IRRECEIVER_HPP

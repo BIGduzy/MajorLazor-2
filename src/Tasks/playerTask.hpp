@@ -3,7 +3,7 @@
 
 #include <hwlib.hpp>
 #include <rtos.hpp>
-#include "oledDiplayTask.hpp"
+#include "oledDisplayTask.hpp"
 #include "message.hpp"
 
 // TODO: Move to player.hpp
