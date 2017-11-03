@@ -9,6 +9,7 @@
 #############################################################################
 
 # source files in this project (main.cpp is automatically assumed)
+<<<<<<< HEAD
 SOURCES := irSender.cpp irReceiver.cpp player.cpp irWeaponTask.cpp irDetecTask.cpp playerTask.cpp oledDisplayTask.cpp oledDisplay.cpp
 
 # header files in this project
@@ -16,6 +17,15 @@ HEADERS := tmp.hpp irSender.hpp irReceiver.hpp player.hpp irWeaponTask.hpp irDet
 
 # other places to look for files for this project
 SEARCH  := ./Tasks ./Boundries ./Application-Logics
+=======
+SOURCES := irSender.cpp player.cpp playerTask.cpp irDetecTask.cpp
+
+# header files in this project
+HEADERS := message.hpp irSignal.hpp tmp.hpp irSender.hpp irReceiver.hpp player.hpp irWeaponTask.hpp irDetecTask.hpp playerTask.hpp
+
+# other places to look for files for this project
+SEARCH  := ./Tasks ./Boundries ./Application-Logics ./Entities
+>>>>>>> IrDetecTask
 
 # set RELATIVE to the next higher directory 
 # and defer to the appropriate Makefile.* there

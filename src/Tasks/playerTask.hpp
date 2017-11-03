@@ -3,22 +3,8 @@
 
 #include <hwlib.hpp>
 #include <rtos.hpp>
-#include "oledDisplayTask.hpp"
-
-// NOTE: Maybe move to own file
-struct Message {
-    uint8_t playerId;
-    bool commandId;
-    uint8_t data;
-
-    Message() {}
-
-    Message(uint8_t playerId, bool commandId, uint8_t data):
-        playerId(playerId),
-        commandId(commandId),
-        data(data)
-    {}
-};
+#include "oledDiplayTask.hpp"
+#include "message.hpp"
 
 // TODO: Move to player.hpp
 struct Player {
