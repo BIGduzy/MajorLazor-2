@@ -44,6 +44,10 @@ void PlayerTask::setMessage(uint8_t playerId, bool commandId, uint8_t data) {
 void PlayerTask::initialState() {
     hwlib::cout << "Initial state" << hwlib::endl;
 
+    // TODO: wait for fire flag
+    // wait(fireButtonFlag);
+
+
     auto evt = wait(messageChannel);
     auto message = messageChannel.read();
     
@@ -122,7 +126,15 @@ void PlayerTask::playState() {
 }
 
 void PlayerTask::doneState() {
-    hwlib::cout << "Done state" << hwlib::endl;
+    hwlib::cout << "Done state" << hwlib::endl << hwlib::endl;
+
+    hwlib::cout << "Hit by: " << hwlib::endl;
+    for (uint8_t i = 0; i < player.hitsByCounter; ++i) {
+        auto hitDamage = player.hitsDamage[i];
+        auto hitBy = player.hitsBy[i];
+
+        hwlib::cout << (int)hitBy << " -- " << (int)hitDamage << hwlib::endl;
+    }
 
     // TODO: Send to pc
     // Wait for connection

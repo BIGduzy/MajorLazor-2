@@ -47,7 +47,7 @@ public:
                 hwlib::cout << "1" << hwlib::endl;
                 wait(clock);
                 hwlib::cout << "Boooooom!" << hwlib::endl;
-                plyerTask.setMessage(1, 0, 2);
+                plyerTask.setMessage(i + 1, 0, 2);
             }
 
             // This task is done
