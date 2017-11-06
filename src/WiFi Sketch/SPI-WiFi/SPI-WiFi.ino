@@ -8,7 +8,7 @@
 const char* ssid        = "";
 const char* password    = "";
 
-const char* host        = "192.168.1.25";
+const char* host        = "";
 const int httpPort = 1337;
 
 int       valueId       = 1;
@@ -26,7 +26,9 @@ int bitPin5 = 13;// 6
 int bitPin6 = 12;// 7
 int bitPin7 = 14;// 8
 
-int result = 0;
+int commandId = 0;
+int playerId  = 0;
+int playerData = 0;
 
 DynamicJsonBuffer jsonBuffer;
 
@@ -67,6 +69,7 @@ void setup() {
   pinMode(bitPin7, INPUT);
   
   pinMode(ackPin, INPUT);
+  //pinMode(conPin, OUTPUT);
 }
 
 void loop() {
@@ -74,19 +77,34 @@ void loop() {
 
   while(digitalRead(ackPin) != HIGH){delay(1);};
 
-  result |= (((digitalRead(bitPin0) == HIGH) ? 1 : 0) << 7);
-  result |= (((digitalRead(bitPin1) == HIGH) ? 1 : 0) << 6);
-  result |= (((digitalRead(bitPin2) == HIGH) ? 1 : 0) << 5);
-  result |= (((digitalRead(bitPin3) == HIGH) ? 1 : 0) << 4);
-  result |= (((digitalRead(bitPin4) == HIGH) ? 1 : 0) << 3);
-  result |= (((digitalRead(bitPin5) == HIGH) ? 1 : 0) << 2);
-  result |= (((digitalRead(bitPin6) == HIGH) ? 1 : 0) << 1);
-  result |= (((digitalRead(bitPin7) == HIGH) ? 1 : 0) << 0);
+  commandId = readDataPins();
 
   Serial.println("---------");
-  Serial.println(result);
+  Serial.println(commandId);
+  
+  while(digitalRead(ackPin) != HIGH){delay(1);};
 
-  result = 0;
+  playerId = readDataPins();
+
+  Serial.println("---------");
+  Serial.println(playerId);
+  
+  while(digitalRead(ackPin) != HIGH){delay(1);};
+
+  playerData = readDataPins();
+
+  Serial.println("---------");
+  Serial.println(playerData);
+
+  if (commandId == 0) {
+    registerPlayer(playerId, playerData);
+  } else {
+    sendHitData(playerId, playerData);
+  }
+
+  commandId = 0;
+  playerId = 0;
+  playerData = 0;
   
   //sendHitData(2, 1);
   //registerPlayer(valueId, defaultLives);
@@ -152,6 +170,22 @@ int registerPlayer(int playerId, int lives) {
     Serial.print(line);
   }
   return 0;
+}
+
+uint8_t readDataPins() {
+  uint8_t temp = 0;
+  temp |= (((digitalRead(bitPin0) == HIGH) ? 1 : 0) << 7);
+  temp |= (((digitalRead(bitPin1) == HIGH) ? 1 : 0) << 6);
+  temp |= (((digitalRead(bitPin2) == HIGH) ? 1 : 0) << 5);
+  temp |= (((digitalRead(bitPin3) == HIGH) ? 1 : 0) << 4);
+  temp |= (((digitalRead(bitPin4) == HIGH) ? 1 : 0) << 3);
+  temp |= (((digitalRead(bitPin5) == HIGH) ? 1 : 0) << 2);
+  temp |= (((digitalRead(bitPin6) == HIGH) ? 1 : 0) << 1);
+  temp |= (((digitalRead(bitPin7) == HIGH) ? 1 : 0) << 0);
+  //digitalWrite(conPin, HIGH);
+  //delay(100);
+  //digitalWrite(conPin, LOW);
+  return temp;
 }
 
 
