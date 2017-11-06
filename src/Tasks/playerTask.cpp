@@ -90,6 +90,9 @@ void PlayerTask::initialState() {
 
     hwlib::cout << "Time to start: " << (int)timeTillStart << hwlib::endl;
 
+    // Display countdown
+    display.setDisplay(timeTillStart);
+
     state = PLAY_STATE;
 }
 
@@ -100,6 +103,8 @@ void PlayerTask::playState() {
     wait(gameTimer);
 
     hwlib::cout << "Game start!" << hwlib::endl;
+
+    uint64_t startTime = hwlib::now_us();
 
     gameTimer.set(gameTime);
     while (player.lives > 0) {
@@ -117,6 +122,16 @@ void PlayerTask::playState() {
             doDamage(message);
             hwlib::cout << "Lives left: " << (int)player.lives << hwlib::endl;
         }
+
+        uint64_t newTime = hwlib::now_us();
+        uint64_t timeDiff = (newTime - startTime);
+        uint8_t timeLeft = (gameTime - timeDiff) / 1'000'000;
+
+        hwlib::cout << "Time: " << (int)timeLeft << hwlib::endl;
+
+        // Display data
+        // TODO: Time left only gets updated when the channel has a message
+        display.setDisplay(timeLeft, player.id, player.lives, player.damage);
     }
 
     // TODO: Display gameover on display
@@ -142,6 +157,9 @@ void PlayerTask::doneState() {
         gameTimer.set(1000 * 1000); // Wait 1 sec
         wait(gameTimer);
         hwlib::cout << "Waiting for connection..." << hwlib::endl;
+
+        // Display gameover
+        display.setDisplay();
     }
     // Send data
     state = INITIAL_STATE;

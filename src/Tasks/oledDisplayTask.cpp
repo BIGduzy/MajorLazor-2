@@ -2,6 +2,7 @@
 
 void OledDisplayTask::main() {
     while(true){
+        wait(oledChannel);
         auto data = oledChannel.read();
         switch(data.state) {
             case data.INITIAL_STATE:
@@ -12,7 +13,7 @@ void OledDisplayTask::main() {
             case data.PLAY_STATE:
                 display.clear();
                 display.layoutPlaystate();
-                display.dataPlaystate(data.time, data.lives, data.power, data.playerId);
+                display.dataPlaystate(data.time, data.lives, data.damage, data.playerId);
                 break;
             case data.DONE_STATE:
                 display.clear();
@@ -28,8 +29,8 @@ void OledDisplayTask::setDisplay(uint8_t time) { // Data for initial state
     oledChannel.write(data);
 }
 
-void OledDisplayTask::setDisplay(uint8_t time, uint8_t playerId, uint8_t lives, uint8_t power) { // Data for play state
-    auto data = displayData(time, playerId, lives, power);
+void OledDisplayTask::setDisplay(uint8_t time, uint8_t playerId, uint8_t lives, uint8_t damage) { // Data for play state
+    auto data = displayData(time, playerId, lives, damage);
     oledChannel.write(data);
 }
 
