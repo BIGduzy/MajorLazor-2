@@ -6,7 +6,8 @@
 #include "playerTask.hpp"
 #include "tmp.hpp"
 #include "oledDisplayTask.hpp"
-
+#include "keypadTask.hpp"
+#include "keypad.hpp"
 #include "irReceiver.hpp"
 
 int main() {
@@ -30,8 +31,20 @@ int main() {
         receiverGround,
         receiverVcc
     );
+    
+    Keypad keypad(
+    hwlib::target::pin_in( hwlib::target::pins::d46 ),
+    hwlib::target::pin_in( hwlib::target::pins::d48 ),
+    hwlib::target::pin_in( hwlib::target::pins::d50 ),
+    hwlib::target::pin_in( hwlib::target::pins::d52 ),
+    hwlib::target::pin_oc( hwlib::target::pins::d38 ),
+    hwlib::target::pin_oc( hwlib::target::pins::d40 ),
+    hwlib::target::pin_oc( hwlib::target::pins::d42 ),
+    hwlib::target::pin_oc( hwlib::target::pins::d44 )
+    );
+    
+    KeypadTask keypadTask(keypad);
 
-        
     rtos::run();
 
     return 0;
