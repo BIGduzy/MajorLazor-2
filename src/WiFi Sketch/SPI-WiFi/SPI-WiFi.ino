@@ -5,8 +5,8 @@
 #include <ArduinoJson.h>
 #include <ESP8266WiFi.h>
 
-const char* ssid        = "Gulp 2";
-const char* password    = "Ph0b0sD31m0s";
+const char* ssid        = "";
+const char* password    = "";
 
 const char* host        = "192.168.1.25";
 const int httpPort = 1337;
