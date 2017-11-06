@@ -139,7 +139,7 @@ void PlayerTask::doneState() {
     // TODO: Send to pc
     // Wait for connection
     while(true) {
-        gameTimer.set(1000 * 1000);
+        gameTimer.set(1000 * 1000); // Wait 1 sec
         wait(gameTimer);
         hwlib::cout << "Waiting for connection..." << hwlib::endl;
     }

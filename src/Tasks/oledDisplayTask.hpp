@@ -37,8 +37,7 @@ struct displayData {
     displayData():
         state(DONE_STATE)
         //state(2)
-    {}
-    
+    {}  
 };
 
 class OledDisplayTask: public rtos::task<> {

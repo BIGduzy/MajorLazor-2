@@ -2,27 +2,22 @@
 #define OLEDDISPLAY_HPP
 
 #include <hwlib.hpp>
-
 #include "due-twi.hpp"
 
-namespace target = hwlib::target;
 
 class OledDisplay {
 private:
-
-    target::twi_bus_due twi_bus;
-
+    hwlib::target::twi_bus_due twi_bus;
     hwlib::glcd_oled display = hwlib::glcd_oled( twi_bus, 0x3c );
 
     hwlib::font_default_8x8 font = hwlib::font_default_8x8();
     hwlib::window_ostream displayOstream = hwlib::window_ostream( display, font );
 
-
-    
-
 public:
-    OledDisplay()
-    {}
+    /**
+     * @brief Constructor
+     */
+    OledDisplay() {};
 
     void layoutInitialstate();
     void layoutPlaystate();

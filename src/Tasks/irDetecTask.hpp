@@ -17,6 +17,13 @@ private:
     rtos::clock ten_us_clock;
 
 public:
+    /**
+     * @brief Constructor
+     * @param playerTask The playerTask, see Solution Architecture for more info
+     * @param dataPin Hwlib pin in for the data of irReceiver
+     * @param groundPin Hwlib pin out for the ground of irReceiver
+     * @param vcc Hwlib pin out for the vcc of irReceiver
+     */
     IrDetecTask(
         PlayerTask& playerTask,
         hwlib::pin_in& dataPin,
@@ -24,6 +31,12 @@ public:
         hwlib::pin_out& vccPin
     );
 
+    /**
+    * @brief rtos main override
+    *
+    * @details
+    * Rtos main function that runs the task
+    */
     void main() override;
     
 };
