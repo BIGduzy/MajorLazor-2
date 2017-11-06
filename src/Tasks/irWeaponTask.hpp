@@ -8,10 +8,19 @@
 
 class IrWeaponTask: public rtos::task<> {
 public:
+    /**
+     * @brief Constructor
+     */
     IrWeaponTask():
         task("IrWeaponTask")
     {}
 
+    /**
+    * @brief rtos main override
+    *
+    * @details
+    * Rtos main function that runs the task
+    */
     void main() override;
 };
 

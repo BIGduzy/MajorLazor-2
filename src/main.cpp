@@ -6,7 +6,8 @@
 #include "playerTask.hpp"
 #include "tmp.hpp"
 #include "oledDisplayTask.hpp"
-
+#include "keypadTask.hpp"
+#include "keypad.hpp"
 #include "irReceiver.hpp"
 
 int main() {
@@ -15,15 +16,35 @@ int main() {
     
     IrSender sender(5, 24);
     
-    //IrReceiver receiver(1, 1);
-    
     OledDisplayTask oledDisplay;
+    PlayerTask playerTask(oledDisplay);
+    TmpTask tmp(playerTask);
+
     
-    //PlayerTask test(oledDisplay);
-    //TmpTask tmp(test);
+    auto receiverData   = hwlib::target::pin_in(hwlib::target::pins::d8);
+    auto receiverGround = hwlib::target::pin_out(hwlib::target::pins::d9);
+    auto receiverVcc    = hwlib::target::pin_out(hwlib::target::pins::d10);
+
+    IrDetecTask IrDetecTask(
+        playerTask,
+        receiverData,
+        receiverGround,
+        receiverVcc
+    );
     
-    oledDisplay.setDisplay(123, 12, 13, 14);
-        
+    Keypad keypad(
+    hwlib::target::pin_in( hwlib::target::pins::d46 ),
+    hwlib::target::pin_in( hwlib::target::pins::d48 ),
+    hwlib::target::pin_in( hwlib::target::pins::d50 ),
+    hwlib::target::pin_in( hwlib::target::pins::d52 ),
+    hwlib::target::pin_oc( hwlib::target::pins::d38 ),
+    hwlib::target::pin_oc( hwlib::target::pins::d40 ),
+    hwlib::target::pin_oc( hwlib::target::pins::d42 ),
+    hwlib::target::pin_oc( hwlib::target::pins::d44 )
+    );
+    
+    KeypadTask keypadTask(keypad);
+
     rtos::run();
 
     return 0;
