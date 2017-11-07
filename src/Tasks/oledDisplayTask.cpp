@@ -43,7 +43,7 @@ void OledDisplayTask::setDisplay() { // Data for done state
     oledChannel.write(data);
 }
 
-void OledDisplayTask::setDisplay(Command command) {
+void OledDisplayTask::setDisplay(const Command& command) {
     auto data = displayData(command.validInput, command.commandId, command.value, command.send);
     oledChannel.write(data);
 }

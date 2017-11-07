@@ -33,7 +33,7 @@ class IrSender {
     /**
      * @brief Constructor.
      */
-    IrSender();
+    IrSender() {};
 
     /**
      * @brief Main function for sending a signal.

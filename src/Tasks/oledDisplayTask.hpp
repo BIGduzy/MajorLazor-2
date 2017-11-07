@@ -66,7 +66,7 @@ public:
     void setDisplay(uint8_t time);
     void setDisplay(uint8_t time, uint8_t playerId, uint8_t lives, uint8_t damage);
     void setDisplay();
-    void setDisplay(Command command);
+    void setDisplay(const Command& command);
 };
 
 #endif // OLEDDISPLAYTASK_HPP

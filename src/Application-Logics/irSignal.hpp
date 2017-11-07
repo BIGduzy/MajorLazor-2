@@ -6,7 +6,7 @@
 
 class IrSignal {
 public:
-    IrSignal();
+    IrSignal() {};
     /**
      * @brief Encodes playerId, commandId and data to binary
      * @return 16 bit binary number:
