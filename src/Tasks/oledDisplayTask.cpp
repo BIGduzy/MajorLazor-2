@@ -20,6 +20,10 @@ void OledDisplayTask::main() {
                 display.layoutDonestate();
                 //display.dataDonestate();
                 break;
+            case data.LEADER_STATE:
+                display.clear();
+                display.layoutLeaderstate();
+                display.dataLeaderstate(data.validInput, data.commandId, data.value, data.send);
         }
     }
 }
@@ -36,5 +40,10 @@ void OledDisplayTask::setDisplay(uint8_t time, uint8_t playerId, uint8_t lives, 
 
 void OledDisplayTask::setDisplay() { // Data for done state
     auto data = displayData();
+    oledChannel.write(data);
+}
+
+void OledDisplayTask::setDisplay(Command command) {
+    auto data = displayData(command.validInput, command.commandId, command.value, command.send);
     oledChannel.write(data);
 }

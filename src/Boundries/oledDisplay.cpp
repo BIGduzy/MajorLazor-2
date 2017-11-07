@@ -1,6 +1,7 @@
 #include <hwlib.hpp>
 
 #include "oledDisplay.hpp"
+#include "command.hpp"
 
 void OledDisplay::layoutInitialstate() {
     for(int i = 0; i < 128; i++){
@@ -71,6 +72,25 @@ void OledDisplay::layoutDonestate() {
     << hwlib::flush;
 }
 
+void OledDisplay::layoutLeaderstate() {
+    for(int i = 0; i < 128; i++){
+        display.write( hwlib::location( i, 0 ), hwlib::black );
+    }
+    for(int i = 0; i < 128; i++){
+        display.write( hwlib::location( i, 63 ), hwlib::black );
+    }
+    for(int i = 0; i < 64; i++){
+        display.write( hwlib::location( 0, i ), hwlib::black );
+    }
+    for(int i = 0; i < 64; i++){
+        display.write( hwlib::location( 127, i ), hwlib::black );
+    }
+    displayOstream 
+    << "\t0101" << "Command:"
+    << "\t0102" << "Value:"
+    << hwlib::flush;
+}
+
 void OledDisplay::dataInitialstate(int time) {
     displayOstream
     << "\t0903" << time
@@ -84,9 +104,24 @@ void OledDisplay::dataPlaystate(int time, int playerId, int lives, int power) {
     << hwlib::flush;
 }
 
+void OledDisplay::dataLeaderstate(bool validInput, int commandId, int value, bool send) {
+    displayOstream
+    << "\t0701" << commandId
+    << "\t0702" << value
+    << hwlib::flush;
+    if(!validInput) {
+        displayOstream << "\t0103" << "Invalid input" << hwlib::flush;
+    }
+    if(!validInput) {
+        displayOstream << "\t0104" << "Send" << hwlib::flush;
+    }
+}
+
 void OledDisplay::clear(bool flush) {
     display.clear();
     if(flush){
         display.flush();
     }
 }
+
+void OledDisplay::
