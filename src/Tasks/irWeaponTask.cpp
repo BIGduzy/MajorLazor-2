@@ -2,11 +2,11 @@
 
 void IrWeaponTask::main() {
     for (;;) {
-        switch(state) {
-            case IDLE_STATE:
-                break;
-            case SEND_STATE:
-                break;
+        switch (state) {
+        case IDLE_STATE:
+            break;
+        case SEND_STATE:
+            break;
         }
     }
 }
@@ -21,7 +21,7 @@ void IrWeaponTask::sendState() {
     auto w = weaponInfoPool.read();
     irSender.send(irSignal.encode(w.playerId, w.commandId, w.data));
     weaponMutex.signal();
-    
+
     state = IDLE_STATE;
 }
 
@@ -31,6 +31,4 @@ void IrWeaponTask::writeToPool(Message poolMessage) {
     weaponMutex.signal();
 }
 
-void IrWeaponTask::startShooting() {
-    fireButtonFlag.set();
-}
+void IrWeaponTask::startShooting() { fireButtonFlag.set(); }
