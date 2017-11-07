@@ -24,7 +24,7 @@ private:
     //Keypad& keypad;   Legacy
 
 public:
-    KeypadTask( hwlib::keypad< 16 > &keypad):
+    KeypadTask( hwlib::keypad<16>& keypad):
         task("KeypadTask"),
         hundred_ms_clock(this, 100000, "100 ms clock"),
         keypad(keypad)

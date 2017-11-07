@@ -7,13 +7,17 @@
 #include "irSender.hpp"
 
 class IrWeaponTask: public rtos::task<> {
+private:
+    rtos::flag fireButtonFlag;
+
+    enum States {IDLE_STATE, CHECKING_STATE};
+    States state = IDLE_STATE;
+
 public:
     /**
      * @brief Constructor
      */
-    IrWeaponTask():
-        task("IrWeaponTask")
-    {}
+    IrWeaponTask();
 
     /**
     * @brief rtos main override
@@ -22,6 +26,11 @@ public:
     * Rtos main function that runs the task
     */
     void main() override;
+
+    /**
+     * @brief Sets fireButtonFlag
+     */
+    void fireSet();
 };
 
 #endif // IRWEAPONTASK_HPP
