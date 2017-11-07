@@ -6,6 +6,7 @@
 
 class IrSignal {
 public:
+    IrSignal() {};
     /**
      * @brief Encodes playerId, commandId and data to binary
      * @return 16 bit binary number:
@@ -18,10 +19,11 @@ public:
      * |7 - 10      | data                |
      * |11 - 15     | Control bits        |
      */
-    uint16_t encode(uint8_t playerId, uint8_t data) {
+    uint16_t encode(uint8_t playerId, bool commandBit, uint8_t data) {
         auto signal = 0;
         signal |= 1 << 15;
         signal |= playerId << 10;
+        signal |= (int)commandBit << 9;
         signal |= data << 5;
         signal |= playerId ^ data;
         return signal;

@@ -9,10 +9,10 @@
 #############################################################################
 
 # source files in this project (main.cpp is automatically assumed)
-SOURCES := irSender.cpp player.cpp playerTask.cpp irDetecTask.cpp oledDisplayTask.cpp oledDisplay.cpp irWeaponTask.cpp keypad.cpp keypadTask.cpp buttonTask.cpp speakerTask.cpp
+SOURCES := gameLeaderTask.cpp irSender.cpp player.cpp playerTask.cpp irDetecTask.cpp oledDisplayTask.cpp oledDisplay.cpp irWeaponTask.cpp keypad.cpp keypadTask.cpp buttonTask.cpp speakerTask.cpp
 
 # header files in this project
-HEADERS := tmp.hpp irSender.hpp irReceiver.hpp player.hpp irWeaponTask.hpp irDetecTask.hpp playerTask.hpp irSignal.hpp player.hpp message.hpp oledDisplayTask.hpp oledDisplay.hpp due-twi.hpp keypad.hpp keypadTask.hpp button.hpp buttonTask.hpp speakerTask.hpp speaker.hpp
+HEADERS := gameLeaderTask.hpp tmp.hpp irSender.hpp irReceiver.hpp player.hpp irWeaponTask.hpp irDetecTask.hpp playerTask.hpp irSignal.hpp player.hpp message.hpp oledDisplayTask.hpp oledDisplay.hpp due-twi.hpp keypad.hpp keypadTask.hpp button.hpp buttonTask.hpp speaker.hpp speakerTask.hpp
 
 # other places to look for files for this project
 SEARCH  := ./Tasks ./Boundries ./Application-Logics ./Entities

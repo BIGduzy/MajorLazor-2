@@ -66,5 +66,6 @@ void KeypadTask::keyPressed(char c){
         validInput = false;
     }
     Command command(validInput, commandId, value, send);
+    // TODO: Send via channel
     hwlib::cout << "ValidInput: " << command.validInput << " CommandId: " << command.commandId << " Value: " << command.value << " Send: " << command.send << hwlib::endl;
 }

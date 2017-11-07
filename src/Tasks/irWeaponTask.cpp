@@ -1,16 +1,36 @@
 #include "irWeaponTask.hpp"
 
-IrWeaponTask::IrWeaponTask():
-    task("IrWeaponTask"),
-    fireButtonFlag(this, "fireButtonFlag")
-{}
-
 void IrWeaponTask::main() {
-    while(true) {
-        hwlib::wait_ms(1000);
+    for (;;) {
+        switch (state) {
+        case IDLE_STATE:
+            idleState();
+            break;
+        case SEND_STATE:
+            sendState();
+            break;
+        }
     }
 }
 
-void IrWeaponTask::fireSet() {
-    fireButtonFlag.set();
+void IrWeaponTask::idleState() {
+    auto evt = wait(fireButtonFlag);
+    state = SEND_STATE;
 }
+
+void IrWeaponTask::sendState() {
+    weaponMutex.wait();
+    auto w = weaponInfoPool.read();
+    irSender.send(irSignal.encode(w.playerId, w.commandId, w.data));
+    weaponMutex.signal();
+
+    state = IDLE_STATE;
+}
+
+void IrWeaponTask::writeToPool(Message poolMessage) {
+    weaponMutex.wait();
+    weaponInfoPool.write(poolMessage);
+    weaponMutex.signal();
+}
+
+void IrWeaponTask::startShooting() { fireButtonFlag.set(); }

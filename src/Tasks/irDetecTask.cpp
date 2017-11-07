@@ -68,9 +68,7 @@ void IrDetecTask::main() {
                             decodedSignal.commandId,
                             decodedSignal.data
                         );
-                        //
                         speakerTask.setHitFlag();
-                        //
                     } else {
                         hwlib::cout << "Signal corrupted" << hwlib::endl;
                     }
