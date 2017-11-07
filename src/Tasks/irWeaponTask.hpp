@@ -56,6 +56,10 @@ public:
      * @brief Start shooting using the current weaponInfo.
      */
     void startShooting();
+    /**
+     * @brief Sets fireButtonFlag
+     */
+    void fireSet();
 };
 
 #endif // IRWEAPONTASK_HPP

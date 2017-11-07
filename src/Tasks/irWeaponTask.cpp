@@ -4,8 +4,10 @@ void IrWeaponTask::main() {
     for (;;) {
         switch (state) {
         case IDLE_STATE:
+            idleState();
             break;
         case SEND_STATE:
+            sendState();
             break;
         }
     }

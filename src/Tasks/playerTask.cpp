@@ -3,6 +3,7 @@
 PlayerTask::PlayerTask(OledDisplayTask& display):
     task("IrPlayerTask"),
     display(display),
+    fireButtonFlag(this, "fireButtonFlag"),
     messageChannel(this, "messageChannel"),
     gameTimer(this, "gameTimer")
 {}
@@ -37,6 +38,10 @@ void PlayerTask::setMessage(uint8_t playerId, bool commandId, uint8_t data) {
     messageChannel.write(message);
 }
 
+void PlayerTask::setFlag() {
+    fireButtonFlag.set();
+}
+
 /*
 * State functions
 */
@@ -44,9 +49,8 @@ void PlayerTask::setMessage(uint8_t playerId, bool commandId, uint8_t data) {
 void PlayerTask::initialState() {
     hwlib::cout << "Initial state" << hwlib::endl;
 
-    // TODO: wait for fire flag
-    // wait(fireButtonFlag);
-
+    // Wait for fire flag, so the gameleader knows which player to initialize
+    wait(fireButtonFlag);
 
     auto evt = wait(messageChannel);
     auto message = messageChannel.read();
@@ -88,6 +92,9 @@ void PlayerTask::initialState() {
     
     // TODO: Write to pool
 
+    // Wait for fire flag, to start the game
+    wait(fireButtonFlag);
+    
     hwlib::cout << "Time to start: " << (int)timeTillStart << hwlib::endl;
 
     // Display countdown
