@@ -5,22 +5,26 @@
 #include <rtos.hpp>
 
 #include "oledDisplay.hpp"
+#include "command.hpp"
 
 struct displayData {
     uint8_t time     = 0;
     uint8_t playerId = 0;
     uint8_t lives    = 0;
     uint8_t damage    = 0;
+    uint8_t power    = 0;
+
+    bool validInput = false;
+    int commandId = 0;
+    int value = 0;
+    bool send = false;
     
-    //int state;
-    
-    enum States { INITIAL_STATE, PLAY_STATE, DONE_STATE };
+    enum States { INITIAL_STATE, PLAY_STATE, DONE_STATE, LEADER_STATE };
     States state;
     
     displayData(uint8_t time):
         time(time),
         state(INITIAL_STATE)
-        //state(0)
     {}
     
     displayData(uint8_t time, uint8_t playerId, uint8_t lives, uint8_t damage):
@@ -31,13 +35,20 @@ struct displayData {
         streak(streak),*/
         damage(damage),
         state(PLAY_STATE)
-        //state(1)
     {}
     
     displayData():
         state(DONE_STATE)
-        //state(2)
-    {}  
+    {}
+    
+    displayData(bool validInput, int commandId, int value, bool send):
+        validInput(validInput),
+        commandId(commandId),
+        value(value),
+        send(send),
+        state(LEADER_STATE)
+    {}
+
 };
 
 class OledDisplayTask: public rtos::task<> {
@@ -55,6 +66,7 @@ public:
     void setDisplay(uint8_t time);
     void setDisplay(uint8_t time, uint8_t playerId, uint8_t lives, uint8_t damage);
     void setDisplay();
+    void setDisplay(Command command);
 };
 
 #endif // OLEDDISPLAYTASK_HPP
