@@ -10,7 +10,7 @@ struct displayData {
     uint8_t time     = 0;
     uint8_t playerId = 0;
     uint8_t lives    = 0;
-    uint8_t power    = 0;
+    uint8_t damage    = 0;
     
     //int state;
     
@@ -23,13 +23,13 @@ struct displayData {
         //state(0)
     {}
     
-    displayData(uint8_t time, uint8_t playerId, uint8_t lives, uint8_t power):
+    displayData(uint8_t time, uint8_t playerId, uint8_t lives, uint8_t damage):
         time(time),
         playerId(playerId),
         lives(lives),
         /*kills(kills),  //To implement later
         streak(streak),*/
-        power(power),
+        damage(damage),
         state(PLAY_STATE)
         //state(1)
     {}
@@ -37,8 +37,7 @@ struct displayData {
     displayData():
         state(DONE_STATE)
         //state(2)
-    {}
-    
+    {}  
 };
 
 class OledDisplayTask: public rtos::task<> {
@@ -54,7 +53,7 @@ public:
     void main() override;
     
     void setDisplay(uint8_t time);
-    void setDisplay(uint8_t time, uint8_t playerId, uint8_t lives, uint8_t power);
+    void setDisplay(uint8_t time, uint8_t playerId, uint8_t lives, uint8_t damage);
     void setDisplay();
 };
 
