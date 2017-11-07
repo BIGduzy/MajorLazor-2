@@ -1,23 +1,14 @@
 #include "hwlib.hpp"
 #include "irSender.hpp"
 
-void IrSender::main() {
-    for(;;){
-            send();
-            hwlib::wait_ms(1000);
-        }
-}
-
-void IrSender::send_signal(){
-    for( int i = 15; i >= 0; --i) {
-        //hwlib::cout << ((signal >> i) & 1);
+void IrSender::send_signal(uint16_t signal) {
+    for (int i = 15; i >= 0; --i) {
         if ((signal >> i) & 1) {
             sendOne();
         } else {
             sendZero();
         }
     }
-    //hwlib::cout << hwlib::endl;
 }
 
 void IrSender::sendOne() {
@@ -34,20 +25,19 @@ void IrSender::sendZero() {
     hwlib::wait_us(1600);
 }
 
-uint16_t IrSender::generateSignal(uint8_t player, uint8_t data) {
-    uint16_t signal = 0;
-    signal |= 1 << 15;
-    signal |= player << 10;
-    signal |= data << 5;
-    signal |= player ^ data; // Control XOR
-    
-    return signal;
-}
+// uint16_t IrSender::generateSignal(uint8_t player, uint8_t data) {
+//    uint16_t signal = 0;
+//    signal |= 1 << 15;
+//    signal |= player << 10;
+//    signal |= data << 5;
+//    signal |= player ^ data; // Control XOR
+//
+//    return signal;
+//}
 
-void IrSender::send() {
-    signal = generateSignal(player, data);
-    send_signal();
-    hwlib::wait_ms(3);
-    send_signal();
+void IrSender::send(uint16_t signal) {
+    send_signal(signal);
+    hwlib::wait_ms(3); // Vervang met rtos!
+    send_signal(signal);
     hwlib::wait_ms(4);
 }
