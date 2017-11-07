@@ -2,28 +2,35 @@
 #define IRRECEIVER_HPP
 
 #include "hwlib.hpp"
-#include "rtos.hpp"
 
-namespace target = hwlib::target;
-
-class IrReceiver : public rtos::task<> {
+class IrReceiver {
 private:
-    uint16_t signal = 0;
-    uint8_t player  = 0;
-    uint8_t data    = 0;
-    uint8_t control = 0;
-    
-    rtos::clock ten_us_clock;
+    hwlib::pin_in& dataPin;
+    hwlib::pin_out& groundPin;
+    hwlib::pin_out& vccPin;
     
 public:
-    IrReceiver(uint8_t player, uint8_t data):
-        task("Ir Receiver"),
-        player(player),
-        data(data),
-        ten_us_clock(this, 10, "Ten us clock")
-    {}
+    /**
+     * @brief Constructor
+     * @param dataPin Hwlib pin in for the data
+     * @param groundPin Hwlib pin out for the ground
+     * @param vcc Hwlib pin out for the vcc
+     */
+    IrReceiver(hwlib::pin_in& dataPin, hwlib::pin_out& groundPin, hwlib::pin_out& vccPin):
+        dataPin(dataPin),
+        groundPin(groundPin),
+        vccPin(vccPin)
+    {
+        groundPin.set(0);
+        vccPin.set(1); 
+    };
 
-    void main() override;
+    /**
+     * @brief returns value of dataPin
+     */
+    bool get() {
+        return dataPin.get();
+    };
 };
 
 #endif // IRRECEIVER_HPP

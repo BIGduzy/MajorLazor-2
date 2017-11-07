@@ -3,7 +3,8 @@
 PlayerTask::PlayerTask(OledDisplayTask& display):
     task("IrPlayerTask"),
     display(display),
-    messageChannel(this, "messageChannel")
+    messageChannel(this, "messageChannel"),
+    gameTimer(this, "gameTimer")
 {}
 
 void PlayerTask::main() {
@@ -42,6 +43,10 @@ void PlayerTask::setMessage(uint8_t playerId, bool commandId, uint8_t data) {
 
 void PlayerTask::initialState() {
     hwlib::cout << "Initial state" << hwlib::endl;
+
+    // TODO: wait for fire flag
+    // wait(fireButtonFlag);
+
 
     auto evt = wait(messageChannel);
     auto message = messageChannel.read();
@@ -85,38 +90,77 @@ void PlayerTask::initialState() {
 
     hwlib::cout << "Time to start: " << (int)timeTillStart << hwlib::endl;
 
+    // Display countdown
+    display.setDisplay(timeTillStart);
+
     state = PLAY_STATE;
 }
 
 void PlayerTask::playState() {
     hwlib::cout << "Play state" << hwlib::endl;
 
-    // // TODO: Remove me
-    // for(int i = 0; i < 8; i++) {
-    //     display.write(i);
-    // }
-    // hwlib::wait_ms(1000);
+    gameTimer.set(timeTillStart * 1000 * 1000); // * 1000'000 to convert to microsecs
+    wait(gameTimer);
 
-    // // TODO: Use clock and not intergers for timer
-    // while (player.lives > 0 && gameTimer < gameTime) {
-    //     // TODO: is this how you wait on a channel?
-    //     auto evt = wait(messageChannel);
-    //     auto message = messageChannel.read();
+    hwlib::cout << "Game start!" << hwlib::endl;
 
-    //     // If message is not from player its a damage hit
-    //     if (message.playerId != 0) {
-    //         doDamage(message);
-    //     }
-    // }
+    uint64_t startTime = hwlib::now_us();
 
-    // state = DONE_STATE;
+    gameTimer.set(gameTime);
+    while (player.lives > 0) {
+        auto evt = wait(messageChannel + gameTimer);
+        if (evt == gameTimer) {
+            // Game time over
+            hwlib::cout << "Time up!" << hwlib::endl;
+            break;
+        }
+
+        auto message = messageChannel.read();
+
+        // If message is from a player other than yourself its a damage hit
+        if (message.playerId != 0 && message.playerId != player.id) {
+            doDamage(message);
+            hwlib::cout << "Lives left: " << (int)player.lives << hwlib::endl;
+        }
+
+        uint64_t newTime = hwlib::now_us();
+        uint64_t timeDiff = (newTime - startTime);
+        uint8_t timeLeft = (gameTime - timeDiff) / 1'000'000;
+
+        hwlib::cout << "Time: " << (int)timeLeft << hwlib::endl;
+
+        // Display data
+        // TODO: Time left only gets updated when the channel has a message
+        display.setDisplay(timeLeft, player.id, player.lives, player.damage);
+    }
+
+    // TODO: Display gameover on display
+    hwlib::cout << "Game over!" << hwlib::endl;
+
+    state = DONE_STATE;
 }
 
 void PlayerTask::doneState() {
-    hwlib::cout << "Done state" << hwlib::endl;
+    hwlib::cout << "Done state" << hwlib::endl << hwlib::endl;
+
+    hwlib::cout << "Hit by: " << hwlib::endl;
+    for (uint8_t i = 0; i < player.hitsByCounter; ++i) {
+        auto hitDamage = player.hitsDamage[i];
+        auto hitBy = player.hitsBy[i];
+
+        hwlib::cout << (int)hitBy << " -- " << (int)hitDamage << hwlib::endl;
+    }
 
     // TODO: Send to pc
     // Wait for connection
+    while(true) {
+        gameTimer.set(1000 * 1000); // Wait 1 sec
+        wait(gameTimer);
+        hwlib::cout << "Waiting for connection..." << hwlib::endl;
+
+        // Display gameover
+        display.setDisplay();
+    }
     // Send data
     state = INITIAL_STATE;
 }
