@@ -123,5 +123,3 @@ void OledDisplay::clear(bool flush) {
         display.flush();
     }
 }
-
-void OledDisplay::
