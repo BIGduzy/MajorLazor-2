@@ -2,12 +2,14 @@
 
 IrDetecTask::IrDetecTask(
     PlayerTask& playerTask,
+    SpeakerTask& speakerTask,
     hwlib::pin_in& dataPin,
     hwlib::pin_out& groundPin,
     hwlib::pin_out& vccPin
 ):
     task("IrDetecTask"),
     playerTask(playerTask),
+    speakerTask(speakerTask),
     irReceiver(dataPin, groundPin, vccPin),
     ten_us_clock(this, 10, "Ten us clock")
 {}
@@ -66,6 +68,7 @@ void IrDetecTask::main() {
                             decodedSignal.commandId,
                             decodedSignal.data
                         );
+                        speakerTask.setHitFlag();
                     } else {
                         hwlib::cout << "Signal corrupted" << hwlib::endl;
                     }

@@ -9,25 +9,22 @@
 #include "keypad.hpp"
 #include "irReceiver.hpp"
 #include "button.hpp"
+#include "speakerTask.hpp"
 
 int main() {
     WDT->WDT_MR = WDT_MR_WDDIS;
     hwlib::wait_ms( 500 );
+
+
+    //Speaker Stuff ~
+    auto lsp_pin = target::pin_out( target::pins::d8 );
+    SpeakerTask speakerTask(lsp_pin);
+    speakerTask.setShootingFlag();
     
     IrWeaponTask irWeaponTask;
 
     OledDisplayTask oledDisplay;
     GameLeaderTask gameLeaderTask(irWeaponTask, oledDisplay);
-
-    // auto receiverData   = hwlib::target::pin_in(hwlib::target::pins::d8);
-    // auto receiverGround = hwlib::target::pin_out(hwlib::target::pins::d9);
-    // auto receiverVcc    = hwlib::target::pin_out(hwlib::target::pins::d10);
-    // IrDetecTask IrDetecTask(
-    //    playerTask,
-    //    receiverData,
-    //    receiverGround,
-    //    receiverVcc
-    // );
 
     auto in0  = hwlib::target::pin_in(hwlib::target::pins::a3);
 	auto in1  = hwlib::target::pin_in(hwlib::target::pins::a2);
