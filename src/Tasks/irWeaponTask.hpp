@@ -17,10 +17,7 @@ public:
     /**
      * @brief Constructor
      */
-    IrWeaponTask():
-        task("IrWeaponTask"),
-        fireButtonFlag(this, "fireButtonFlag")
-    {};
+    IrWeaponTask();
 
     /**
     * @brief rtos main override
@@ -29,6 +26,10 @@ public:
     * Rtos main function that runs the task
     */
     void main() override;
+
+    /**
+     * @brief Sets fireButtonFlag
+     */
     void fireSet();
 };
 

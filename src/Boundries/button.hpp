@@ -3,13 +3,13 @@
 
 #include "hwlib.hpp"
 
-namespace target = hwlib::target;
-
 class Button {
 private:
-    target::pin_in buttonInput = target::pin_in(target::pins::d7);
+    hwlib::pin_in& buttonInput;
 public:
-    Button();
+    Button(hwlib::pin_in& buttonInput):
+        buttonInput(buttonInput)
+    {};
 
     auto get() {
         return (!buttonInput.get());

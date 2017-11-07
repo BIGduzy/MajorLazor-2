@@ -1,31 +1,38 @@
 #ifndef BUTTONTASK_HPP
 #define BUTTONTASK_HPP
 
+#include <rtos.hpp>
+#include <hwlib.hpp>
 #include "button.hpp"
 #include "irWeaponTask.hpp"
-
-#include "rtos.hpp"
-#include "hwlib.hpp"
+#include "playerTask.hpp"
 
 class ButtonTask: public rtos::task<> {
 private:
-    enum States {IDLE_STATE, CHECKING_STATE};
-    States state = IDLE_STATE;
-
     IrWeaponTask& irWeaponTask;
+    PlayerTask& playerTask;
     Button& fireButton;
 
+    rtos::clock clock;
 public:
-    ButtonTask(IrWeaponTask& irWeaponTask, Button& fireButton): 
+    /**
+     * @brief Constructor
+     */
+    ButtonTask(IrWeaponTask& irWeaponTask, PlayerTask& playerTask, Button& fireButton): 
         task("ButtonTask"),
         irWeaponTask(irWeaponTask),
-        fireButton(fireButton) 
+        playerTask(playerTask),
+        fireButton(fireButton),
+        clock(this, 1000)
     {};
 
+    /**
+    * @brief rtos main override
+    *
+    * @details
+    * Rtos main function that runs the task
+    */
     void main() override;
-private:
-    void idleState();
-    void checkingState();
 };
 
 #endif // BUTTONTASK_HPP

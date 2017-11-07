@@ -24,6 +24,7 @@ private:
     Player player;
     OledDisplayTask& display;
 
+    rtos::flag fireButtonFlag;
     rtos::channel<Message, 5> messageChannel;
     rtos::timer gameTimer;
 
@@ -59,6 +60,11 @@ public:
      * Puts the variables in a struct and writes it to the channel
      */
     void setMessage(uint8_t playerId, bool commandId, uint8_t data);
+
+    /**
+     * 
+     */
+    void setFlag();
 
 private:
     // ***************
