@@ -8,8 +8,6 @@
 
 class SpeakerTask: public rtos::task<> {
 private:
-    /*enum States = { IDLE_STATE, HIT_STATE, SHOOTING_STATE };
-    States state = IDLE_STATE;*/
     enum States { IDLE_STATE, HIT_STATE, SHOOTING_STATE };
     States state = IDLE_STATE;
 

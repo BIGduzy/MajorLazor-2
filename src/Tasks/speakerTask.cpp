@@ -37,15 +37,40 @@ void SpeakerTask::idleState() {
 }
 
 void SpeakerTask::hitState() {
-    speaker.startSpeaker();
-    beepTimer.set(2 * 1000 * 1000);
-    wait(beepTimer);
-    speaker.stopSpeaker();
+    // Loop for two seconds
+    auto start_time = hwlib::now_us();
+
+    while(2000000 > (hwlib::now_us() - start_time) ) {
+        //Turn on the speaker
+        speaker.startSpeaker();
+        beepTimer.set(500);
+        wait(beepTimer);
+    
+        //Turn off the speaker
+        speaker.stopSpeaker();
+        beepTimer.set(500);
+        wait(beepTimer);
+    }
+    
+    state = IDLE_STATE;
 }
 
 void SpeakerTask::shootingState() {
-    speaker.startSpeaker();
-    beepTimer.set(1 * 1000 * 1000);
-    wait(beepTimer);
-    speaker.stopSpeaker();
+    
+    // Loop for two seconds
+    auto start_time = hwlib::now_us();
+    while(1000000 > (hwlib::now_us() - start_time) ) {
+
+        //Turn on the speaker
+        speaker.startSpeaker();
+        beepTimer.set(800);
+        wait(beepTimer);
+    
+        //Turn off the speaker
+        speaker.stopSpeaker();
+        beepTimer.set(800);
+        wait(beepTimer);
+    }
+
+    state = IDLE_STATE;
 }

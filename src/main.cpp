@@ -12,10 +12,17 @@
 #include "keypad.hpp"
 #include "irReceiver.hpp"
 #include "button.hpp"
+#include "speakerTask.hpp"
 
 int main() {
     WDT->WDT_MR = WDT_MR_WDDIS;
     hwlib::wait_ms( 500 );
+
+
+    //Speaker Stuff ~
+    auto lsp_pin = target::pin_out( target::pins::d8 );
+    SpeakerTask speakerTask(lsp_pin);
+    speakerTask.setShootingFlag();
     
     IrSender sender(5, 24);
     IrWeaponTask irWeaponTask;
@@ -25,7 +32,7 @@ int main() {
 
     auto buttonPin = hwlib::target::pin_in(hwlib::target::pins::d7);
     Button button(buttonPin);
-    ButtonTask buttonTask(irWeaponTask, playerTask, button);
+    ButtonTask buttonTask(irWeaponTask, playerTask, speakerTask, button);
     // TODO: Remove when gameLeader works
     TmpTask tmp(playerTask);
 
@@ -34,6 +41,7 @@ int main() {
     auto receiverVcc    = hwlib::target::pin_out(hwlib::target::pins::d10);
     IrDetecTask IrDetecTask(
        playerTask,
+       speakerTask,
        receiverData,
        receiverGround,
        receiverVcc
