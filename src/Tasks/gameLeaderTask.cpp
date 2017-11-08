@@ -24,10 +24,16 @@ void GameLeaderTask::main() {
                 case 1: // Start game
                     irWeaponTask.writeToPool(Message(0, 0, 0 ));
                 default: // Other commands
+                    // Tell player what field we want to edit
+                    // We do commandId - 2 because the commands start at 0
                     irWeaponTask.writeToPool(Message(0, 1, command.commandId - 2 ));
+                    irWeaponTask.startShooting();
+                    // Set field value
                     irWeaponTask.writeToPool(Message(0, 1, command.value ));
             }
 
+            irWeaponTask.startShooting();
+            
             // Display to oled
             display.setDisplay(command);
         }
