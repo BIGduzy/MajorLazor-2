@@ -34,7 +34,7 @@ namespace due
 		*/
 		void write_byte(uint8_t byte) {
 			TWI0->TWI_THR = byte;
-			hwlib::wait_ns(28000);
+			hwlib::wait_ns_busy(28000);
 		}
 		
 	public:
