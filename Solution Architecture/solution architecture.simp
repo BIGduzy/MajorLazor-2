@@ -13,7 +13,7 @@
       </counter>
       <counter>
         <item-type type-id="initial-state" type="UmlInitialState" />
-        <value>7</value>
+        <value>15</value>
       </counter>
       <counter>
         <item-type type-id="final-state" type="UmlFinalState" />
@@ -21,11 +21,11 @@
       </counter>
       <counter>
         <item-type type-id="state" type="UmlState" />
-        <value>22</value>
+        <value>44</value>
       </counter>
       <counter>
         <item-type type-id="composite-state" type="UmlCompositeState" />
-        <value>9</value>
+        <value>14</value>
       </counter>
       <counter>
         <item-type type-id="concurrency-pool" type="ConcurrencyPool" />
@@ -51,6 +51,10 @@
         <item-type type-id="concurrency-task" type="ConcurrencyTask" />
         <value>3</value>
       </counter>
+      <counter>
+        <item-type type-id="" type="LineItem" />
+        <value>5</value>
+      </counter>
     </entity-names>
     <entity-ids>
       <counter>
@@ -63,7 +67,7 @@
       </counter>
       <counter>
         <item-type type-id="initial-state" type="UmlInitialState" />
-        <value>8</value>
+        <value>16</value>
       </counter>
       <counter>
         <item-type type-id="final-state" type="UmlFinalState" />
@@ -71,19 +75,19 @@
       </counter>
       <counter>
         <item-type type-id="state" type="UmlState" />
-        <value>23</value>
+        <value>45</value>
       </counter>
       <counter>
         <item-type type-id="general-transition" type="UmlTransition" />
-        <value>50</value>
+        <value>70</value>
       </counter>
       <counter>
         <item-type type-id="shape" type="AbstractShapeItem" />
-        <value>23</value>
+        <value>26</value>
       </counter>
       <counter>
         <item-type type-id="universal-connector" type="UniversalConnector" />
-        <value>38</value>
+        <value>47</value>
       </counter>
       <counter>
         <item-type type-id="comment" type="UmlComment" />
@@ -91,7 +95,7 @@
       </counter>
       <counter>
         <item-type type-id="composite-state" type="UmlCompositeState" />
-        <value>10</value>
+        <value>15</value>
       </counter>
       <counter>
         <item-type type-id="join" type="UmlJoin" />
@@ -131,7 +135,7 @@
       </counter>
       <counter>
         <item-type type-id="decision" type="UmlDecision" />
-        <value>2</value>
+        <value>3</value>
       </counter>
       <counter>
         <item-type type-id="concurrency-task" type="ConcurrencyTask" />
@@ -139,7 +143,11 @@
       </counter>
       <counter>
         <item-type type-id="" type="AbstractElementGroup" />
-        <value>66</value>
+        <value>402</value>
+      </counter>
+      <counter>
+        <item-type type-id="comment-connector" type="UmlCommentConnector" />
+        <value>2</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -149,7 +157,7 @@
       </counter>
       <counter>
         <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlStateMachineDiagram</type>
-        <value>7</value>
+        <value>9</value>
       </counter>
       <counter>
         <type>SoftwareIdeasModeler.Core.Diagrams.Other.ConcurrencyDiagram</type>
@@ -521,57 +529,57 @@
           <item id="di817523136993335966" cid="REL001" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 10:59:17" from="di673900580766149599" to="di165648356784706659">
             <style class="default" />
             <relation from="di673900580766149599" to="di165648356784706659">
-              <start-role id="umlar-403bf761-7725-4022-a4ae-d86a472498a2" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-2f7e1c3b-adc7-4547-bdec-953b602c46c9" name="" multiplicity="1" navigability="yes" association-type="association" visibility="private" />
+              <start-role id="umlar-e3bc6611-751b-4a82-ac92-2db24b9caad6" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-80c979be-edc2-4267-b7f0-913fe9c8d68c" name="" multiplicity="1" navigability="yes" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di568548853483448306" cid="REL002" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 10:59:44" from="di673900580766149599" to="di579064802371366565">
             <style class="default" />
             <relation from="di673900580766149599" to="di579064802371366565">
-              <start-role id="umlar-9e03a661-bf8a-417d-8873-0e402954aab1" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-8d015328-53c4-4111-9322-c137d12bca9f" name="" multiplicity="1" navigability="yes" association-type="association" visibility="private" />
+              <start-role id="umlar-3597b1ea-6005-406c-bab1-8a9fff2aec6c" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-3c423390-6517-4d80-a45a-ccc2d038c2ad" name="" multiplicity="1" navigability="yes" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di233529460618318148" cid="REL006" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 11:01:49" from="di165648356784706659" to="di369030727509139968">
             <style class="default" />
             <relation from="di165648356784706659" to="di369030727509139968">
-              <start-role id="umlar-4c7b67cf-d4ac-4f35-b36c-ab544029426b" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
-              <end-role id="umlar-c1a24934-2400-4605-a67b-3b3ddae40ee0" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-5826e399-46d0-4e30-aa80-0c5cb569971e" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="umlar-5c1401cd-625e-4d78-ac16-021e679f5166" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di160030853380337191" cid="REL007" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 11:01:58" from="di673900580766149599" to="di712666449111549972">
             <style class="default" />
             <relation from="di673900580766149599" to="di712666449111549972">
-              <start-role id="umlar-9106a0bf-76ed-44a6-9104-b8eae93725a0" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
-              <end-role id="umlar-7621ce6d-c455-41c1-9be8-433d3bfee19c" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-0feeaadd-9d12-4e60-ad45-2d1cb87b190e" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="umlar-e999142d-fbe7-4e8e-8b88-9c382cce4c6b" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di330901629956005923" cid="REL008" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 11:02:06" from="di834086520951205257" to="di579064802371366565">
             <style class="default" />
             <relation from="di834086520951205257" to="di579064802371366565">
-              <start-role id="umlar-c4601010-cb81-480c-91b0-9e4b450769a2" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
-              <end-role id="umlar-55c6384c-01a8-42b2-af04-4f1298f56b63" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-7b61f7cc-f5be-431d-8bde-22ad685e77cb" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="umlar-a99a7873-8f8f-4b65-9787-ca9f9bd3359c" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di552311732609638980" cid="REL016" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/25/2017 10:21:07" from="di165648356784706659" to="di802042811192012194">
             <style class="default" />
             <relation from="di165648356784706659" to="di802042811192012194">
-              <start-role id="umlar-382e7666-d53b-400e-8998-65c8e11dc5d2" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-5e6d0bcd-8469-40f1-9451-74f730c47bd0" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-f8833045-293b-4078-9dfd-353cdab43d3d" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-cadb14d5-6a2b-4045-ad11-2aa9b36659e2" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di519037780402983493" cid="REL017" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/25/2017 10:21:14" from="di579064802371366565" to="di802042811192012194">
             <style class="default" />
             <relation from="di579064802371366565" to="di802042811192012194">
-              <start-role id="umlar-7c6ea0fe-bbf2-4531-847c-34a3f28f032c" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-a62cae99-73ce-4a51-9a38-d1ea3f603111" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-539ac0a0-ecbb-4b29-9473-a15b3726dd2c" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-93a5436a-6b45-4edd-856b-58fbc8697876" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di369248366148470893" cid="REL011" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 11:03:26" from="di673900580766149599" to="di897733104304878071">
             <style class="default" />
             <relation from="di673900580766149599" to="di897733104304878071">
-              <start-role id="umlar-91f5d2b2-90f7-4c16-b076-4b3f1832383e" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
-              <end-role id="umlar-5e3c5892-7e26-465b-aed6-eac76ccd52cf" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-83c9eb88-b932-4001-a183-1e939a4b028e" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="umlar-a3166c56-ae84-4a1a-aabb-dd6b11d6aee5" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di739835697105747140" cid="C001" type="class" name="Speaker" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 10:55:09">
@@ -586,8 +594,8 @@
           <item id="di331927419870044155" cid="REL019" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/03/2017 10:56:23" from="di673900580766149599" to="di739835697105747140">
             <style class="default" />
             <relation from="di673900580766149599" to="di739835697105747140">
-              <start-role id="umlar-411efe54-81c9-418c-b0f8-7384ecb84ea0" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
-              <end-role id="umlar-0a9bc5c4-82a1-48d1-82db-0a6757d171ae" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-317a25b9-c4b9-420e-8487-91939689105f" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="umlar-2fe6f5fd-0b9a-4077-beff-2de55f31908c" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
         </abstract-items>
@@ -825,43 +833,43 @@
           <item id="di381605842356730402" cid="REL001" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 10:59:17" from="di155764713812520736" to="di546608471779416457">
             <style class="default" />
             <relation from="di155764713812520736" to="di546608471779416457">
-              <start-role id="umlar-8e5c53d3-0e48-424a-b50e-906f43865aed" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-d35c574e-cd20-4922-b899-847f2d8e6ce3" name="" multiplicity="1" navigability="yes" association-type="association" visibility="private" />
+              <start-role id="umlar-649375ed-ac80-49d3-bc41-6de52ba83167" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-fc110443-a498-469d-8982-a264e8301384" name="" multiplicity="1" navigability="yes" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di806763174816536712" cid="REL002" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 10:59:44" from="di155764713812520736" to="di664726813598465129">
             <style class="default" />
             <relation from="di155764713812520736" to="di664726813598465129">
-              <start-role id="umlar-1f0c619b-24fc-45e4-b232-003181009a54" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-2d1fb972-aca0-46a6-bb5e-1f66abf8f3de" name="" multiplicity="1" navigability="yes" association-type="association" visibility="private" />
+              <start-role id="umlar-ef9d1590-489a-4b70-b7d3-23088d96d555" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-c900c77e-d044-4a12-ba76-dc1209446f0e" name="" multiplicity="1" navigability="yes" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di835679435669836428" cid="REL006" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 11:01:49" from="di546608471779416457" to="di486691022826424155">
             <style class="default" />
             <relation from="di546608471779416457" to="di486691022826424155">
-              <start-role id="umlar-fad12cbd-a395-4949-9344-6f9a3dbd934c" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
-              <end-role id="umlar-a77782c7-8619-4fd0-bf27-d182b449310c" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-6ad75b5e-f1bc-4fae-9def-cab4b4d96b8f" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="umlar-9cd69d55-31fa-44a8-9723-8bc5d536dd3b" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di875315439601357688" cid="REL007" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 11:01:58" from="di155764713812520736" to="di177593848633081591">
             <style class="default" />
             <relation from="di155764713812520736" to="di177593848633081591">
-              <start-role id="umlar-bc93d8e5-9886-4142-be48-b02cb7f190fc" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
-              <end-role id="umlar-98494f80-473b-4470-a7be-e9c0ee4a2dc4" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-ff8446f8-b248-4438-8f41-a71f25e2d844" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="umlar-c090efc0-ba3e-41af-bc5d-eefe38551314" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di358170954402450384" cid="REL008" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 11:02:06" from="di664980504731896218" to="di664726813598465129">
             <style class="default" />
             <relation from="di664980504731896218" to="di664726813598465129">
-              <start-role id="umlar-0bdce9eb-01b8-40e1-9f4a-8006dba5239f" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
-              <end-role id="umlar-7056a4a6-190d-42f5-8dd3-a890745aee15" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-1a146572-b190-4563-9f53-96165fae6ac6" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="umlar-6ea64613-c4ae-45ae-b93d-e48373248a22" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di744709964948884510" cid="REL011" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 11:03:26" from="di155764713812520736" to="di845594516888272329">
             <style class="default" />
             <relation from="di155764713812520736" to="di845594516888272329">
-              <start-role id="umlar-e3c278c0-c8f4-4622-898a-3f04e2a5af0f" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
-              <end-role id="umlar-de202260-531c-4ef1-ba16-37ea95510568" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-b2a815a7-1523-4c4d-b6bc-12796b9ad1f7" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="umlar-c2d8a751-b234-44d3-a725-28677ecbea39" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di486691022826424155" cid="C003" type="class" name="IrLed" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 10:55:31">
@@ -876,15 +884,15 @@
           <item id="di455825159605128620" cid="REL016" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/25/2017 10:21:07" from="di546608471779416457" to="di752464223289153391">
             <style class="default" />
             <relation from="di546608471779416457" to="di752464223289153391">
-              <start-role id="umlar-335deafa-c05f-4693-abf0-6491b3f688a4" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-2081c578-627e-4128-ae6c-d44f7a9e5c7e" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-83506391-0ca1-4797-bbb9-ecde30fdc30a" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-a50fd5fd-8d09-4209-817f-09768eac162d" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di362004852186767240" cid="REL017" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/25/2017 10:21:14" from="di664726813598465129" to="di752464223289153391">
             <style class="default" />
             <relation from="di664726813598465129" to="di752464223289153391">
-              <start-role id="umlar-e8e8d35d-20a1-4eaf-a548-453f70d4f503" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-0d3793af-7418-4aef-ae26-5d1d4ea39085" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-79261f4f-279a-4778-adf2-90ad3b681622" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-82f3bfcd-cbf5-4fc5-a374-a305a76e771e" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="di664726813598465129" cid="C007" type="class" name="Detector" style-class="" visibility="package" change-tracking-state="added" creator="P24a864b8b5a94391a6775c9b5f68ca71" creation-date="10/24/2017 10:56:47">
@@ -1937,7 +1945,7 @@
             </layout>
             <relation from="di495261712677894949" from-iid="177852b63b7d46bfbb3f05d776efd9f8" to="di359749646374426969" to-iid="8a20b2075b9c4f5fab056d4dee559fc6" />
           </item>
-          <item id="di673556104921913275" iid="a61d3b88145943b2bb9f2c65fb837751" name="Element2" creation-date="11/03/2017 11:44:43" order-index="52" type="drawing-line">
+          <item id="di538821547629776523" iid="a61d3b88145943b2bb9f2c65fb837751" name="Element2" creation-date="11/03/2017 11:44:43" order-index="52" type="drawing-line">
             <layout ax="678" ay="226" awidth="140" aheight="160" x="678" y="226" width="140" height="160" />
             <drawing-line start-point="0,0" end-point="0,0" />
             <style class="default" />
@@ -1945,7 +1953,7 @@
           <item id="di985421310667129480" iid="2ee09b29d1bd4fb9a65ddd022fd49e5b" container="di163618948208158605" container-iid="a063d4dd742a4161876ac517f694e47f" creation-date="10/27/2017 12:27:48" order-index="16" type="entity">
             <layout ax="1080" ay="1091" awidth="850" aheight="350" x="1080" y="1091" width="850" height="350" />
           </item>
-          <item id="di940487334607364897" iid="987d513be8c4499aba799084db114267" name="Element3" container="di163618948208158605" container-iid="a063d4dd742a4161876ac517f694e47f" creation-date="11/03/2017 11:44:51" order-index="53" type="drawing-line">
+          <item id="di841150165547250853" iid="987d513be8c4499aba799084db114267" name="Element3" container="di163618948208158605" container-iid="a063d4dd742a4161876ac517f694e47f" creation-date="11/03/2017 11:44:51" order-index="53" type="drawing-line">
             <layout ax="70" ay="850" awidth="2731" aheight="1" x="100" y="850" width="2701" height="21" />
             <drawing-line start-point="70,850" end-point="2800,850" />
             <style class="default" />
@@ -2544,7 +2552,7 @@
           </authors>
           <description />
           <creation-date>10/27/2017 10:35:02</creation-date>
-          <change-date>10/27/2017 14:23:00</change-date>
+          <change-date>11/07/2017 17:47:23</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
@@ -2552,324 +2560,135 @@
           <item id="di102842180861716796" cid="IS005" type="initial-state" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:02:49">
             <style class="default" />
           </item>
-          <item id="di444409394710793571" cid="ST014" type="state" name="pollingState" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:04:05">
+          <item id="di254552315956070909" cid="CS012" type="composite-state" name="irDetecTask" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:31:00">
             <style class="default" />
             <state-invariant />
-            <actions>
-              <action id="sa-b5a3d753-39be-4526-9990-2511bbc0babd" name="entry" behavior="IrDetector.get()" />
-            </actions>
-            <source-codes>
-              <source-code language="ActionScript" uid="scs-4175bd6a-7316-47b6-b382-432f87fe801f" />
-            </source-codes>
+            <actions />
           </item>
-          <item id="di376783883140502955" cid="ELEM033" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:04:12" from="di102842180861716796" to="di444409394710793571">
+          <item id="di376783883140502955" cid="ELEM033" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:04:12" from="di102842180861716796" to="di254552315956070909">
             <style class="default" />
             <transition guard="" behaviourExpression=" ">
               <trigger>main()</trigger>
             </transition>
           </item>
-          <item id="di353743133447101067" cid="ST015" type="state" name="SendMessageState" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:04:52">
-            <style class="default" />
-            <state-invariant />
-            <actions>
-              <action id="sa-bb601543-df25-46fb-92ce-7440c9d4e9d9" name="entry" behavior="messageChannel.send(bitMessage)" />
-            </actions>
-            <source-codes>
-              <source-code language="ActionScript" uid="scs-b82d8198-4ea6-4baf-9bb9-1038ea16a5da" />
-            </source-codes>
-          </item>
-          <item id="di409899748257109787" cid="DC001" type="decision" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:06:23">
-            <style class="default" />
-          </item>
-          <item id="di727332354843592994" cid="ELEM036" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:06:55" from="di444409394710793571" to="di409899748257109787">
-            <style class="default" />
-            <transition guard="" behaviourExpression=" ">
-              <trigger />
-            </transition>
-          </item>
-          <item id="di314628587297179313" cid="ELEM038" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:07:34" from="di409899748257109787" to="di353743133447101067">
-            <style class="default" />
-            <transition guard="IrDetector.get() == 1" behaviourExpression=" ">
-              <trigger />
-            </transition>
-          </item>
-          <item id="di471233030106774659" cid="ELEM039" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:08:19" from="di409899748257109787" to="di950380818912652643">
-            <style class="default" />
-            <transition guard="else" behaviourExpression=" ">
-              <trigger />
-            </transition>
-          </item>
-          <item id="di950380818912652643" cid="ST016" type="state" name="IdleState" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:08:31">
+          <item id="di783096604661760357" cid="ST034" type="state" name="WaitingForIRSignal" style-class="" owner="di254552315956070909" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:32:56">
             <style class="default" />
             <state-invariant />
             <actions />
-            <source-codes>
-              <source-code language="ActionScript" uid="scs-a086e0ee-1475-4362-a8a7-aef12924e776" />
-            </source-codes>
           </item>
-          <item id="di147943578164813147" cid="ELEM040" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:09:04" from="di950380818912652643" to="di444409394710793571">
+          <item id="di221686591203219076" cid="ST035" type="state" name="MeasurringDelay" style-class="" owner="di254552315956070909" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:39:18">
             <style class="default" />
-            <transition guard="" behaviourExpression=" ">
-              <trigger>after(1 ms)</trigger>
+            <state-invariant />
+            <actions />
+          </item>
+          <item id="di840532213855867608" cid="ST036" type="state" name="ConcatBits" style-class="" owner="di254552315956070909" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:41:12">
+            <style class="default" />
+            <state-invariant />
+            <actions />
+          </item>
+          <item id="di940805703453193544" cid="ST037" type="state" name="decodeSignal" style-class="" owner="di254552315956070909" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:41:26">
+            <style class="default" />
+            <state-invariant />
+            <actions />
+          </item>
+          <item id="di138629508668240795" cid="ELEM062" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:42:16" from="di783096604661760357" to="di221686591203219076">
+            <style class="default" />
+            <transition guard="irReceiver.get() == 1" behaviourExpression=" ">
+              <trigger />
             </transition>
           </item>
-          <item id="di443168247564199398" cid="ELEM041" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:11:23" from="di353743133447101067" to="di444409394710793571">
+          <item id="di428209624838399381" cid="ELEM063" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:42:21" from="di221686591203219076" to="di840532213855867608">
+            <style class="default" />
+            <transition guard="count &lt; 0" behaviourExpression=" ">
+              <trigger />
+            </transition>
+          </item>
+          <item id="di282028973456530362" cid="ELEM064" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:42:26" from="di840532213855867608" to="di940805703453193544">
+            <style class="default" />
+            <transition guard="signal1 == signal2" behaviourExpression=" ">
+              <trigger />
+            </transition>
+          </item>
+          <item id="di630264143755612460" cid="IS012" type="initial-state" name="" style-class="" owner="di254552315956070909" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:47:18">
+            <style class="default" />
+          </item>
+          <item id="di957167594797458356" cid="ELEM065" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:47:23" from="di630264143755612460" to="di783096604661760357">
             <style class="default" />
             <transition guard="" behaviourExpression=" ">
               <trigger />
             </transition>
-          </item>
-          <item id="di171473810873078868" cid="CMT002" type="comment" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2017 12:33:14">
-            <style class="default" />
-            <comment>IrDetecTask</comment>
           </item>
         </abstract-items>
         <layer id="62759f7a1af54050acd76c3e67aad9ca" name="Default" visible="true" enabled="true" locked="false">
           <item id="di102842180861716796" iid="6fc6c9a5d9934c47b0aacefd57075d9c" creation-date="10/27/2017 14:02:49" order-index="0" type="entity">
             <layout ax="110" ay="160" awidth="10" aheight="10" x="110" y="160" width="10" height="10" name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" />
           </item>
-          <item id="di444409394710793571" iid="3e7bb03664774054839558c3ddc2cb6d" creation-date="10/27/2017 14:04:05" order-index="1" type="entity">
-            <layout ax="220" ay="140" awidth="160" aheight="50" x="220" y="140" width="160" height="50" />
-          </item>
           <item id="di376783883140502955" iid="be54e60102934254819952a08010e21e" creation-date="10/27/2017 14:04:12" order-index="2" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="120" y1="165" x2="220" y2="165" start-border-pos="0.375" end-border-pos="0.875" name-position="0,-20">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="120" y1="167" x2="270" y2="215" start-border-pos="0.415322494506836" end-border-pos="0.875" name-position="0,-20">
               <points>
-                <point x="120" y="165" />
-                <point x="220" y="165" />
+                <point x="120" y="167" />
+                <point x="270" y="215" />
               </points>
             </layout>
-            <relation from="di102842180861716796" from-iid="6fc6c9a5d9934c47b0aacefd57075d9c" to="di444409394710793571" to-iid="3e7bb03664774054839558c3ddc2cb6d" />
+            <relation from="di102842180861716796" from-iid="6fc6c9a5d9934c47b0aacefd57075d9c" to="di254552315956070909" to-iid="2cd6ea6be09e43a198eacb33fcf76a98" />
           </item>
-          <item id="di353743133447101067" iid="12e19f3389474914bb10b701ff9bfd88" creation-date="10/27/2017 14:04:52" order-index="3" type="entity">
-            <layout ax="640" ay="140" awidth="200" aheight="90" x="640" y="140" width="200" height="90" />
+          <item id="di254552315956070909" iid="2cd6ea6be09e43a198eacb33fcf76a98" creation-date="11/07/2017 17:31:00" order-index="3" type="entity">
+            <layout ax="270" ay="60" awidth="880" aheight="310" x="270" y="60" width="880" height="310" />
           </item>
-          <item id="di409899748257109787" iid="2bd63a1ace28434db45dcfb474574a12" creation-date="10/27/2017 14:06:23" order-index="4" type="entity">
-            <layout ax="480" ay="190" awidth="40" aheight="60" x="480" y="190" width="40" height="60" name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" />
+          <item id="di783096604661760357" iid="224cb989691247cab515b4e6e9c6a573" container="di254552315956070909" container-iid="2cd6ea6be09e43a198eacb33fcf76a98" creation-date="11/07/2017 17:32:56" order-index="4" type="entity">
+            <layout ax="300" ay="205" awidth="110" aheight="50" x="300" y="205" width="110" height="50" />
           </item>
-          <item id="di727332354843592994" iid="7624eb59a8c2472ba8fefa88e86f4dd2" creation-date="10/27/2017 14:06:55" order-index="5" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="380" y1="187" x2="484" y2="214" start-border-pos="0.485" end-border-pos="0.897916666666667" name-position="0,0">
+          <item id="di138629508668240795" iid="22c34197502242028c25c5b5c6e8444c" creation-date="11/07/2017 17:42:16" order-index="8" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="410" y1="230" x2="570" y2="230" start-border-pos="0.375" end-border-pos="0.875" name-position="0,0" name-width="200">
               <points>
-                <point x="380" y="187" />
-                <point x="484" y="214" />
+                <point x="410" y="230" />
+                <point x="570" y="230" />
               </points>
             </layout>
-            <relation from="di444409394710793571" from-iid="3e7bb03664774054839558c3ddc2cb6d" to="di409899748257109787" to-iid="2bd63a1ace28434db45dcfb474574a12" />
+            <relation from="di783096604661760357" from-iid="224cb989691247cab515b4e6e9c6a573" to="di221686591203219076" to-iid="7b6b1c534e1f4534a3d810d80f27a22d" />
           </item>
-          <item id="di314628587297179313" iid="2a591e7a50074741944bc88e78a012ab" creation-date="10/27/2017 14:07:34" order-index="6" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="520" y1="220" x2="640" y2="185" start-border-pos="0.375" end-border-pos="0.875" name-position="0,0">
+          <item id="di428209624838399381" iid="3580b25b7cc7432ab9359f50879d262d" creation-date="11/07/2017 17:42:21" order-index="9" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="680" y1="230" x2="790" y2="230" start-border-pos="0.375" end-border-pos="0.875" name-position="0,0">
               <points>
-                <point x="520" y="220" />
-                <point x="640" y="185" />
+                <point x="680" y="230" />
+                <point x="790" y="230" />
               </points>
             </layout>
-            <relation from="di409899748257109787" from-iid="2bd63a1ace28434db45dcfb474574a12" to="di353743133447101067" to-iid="12e19f3389474914bb10b701ff9bfd88" />
+            <relation from="di221686591203219076" from-iid="7b6b1c534e1f4534a3d810d80f27a22d" to="di840532213855867608" to-iid="8d13819aa7444c82860c2f660076df53" />
           </item>
-          <item id="di471233030106774659" iid="5281f20768274cd9a1315f7d4d294c6a" creation-date="10/27/2017 14:08:19" order-index="7" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="500" y1="250" x2="350" y2="265" start-border-pos="0.625" end-border-pos="0.375" name-position="0,10">
+          <item id="di282028973456530362" iid="02db455275fe4c1aab36512cb47b4a67" creation-date="11/07/2017 17:42:26" order-index="10" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="900" y1="230" x2="1010" y2="230" start-border-pos="0.375" end-border-pos="0.875" name-position="0,-30" name-width="140">
               <points>
-                <point x="500" y="250" />
-                <point x="500" y="260" />
-                <point x="350" y="265" />
+                <point x="900" y="230" />
+                <point x="1010" y="230" />
               </points>
             </layout>
-            <relation from="di409899748257109787" from-iid="2bd63a1ace28434db45dcfb474574a12" to="di950380818912652643" to-iid="2377d33194444b90a46cfd729a9eef78" />
+            <relation from="di840532213855867608" from-iid="8d13819aa7444c82860c2f660076df53" to="di940805703453193544" to-iid="9f5e7773a1dc4fe89c320de6cd06c074" />
           </item>
-          <item id="di950380818912652643" iid="2377d33194444b90a46cfd729a9eef78" creation-date="10/27/2017 14:08:31" order-index="8" type="entity">
-            <layout ax="240" ay="240" awidth="110" aheight="50" x="240" y="240" width="110" height="50" />
+          <item id="di221686591203219076" iid="7b6b1c534e1f4534a3d810d80f27a22d" container="di254552315956070909" container-iid="2cd6ea6be09e43a198eacb33fcf76a98" creation-date="11/07/2017 17:39:18" order-index="5" type="entity">
+            <layout ax="570" ay="205" awidth="110" aheight="50" x="570" y="205" width="110" height="50" />
           </item>
-          <item id="di147943578164813147" iid="d4d79966dd5c491c95f2e11a8a20ba12" creation-date="10/27/2017 14:09:04" order-index="9" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="295" y1="240" x2="300" y2="190" start-border-pos="0.125" end-border-pos="0.625" name-position="-50,0">
+          <item id="di840532213855867608" iid="8d13819aa7444c82860c2f660076df53" container="di254552315956070909" container-iid="2cd6ea6be09e43a198eacb33fcf76a98" creation-date="11/07/2017 17:41:12" order-index="6" type="entity">
+            <layout ax="790" ay="205" awidth="110" aheight="50" x="790" y="205" width="110" height="50" />
+          </item>
+          <item id="di940805703453193544" iid="9f5e7773a1dc4fe89c320de6cd06c074" container="di254552315956070909" container-iid="2cd6ea6be09e43a198eacb33fcf76a98" creation-date="11/07/2017 17:41:26" order-index="7" type="entity">
+            <layout ax="1010" ay="205" awidth="100" aheight="50" x="1010" y="205" width="100" height="50" />
+          </item>
+          <item id="di630264143755612460" iid="223778a7097344e980412ecc96e55b21" container="di254552315956070909" container-iid="2cd6ea6be09e43a198eacb33fcf76a98" creation-date="11/07/2017 17:47:18" order-index="11" type="entity">
+            <layout ax="300" ay="100" awidth="20" aheight="20" x="300" y="100" width="20" height="20" name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" />
+          </item>
+          <item id="di957167594797458356" iid="5941a6b7678f435c9651b4d24bb4321d" creation-date="11/07/2017 17:47:23" order-index="12" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="314" y1="119" x2="346" y2="205" start-border-pos="0.578125" end-border-pos="0.103693181818182" name-position="0,0">
               <points>
-                <point x="295" y="240" />
-                <point x="300" y="190" />
+                <point x="314" y="119" />
+                <point x="346" y="205" />
               </points>
             </layout>
-            <relation from="di950380818912652643" from-iid="2377d33194444b90a46cfd729a9eef78" to="di444409394710793571" to-iid="3e7bb03664774054839558c3ddc2cb6d" />
-          </item>
-          <item id="di443168247564199398" iid="15268302ff5c4424a01feb57a537185a" creation-date="10/27/2017 14:11:23" order-index="10" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="740" y1="140" x2="300" y2="140" start-border-pos="0.125" end-border-pos="0.125" name-position="0,0">
-              <points>
-                <point x="740" y="140" />
-                <point x="740" y="110" />
-                <point x="300" y="110" />
-                <point x="300" y="140" />
-              </points>
-            </layout>
-            <relation from="di353743133447101067" from-iid="12e19f3389474914bb10b701ff9bfd88" to="di444409394710793571" to-iid="3e7bb03664774054839558c3ddc2cb6d" />
-          </item>
-          <item id="di171473810873078868" iid="bd5336f1000347718b8ca268d0dc105a" creation-date="10/26/2017 12:33:14" order-index="4" type="entity">
-            <layout ax="120" ay="40" awidth="140" aheight="50" x="120" y="40" width="140" height="50" />
+            <relation from="di630264143755612460" from-iid="223778a7097344e980412ecc96e55b21" to="di783096604661760357" to-iid="224cb989691247cab515b4e6e9c6a573" />
           </item>
         </layer>
       </diagram>
-      <diagram type="uml-statechart" id="p8da1d3d5e28b4c8286d2ef242ce02314_280851959" name="StateMachineDiagram IrSignalTask" order-index="6" overview-order-index="4" uid="" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="0,-88">
-        <style>
-          <background-color index="1" color="#FFFFFFFF" />
-          <background-color index="2" color="#FFFFFFFF" />
-          <background-type type="solid" />
-        </style>
-        <meta>
-          <authors>
-            <author> </author>
-          </authors>
-          <description />
-          <creation-date>10/27/2017 14:28:23</creation-date>
-          <change-date>10/27/2017 15:23:55</change-date>
-          <revision-count>0</revision-count>
-          <version />
-        </meta>
-        <abstract-items>
-          <item id="di752168632860815445" cid="IS006" type="initial-state" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:35:19">
-            <style class="default" />
-          </item>
-          <item id="di362886793536749106" cid="ST017" type="state" name="idleState" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:35:47">
-            <style class="default" />
-            <state-invariant />
-            <actions />
-            <source-codes>
-              <source-code language="ActionScript" uid="scs-4f4d267d-127d-45c4-b4c2-57a5de26cb14" />
-            </source-codes>
-          </item>
-          <item id="di339322922250079555" cid="ELEM042" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:56:05" from="di752168632860815445" to="di362886793536749106">
-            <style class="default" />
-            <transition guard="" behaviourExpression="" />
-          </item>
-          <item id="di450335453174220550" cid="ST019" type="state" name="decodeState" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:56:14">
-            <style class="default" />
-            <state-invariant />
-            <actions>
-              <action id="sa-c99fa278-6545-4886-b922-70c63648cbf9" name="entry" behavior="decodeData()" />
-            </actions>
-            <source-codes>
-              <source-code language="ActionScript" uid="scs-443bf374-e366-4faa-a6bc-10be762d1785" />
-            </source-codes>
-          </item>
-          <item id="di981329428162188682" cid="ST020" type="state" name="encodeState" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:57:35">
-            <style class="default" />
-            <state-invariant />
-            <actions>
-              <action id="sa-e244b504-e939-4824-b4d2-02cb1f89016c" name="entry" behavior="encodeData(playerId, commandId, data)" />
-            </actions>
-            <source-codes>
-              <source-code language="ActionScript" uid="scs-b6f15ca8-6037-46e3-982b-298b50fe2bc1" />
-            </source-codes>
-          </item>
-          <item id="di809032367425018923" cid="ELEM043" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:59:22" from="di362886793536749106" to="di981329428162188682">
-            <style class="default" />
-            <transition guard="" behaviourExpression=" ">
-              <trigger>fireButtonFlag</trigger>
-            </transition>
-          </item>
-          <item id="di217309380655228175" cid="ELEM044" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:59:27" from="di362886793536749106" to="di450335453174220550">
-            <style class="default" />
-            <transition guard="" behaviourExpression=" ">
-              <trigger>DataChannel.read()</trigger>
-            </transition>
-          </item>
-          <item id="di134198092284047911" cid="ELEM045" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 15:03:40" from="di450335453174220550" to="di362886793536749106">
-            <style class="default" />
-            <transition guard="" behaviourExpression="MessageChannel.write(decodedData)">
-              <trigger />
-            </transition>
-          </item>
-          <item id="di901292767785413101" cid="ST021" type="state" name="sendToWeaponState" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 15:20:59">
-            <style class="default" />
-            <state-invariant />
-            <actions>
-              <action id="sa-773aae9a-f757-4a9a-85a8-c2b82eec8a65" name="entry" behavior="encodedChannel.write(encodedData)" />
-            </actions>
-            <source-codes>
-              <source-code language="ActionScript" uid="scs-d30c7072-ab8b-48cf-a49c-03891ed89aa3" />
-            </source-codes>
-          </item>
-          <item id="di736311338189646746" cid="ELEM047" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 15:22:04" from="di981329428162188682" to="di901292767785413101">
-            <style class="default" />
-            <transition guard="" behaviourExpression=" ">
-              <trigger />
-            </transition>
-          </item>
-          <item id="di915346809625235849" cid="ELEM048" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 15:23:55" from="di901292767785413101" to="di362886793536749106">
-            <style class="default" />
-            <transition guard="" behaviourExpression=" ">
-              <trigger />
-            </transition>
-          </item>
-        </abstract-items>
-        <layer id="6c4843eac38d42ad89a6dea791a9a07e" name="Default" visible="true" enabled="true" locked="false">
-          <item id="di752168632860815445" iid="82eecb89f41d401d8c04d5da45a969b9" creation-date="10/27/2017 14:35:19" order-index="0" type="entity">
-            <layout ax="100" ay="30" awidth="20" aheight="20" x="100" y="30" width="20" height="20" name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" />
-          </item>
-          <item id="di362886793536749106" iid="868ebbeff24f4c2d978201aac5fe3b74" creation-date="10/27/2017 14:35:47" order-index="1" type="entity">
-            <layout ax="190" ay="20" awidth="100" aheight="50" x="190" y="20" width="100" height="50" />
-          </item>
-          <item id="di339322922250079555" iid="941299910ac2404bb5471e5e793baab4" creation-date="10/27/2017 14:56:05" order-index="2" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="120" y1="40" x2="190" y2="43" start-border-pos="0.379807710647583" end-border-pos="0.884615383148193" name-position="0,0">
-              <points>
-                <point x="120" y="40" />
-                <point x="190" y="43" />
-              </points>
-            </layout>
-            <relation from="di752168632860815445" from-iid="82eecb89f41d401d8c04d5da45a969b9" to="di362886793536749106" to-iid="868ebbeff24f4c2d978201aac5fe3b74" />
-          </item>
-          <item id="di450335453174220550" iid="c713df71eb614c4c9bc04e07d270fdf7" creation-date="10/27/2017 14:56:14" order-index="3" type="entity">
-            <layout ax="190" ay="190" awidth="110" aheight="70" x="190" y="190" width="110" height="70" />
-          </item>
-          <item id="di981329428162188682" iid="4639fa2f24234c43a516e1dd5f6da30a" creation-date="10/27/2017 14:57:35" order-index="4" type="entity">
-            <layout ax="460" ay="20" awidth="270" aheight="60" x="460" y="20" width="270" height="60" />
-          </item>
-          <item id="di809032367425018923" iid="4ba4398605bb453888b432b042d3e5ca" creation-date="10/27/2017 14:59:22" order-index="5" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="290" y1="45" x2="460" y2="50" start-border-pos="0.375" end-border-pos="0.875" name-position="10,-10">
-              <points>
-                <point x="290" y="45" />
-                <point x="460" y="50" />
-              </points>
-            </layout>
-            <relation from="di362886793536749106" from-iid="868ebbeff24f4c2d978201aac5fe3b74" to="di981329428162188682" to-iid="4639fa2f24234c43a516e1dd5f6da30a" />
-          </item>
-          <item id="di217309380655228175" iid="198ce724040f4467a9484ad62842dc18" creation-date="10/27/2017 14:59:27" order-index="6" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="210" y1="70" x2="210" y2="190" start-border-pos="0.700000002980232" end-border-pos="0.0454545468091965" name-position="-80,0" name-width="150">
-              <points>
-                <point x="210" y="70" />
-                <point x="210" y="190" />
-              </points>
-            </layout>
-            <relation from="di362886793536749106" from-iid="868ebbeff24f4c2d978201aac5fe3b74" to="di450335453174220550" to-iid="c713df71eb614c4c9bc04e07d270fdf7" />
-          </item>
-          <item id="di134198092284047911" iid="281324ba056444e3bd0a4bd068b52077" creation-date="10/27/2017 15:03:40" order-index="7" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="270" y1="190" x2="270" y2="70" start-border-pos="0.181818187236786" end-border-pos="0.550000000745058" name-position="80,10" name-width="170">
-              <points>
-                <point x="270" y="190" />
-                <point x="270" y="70" />
-              </points>
-            </layout>
-            <relation from="di450335453174220550" from-iid="c713df71eb614c4c9bc04e07d270fdf7" to="di362886793536749106" to-iid="868ebbeff24f4c2d978201aac5fe3b74" />
-          </item>
-          <item id="di901292767785413101" iid="814f0cf182504b2da7d31ba916dd4540" creation-date="10/27/2017 15:20:59" order-index="8" type="entity">
-            <layout ax="800" ay="20" awidth="220" aheight="60" x="800" y="20" width="220" height="60" />
-          </item>
-          <item id="di736311338189646746" iid="844e7769df484465af9faf3f9a5c35a8" creation-date="10/27/2017 15:22:04" order-index="9" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="730" y1="50" x2="800" y2="50" start-border-pos="0.375" end-border-pos="0.875" name-position="0,0">
-              <points>
-                <point x="730" y="50" />
-                <point x="800" y="50" />
-              </points>
-            </layout>
-            <relation from="di981329428162188682" from-iid="4639fa2f24234c43a516e1dd5f6da30a" to="di901292767785413101" to-iid="814f0cf182504b2da7d31ba916dd4540" />
-          </item>
-          <item id="di915346809625235849" iid="e123a62bb60241db8d6bc0c8153fc8ae" creation-date="10/27/2017 15:23:55" order-index="10" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="929" y1="20" x2="240" y2="20" start-border-pos="0.147058829665184" end-border-pos="0.125" name-position="0,0">
-              <points>
-                <point x="929" y="20" />
-                <point x="900" y="-20" />
-                <point x="240" y="-20" />
-                <point x="240" y="20" />
-              </points>
-            </layout>
-            <relation from="di901292767785413101" from-iid="814f0cf182504b2da7d31ba916dd4540" to="di362886793536749106" to-iid="868ebbeff24f4c2d978201aac5fe3b74" />
-          </item>
-        </layer>
-      </diagram>
-      <diagram type="uml-statechart" id="p8c205cbd844c4ab794e7643858b2d6e5_702638556" name="StateMachineDiagram OledDisplayTask" order-index="7" overview-order-index="5" uid="" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false">
+      <diagram type="uml-statechart" id="p8c205cbd844c4ab794e7643858b2d6e5_702638556" name="StateMachineDiagram OledDisplayTask" order-index="7" overview-order-index="5" uid="" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-3,0">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -2881,7 +2700,7 @@
           </authors>
           <description />
           <creation-date>10/27/2017 20:20:22</creation-date>
-          <change-date>10/27/2017 20:20:24</change-date>
+          <change-date>11/07/2017 16:58:38</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
@@ -2889,37 +2708,27 @@
           <item id="di420077648375066629" cid="IS001" type="initial-state" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 13:35:34">
             <style class="default" />
           </item>
-          <item id="di350939147982648930" cid="ST001" type="state" name="Reading buffer" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 13:36:19">
+          <item id="di507855444927563101" cid="ST025" type="state" name="InitialState" style-class="" owner="di846450883368587696" visibility="package" change-tracking-state="added" creation-date="11/07/2017 16:35:11">
             <style class="default" />
             <state-invariant />
             <actions />
-            <source-codes>
-              <source-code language="ActionScript" uid="scs-8dcc3cd1-6a2d-4b26-9344-dc9c0196311d" />
-            </source-codes>
           </item>
-          <item id="di864819673881107499" cid="ST001" type="state" name="Writing screen" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 13:36:19">
+          <item id="di167572677462150734" cid="ST026" type="state" name="DoneState" style-class="" owner="di846450883368587696" visibility="package" change-tracking-state="added" creation-date="11/07/2017 16:35:34">
             <style class="default" />
             <state-invariant />
-            <actions>
-              <action id="sa-56a03a61-8bce-4eac-9939-8c6cb1cbfc4f" name="entry" behavior="updateScreen()" />
-            </actions>
-            <source-codes>
-              <source-code language="ActionScript" uid="scs-dede266e-40b8-4d07-82ba-010dbee62bff" />
-            </source-codes>
+            <actions />
           </item>
-          <item id="di984797209447049723" cid="ELEM001" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 13:37:22" from="di350939147982648930" to="di864819673881107499">
+          <item id="di899864264109006910" cid="ST027" type="state" name="PlayState" style-class="" owner="di846450883368587696" visibility="package" change-tracking-state="added" creation-date="11/07/2017 16:35:42">
             <style class="default" />
-            <transition guard="" behaviourExpression="">
-              <trigger>read() /</trigger>
-            </transition>
+            <state-invariant />
+            <actions />
           </item>
-          <item id="di772885216645962625" cid="ELEM002" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 13:37:29" from="di864819673881107499" to="di350939147982648930">
+          <item id="di882244976205935888" cid="ST028" type="state" name="LeaderState" style-class="" owner="di846450883368587696" visibility="package" change-tracking-state="added" creation-date="11/07/2017 16:35:48">
             <style class="default" />
-            <transition guard="" behaviourExpression="">
-              <trigger>/</trigger>
-            </transition>
+            <state-invariant />
+            <actions />
           </item>
-          <item id="di341555009287912299" cid="ELEM003" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 13:38:07" from="di420077648375066629" to="di350939147982648930">
+          <item id="di341555009287912299" cid="ELEM003" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 13:38:07" from="di420077648375066629" to="di846450883368587696">
             <style style-name="Custom Style" shadow-type="smooth" shadow-offset="1,1" shadow-visible="true" shadow-color="#32000000" gloss-effect="true" wrap-name-text="true" padding="1" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
               <text-style type="name" use-defaults="false" color="#FF000000" font="Segoe UI;10;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
               <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
@@ -2943,46 +2752,204 @@
               </alternate-styles>
             </style>
             <transition guard="" behaviourExpression="">
-              <trigger>/</trigger>
+              <trigger>main()</trigger>
+            </transition>
+          </item>
+          <item id="di846450883368587696" cid="CS010" type="composite-state" name="OledDisplayTask" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 16:36:27">
+            <style class="default" />
+            <state-invariant />
+            <actions />
+            <source-codes>
+              <source-code language="ActionScript" uid="scs-c1de00f6-1483-4b43-89bc-6982b6d73e01" />
+            </source-codes>
+          </item>
+          <item id="di893669541361653384" cid="ST029" type="state" name="IdleState" style-class="" owner="di846450883368587696" visibility="package" change-tracking-state="added" creation-date="11/07/2017 16:45:26">
+            <style class="default" />
+            <state-invariant />
+            <actions>
+              <action id="sa-d80af7ba-ea32-48ac-a292-046edbb9f09d" name="entry" behavior="wait(oledChannel)" />
+            </actions>
+            <source-codes>
+              <source-code language="ActionScript" uid="scs-51133e44-3eac-4ec6-a2ef-12ecc124d451" />
+            </source-codes>
+          </item>
+          <item id="di405502542877772186" cid="DC002" type="decision" name="oledChannel.read()" style-class="" owner="di846450883368587696" visibility="package" change-tracking-state="added" creation-date="11/07/2017 16:46:16">
+            <style class="default" />
+          </item>
+          <item id="di393582012240130814" cid="ELEM050" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 16:47:21" from="di405502542877772186" to="di507855444927563101">
+            <style class="default" />
+            <transition guard="INITIAL_STATE" behaviourExpression="">
+              <trigger />
+            </transition>
+          </item>
+          <item id="di858272877465462684" cid="ELEM051" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 16:47:55" from="di405502542877772186" to="di899864264109006910">
+            <style class="default" />
+            <transition guard="PLAY_STATE" behaviourExpression="">
+              <trigger />
+            </transition>
+          </item>
+          <item id="di466922531388063116" cid="ELEM052" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 16:49:30" from="di893669541361653384" to="di405502542877772186">
+            <style class="default" />
+            <transition guard="" behaviourExpression="" />
+          </item>
+          <item id="di925479255882817896" cid="ELEM053" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 16:49:49" from="di405502542877772186" to="di167572677462150734">
+            <style class="default" />
+            <transition guard="DONE_STATE" behaviourExpression="">
+              <trigger />
+            </transition>
+          </item>
+          <item id="di901170309317963639" cid="ELEM054" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 16:50:08" from="di405502542877772186" to="di882244976205935888">
+            <style class="default" />
+            <transition guard="LEADER_STATE" behaviourExpression="">
+              <trigger />
+            </transition>
+          </item>
+          <item id="di103789603943721588" cid="ST030" type="state" name="Interface" style-class="" owner="di846450883368587696" visibility="package" change-tracking-state="added" creation-date="11/07/2017 16:50:49">
+            <style class="default" />
+            <state-invariant />
+            <actions>
+              <action id="sa-ff0ce74f-4cd6-4d9f-a5a1-fe48a5cf0d2a" name="setDisplay()" behavior="" />
+              <action id="sa-33812c25-a5c7-4184-b434-fa7be07133ef" name="setDisplay()" behavior="" />
+              <action id="sa-82830597-620a-4a1c-b400-bdd97fdd1efb" name="setDisplay()" behavior="" />
+              <action id="sa-8037cabb-a749-42eb-8171-567111b1ba85" name="setDisplay()" behavior="" />
+            </actions>
+            <source-codes>
+              <source-code language="ActionScript" uid="scs-c6a2cfc5-a80d-4177-9123-2081af6d0fc0" />
+            </source-codes>
+          </item>
+          <item id="di706278681865185593" cid="IS008" type="initial-state" name="" style-class="" owner="di846450883368587696" visibility="package" change-tracking-state="added" creation-date="11/07/2017 16:58:16">
+            <style class="default" />
+          </item>
+          <item id="di167533692370666619" cid="IS009" type="initial-state" name="" style-class="" owner="di846450883368587696" visibility="package" change-tracking-state="added" creation-date="11/07/2017 16:58:20">
+            <style class="default" />
+          </item>
+          <item id="di289334941839267360" cid="ELEM055" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 16:58:32" from="di167533692370666619" to="di893669541361653384">
+            <style class="default" />
+            <transition guard="" behaviourExpression=" ">
+              <trigger />
+            </transition>
+          </item>
+          <item id="di306137667648245488" cid="ELEM056" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 16:58:38" from="di706278681865185593" to="di103789603943721588">
+            <style class="default" />
+            <transition guard="" behaviourExpression=" ">
+              <trigger />
             </transition>
           </item>
         </abstract-items>
         <layer id="44b1751bc3d14e9b81d796fb9385ab70" name="Default" visible="true" enabled="true" locked="false">
+          <item id="di846450883368587696" iid="fc1c8928892c4627b1f63ec766c2e305" creation-date="11/07/2017 16:36:27" order-index="9" type="entity">
+            <layout ax="410" ay="60" awidth="770" aheight="720" x="410" y="60" width="770" height="720" />
+          </item>
           <item id="di420077648375066629" iid="8c9fd3e5771340c689f68937d343c544" creation-date="10/27/2017 13:35:34" order-index="0" type="entity">
-            <layout ax="280" ay="300" awidth="20" aheight="20" x="280" y="300" width="20" height="20" name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" />
-          </item>
-          <item id="di350939147982648930" iid="611b9bec56e04454b66473b527de84a1" creation-date="10/27/2017 13:36:19" order-index="1" type="entity">
-            <layout ax="400" ay="280" awidth="160" aheight="60" x="400" y="280" width="160" height="60" />
-          </item>
-          <item id="di864819673881107499" iid="55e1153c260242ee8893e67a9031b843" creation-date="10/27/2017 13:36:19" order-index="1" type="entity">
-            <layout ax="400" ay="460" awidth="161" aheight="60" x="400" y="460" width="161" height="60" />
-          </item>
-          <item id="di984797209447049723" iid="aaa2010c6fe2482497a32b345c11f60b" creation-date="10/27/2017 13:37:22" order-index="2" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="437" y1="340" x2="437" y2="460" start-border-pos="0.692307695746422" end-border-pos="0.0576923079788685" name-position="-40,-20">
-              <points>
-                <point x="437" y="340" />
-                <point x="437" y="460" />
-              </points>
-            </layout>
-            <relation from="di350939147982648930" from-iid="611b9bec56e04454b66473b527de84a1" to="di864819673881107499" to-iid="55e1153c260242ee8893e67a9031b843" />
-          </item>
-          <item id="di772885216645962625" iid="3bfe13d87eea47eb90e593f6cb3cdb0d" creation-date="10/27/2017 13:37:29" order-index="3" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="524" y1="460" x2="523" y2="340" start-border-pos="0.192307695746422" end-border-pos="0.557692307978868" name-position="30,-20">
-              <points>
-                <point x="524" y="460" />
-                <point x="523" y="340" />
-              </points>
-            </layout>
-            <relation from="di864819673881107499" from-iid="55e1153c260242ee8893e67a9031b843" to="di350939147982648930" to-iid="611b9bec56e04454b66473b527de84a1" />
+            <layout ax="150" ay="130" awidth="14.81396" aheight="14.81396" x="150" y="130" width="14.81396" height="14.81396" name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" />
           </item>
           <item id="di341555009287912299" iid="c3a68f4a3053487d870ed7c9c966a409" creation-date="10/27/2017 13:38:07" order-index="4" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="300" y1="310" x2="400" y2="310" start-border-pos="0.375" end-border-pos="0.875" name-position="-10,-20">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="164" y1="140" x2="410" y2="249" start-border-pos="0.420531844325785" end-border-pos="0.934297174877591" name-position="-10,-20">
               <points>
-                <point x="300" y="310" />
-                <point x="400" y="310" />
+                <point x="164" y="140" />
+                <point x="410" y="249" />
               </points>
             </layout>
-            <relation from="di420077648375066629" from-iid="8c9fd3e5771340c689f68937d343c544" to="di350939147982648930" to-iid="611b9bec56e04454b66473b527de84a1" />
+            <relation from="di420077648375066629" from-iid="8c9fd3e5771340c689f68937d343c544" to="di846450883368587696" to-iid="fc1c8928892c4627b1f63ec766c2e305" />
+          </item>
+          <item id="di103789603943721588" iid="3d624fc4cabc4fb5a1107334d0ff7eb2" container="di846450883368587696" container-iid="fc1c8928892c4627b1f63ec766c2e305" creation-date="11/07/2017 16:50:49" order-index="17" type="entity">
+            <layout ax="580" ay="140" awidth="400" aheight="100" x="580" y="140" width="400" height="100" />
+          </item>
+          <item id="di167572677462150734" iid="ce29d48c2e5d42c7a81fe2260f0ec5a3" container="di846450883368587696" container-iid="fc1c8928892c4627b1f63ec766c2e305" creation-date="11/07/2017 16:35:34" order-index="6" type="entity">
+            <layout ax="616" ay="670" awidth="100" aheight="50" x="616" y="670" width="100" height="50" />
+          </item>
+          <item id="di893669541361653384" iid="43d63a33114744ea8e94873b8613f2ea" container="di846450883368587696" container-iid="fc1c8928892c4627b1f63ec766c2e305" creation-date="11/07/2017 16:45:26" order-index="10" type="entity">
+            <layout ax="666" ay="320" awidth="230" aheight="50" x="666" y="320" width="230" height="50" />
+          </item>
+          <item id="di405502542877772186" iid="3039dd1a3cca4a94875b1e8113addf87" container="di846450883368587696" container-iid="fc1c8928892c4627b1f63ec766c2e305" creation-date="11/07/2017 16:46:16" order-index="11" type="entity">
+            <layout ax="756" ay="430" awidth="40" aheight="60" x="756" y="430" width="40" height="60" name-position="0,10" name-anchor="bottom" name-width="190" auto-anchor="true" label-attached="false" />
+          </item>
+          <item id="di507855444927563101" iid="8f2f7c7b7a92490f8e6f0ff87508eff8" container="di846450883368587696" container-iid="fc1c8928892c4627b1f63ec766c2e305" creation-date="11/07/2017 16:35:11" order-index="5" type="entity">
+            <layout ax="616" ay="560" awidth="100" aheight="50" x="616" y="560" width="100" height="50" />
+          </item>
+          <item id="di882244976205935888" iid="b715243256b745f28fdb5881f523c8df" container="di846450883368587696" container-iid="fc1c8928892c4627b1f63ec766c2e305" creation-date="11/07/2017 16:35:48" order-index="8" type="entity">
+            <layout ax="836" ay="670" awidth="100" aheight="50" x="836" y="670" width="100" height="50" />
+          </item>
+          <item id="di393582012240130814" iid="94a1a68ed59544f69b6c083bcd1f5a9e" creation-date="11/07/2017 16:47:21" order-index="12" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="756" y1="460" x2="684" y2="560" start-border-pos="0.875" end-border-pos="0.17" name-position="-50,20" name-width="150">
+              <points>
+                <point x="756" y="460" />
+                <point x="686" y="460" />
+                <point x="684" y="560" />
+              </points>
+            </layout>
+            <relation from="di405502542877772186" from-iid="3039dd1a3cca4a94875b1e8113addf87" to="di507855444927563101" to-iid="8f2f7c7b7a92490f8e6f0ff87508eff8" />
+          </item>
+          <item id="di899864264109006910" iid="52208eea026f472fabee3b66235038f2" container="di846450883368587696" container-iid="fc1c8928892c4627b1f63ec766c2e305" creation-date="11/07/2017 16:35:42" order-index="7" type="entity">
+            <layout ax="836" ay="560" awidth="100" aheight="50" x="836" y="560" width="100" height="50" />
+          </item>
+          <item id="di858272877465462684" iid="51d45df2f6a7487d9cf84392f41c5b56" creation-date="11/07/2017 16:47:55" order-index="13" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="796" y1="460" x2="868" y2="560" start-border-pos="0.375" end-border-pos="0.08" name-position="0,0">
+              <points>
+                <point x="796" y="460" />
+                <point x="866" y="460" />
+                <point x="868" y="560" />
+              </points>
+            </layout>
+            <relation from="di405502542877772186" from-iid="3039dd1a3cca4a94875b1e8113addf87" to="di899864264109006910" to-iid="52208eea026f472fabee3b66235038f2" />
+          </item>
+          <item id="di466922531388063116" iid="a01e0dc8dc2a4804993cd3ab74366f2e" creation-date="11/07/2017 16:49:30" order-index="14" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="780" y1="370" x2="777" y2="431" start-border-pos="0.626181494671366" end-border-pos="0.133152008056641" name-position="0,0">
+              <points>
+                <point x="780" y="370" />
+                <point x="777" y="431" />
+              </points>
+            </layout>
+            <relation from="di893669541361653384" from-iid="43d63a33114744ea8e94873b8613f2ea" to="di405502542877772186" to-iid="3039dd1a3cca4a94875b1e8113addf87" />
+          </item>
+          <item id="di925479255882817896" iid="56f16a48a4304edca771192150819591" creation-date="11/07/2017 16:49:49" order-index="15" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="776" y1="490" x2="679" y2="670" start-border-pos="0.625" end-border-pos="0.158536529541016" name-position="-30,50">
+              <points>
+                <point x="776" y="490" />
+                <point x="736" y="650" />
+                <point x="679" y="670" />
+              </points>
+            </layout>
+            <relation from="di405502542877772186" from-iid="3039dd1a3cca4a94875b1e8113addf87" to="di167572677462150734" to-iid="ce29d48c2e5d42c7a81fe2260f0ec5a3" />
+          </item>
+          <item id="di901170309317963639" iid="89f14bb112eb425b84faac60902d45fa" creation-date="11/07/2017 16:50:08" order-index="16" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="776" y1="490" x2="873" y2="670" start-border-pos="0.625" end-border-pos="0.0925000011920929" name-position="40,60">
+              <points>
+                <point x="776" y="490" />
+                <point x="806" y="650" />
+                <point x="873" y="670" />
+              </points>
+            </layout>
+            <relation from="di405502542877772186" from-iid="3039dd1a3cca4a94875b1e8113addf87" to="di882244976205935888" to-iid="b715243256b745f28fdb5881f523c8df" />
+          </item>
+          <item id="di255679811103666419" iid="25c29be1c0184d02824a2b37980af3cf" name="Element4" container="di846450883368587696" container-iid="fc1c8928892c4627b1f63ec766c2e305" creation-date="11/07/2017 16:58:06" order-index="18" type="drawing-line">
+            <layout ax="411" ay="262" awidth="766" aheight="7" x="411" y="262" width="765" height="6" />
+            <drawing-line start-point="411,262" end-point="1176,268" />
+            <style class="default" />
+          </item>
+          <item id="di706278681865185593" iid="c97d5c27d6474556aaa0e371baf3d24f" container="di846450883368587696" container-iid="fc1c8928892c4627b1f63ec766c2e305" creation-date="11/07/2017 16:58:16" order-index="19" type="entity">
+            <layout ax="450" ay="160" awidth="30" aheight="30" x="450" y="160" width="30" height="30" name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" />
+          </item>
+          <item id="di167533692370666619" iid="0e1c3d39816c4d53bfe57f02bdcb3b9a" container="di846450883368587696" container-iid="fc1c8928892c4627b1f63ec766c2e305" creation-date="11/07/2017 16:58:20" order-index="20" type="entity">
+            <layout ax="450" ay="330" awidth="30" aheight="30" x="450" y="330" width="30" height="30" name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" />
+          </item>
+          <item id="di289334941839267360" iid="9c204e6adc0d4c73900b8c82773f4923" creation-date="11/07/2017 16:58:32" order-index="21" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="480" y1="345" x2="666" y2="345" start-border-pos="0.375" end-border-pos="0.875" name-position="0,0">
+              <points>
+                <point x="480" y="345" />
+                <point x="666" y="345" />
+              </points>
+            </layout>
+            <relation from="di167533692370666619" from-iid="0e1c3d39816c4d53bfe57f02bdcb3b9a" to="di893669541361653384" to-iid="43d63a33114744ea8e94873b8613f2ea" />
+          </item>
+          <item id="di306137667648245488" iid="cee0b50ef63b4f63bdd648a57b3f0dd3" creation-date="11/07/2017 16:58:38" order-index="22" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="480" y1="176" x2="580" y2="180" start-border-pos="0.380952326456706" end-border-pos="0.898809509277344" name-position="0,0">
+              <points>
+                <point x="480" y="176" />
+                <point x="580" y="180" />
+              </points>
+            </layout>
+            <relation from="di706278681865185593" from-iid="c97d5c27d6474556aaa0e371baf3d24f" to="di103789603943721588" to-iid="3d624fc4cabc4fb5a1107334d0ff7eb2" />
           </item>
         </layer>
       </diagram>
@@ -2998,7 +2965,7 @@
           </authors>
           <description />
           <creation-date>10/27/2017 20:20:58</creation-date>
-          <change-date>10/27/2017 20:21:10</change-date>
+          <change-date>11/07/2017 17:22:52</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
@@ -3006,76 +2973,147 @@
           <item id="di268387692688260931" cid="IS002" type="initial-state" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:11:46">
             <style class="default" />
           </item>
-          <item id="di643435699870677956" cid="ST002" type="state" name="Waiting" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:14:29">
+          <item id="di165878865870702918" cid="CS011" type="composite-state" name="CompositeState11" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:02:33">
             <style class="default" />
             <state-invariant />
             <actions />
           </item>
-          <item id="di296082094114536898" cid="ELEM004" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:14:33" from="di268387692688260931" to="di643435699870677956">
+          <item id="di296082094114536898" cid="ELEM004" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:14:33" from="di268387692688260931">
             <style class="default" />
-            <transition guard="" behaviourExpression="">
-              <trigger>/</trigger>
+            <transition guard="" behaviourExpression=" ">
+              <trigger>main()</trigger>
             </transition>
           </item>
-          <item id="di340312726287338369" cid="ST003" type="state" name="SendIr" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:22:15">
+          <item id="di356208893764313227" cid="ST031" type="state" name="Interface" style-class="" owner="di165878865870702918" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:03:45">
             <style class="default" />
             <state-invariant />
             <actions>
-              <action id="sa-0cf3d370-4b5b-46c6-b2f2-ea752b27f16a" name="entry" behavior="send()" />
+              <action id="sa-8c21368f-d6f0-4a9d-8dbe-8f16e00691f6" name="writeToPool(Message poolMessage)" behavior="" />
+              <action id="sa-a59ce6b4-309f-4149-9596-5e057910e446" name="startShooting()" behavior="" />
+              <action id="sa-a8476ca5-9792-4aad-9ff4-ab8b3107dd6e" name="fireSet()" behavior="" />
             </actions>
             <source-codes>
-              <source-code language="ActionScript" uid="scs-57ccc01b-fe53-4044-a020-2b01b6f1dc9f" />
+              <source-code language="ActionScript" uid="scs-6e38e3a2-1b9d-4786-932a-34990c1f286a" />
             </source-codes>
           </item>
-          <item id="di435371594221018204" cid="ELEM005" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:24:38" from="di643435699870677956" to="di340312726287338369">
+          <item id="di496897628207437361" cid="ST032" type="state" name="IDLE_STATE" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:04:13">
             <style class="default" />
-            <transition guard="" behaviourExpression="">
-              <trigger>read() /</trigger>
+            <state-invariant />
+            <actions>
+              <action id="sa-eabdaff5-7923-4bb0-a271-8f6c95d221ce" name="entry" behavior="idleState()" />
+            </actions>
+            <source-codes>
+              <source-code language="ActionScript" uid="scs-97a54c9b-1a7b-4786-88df-428e1bf241e2" />
+            </source-codes>
+          </item>
+          <item id="di149522321139518391" cid="IS010" type="initial-state" name="" style-class="" owner="di165878865870702918" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:08:06">
+            <style class="default" />
+          </item>
+          <item id="di169226367108134679" cid="ELEM057" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:08:11" from="di149522321139518391" to="di356208893764313227">
+            <style class="default" />
+            <transition guard="" behaviourExpression=" ">
+              <trigger />
             </transition>
           </item>
-          <item id="di727259560895618855" cid="ELEM006" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2017 14:27:43" from="di340312726287338369" to="di643435699870677956">
+          <item id="di805343526940341428" cid="IS011" type="initial-state" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:08:24">
             <style class="default" />
-            <transition guard="" behaviourExpression="">
-              <trigger>/</trigger>
-            </transition>
+          </item>
+          <item id="di646022900886014774" cid="ST033" type="state" name="SEND_STATE" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:13:03">
+            <style class="default" />
+            <state-invariant />
+            <actions>
+              <action id="sa-04bdbbb4-9fca-4f9e-8e4a-bdceae4b9cee" name="entry" behavior="sendState()" />
+            </actions>
+            <source-codes>
+              <source-code language="ActionScript" uid="scs-ba339fc9-3a94-4a1c-9b0a-f9bc3583595f" />
+            </source-codes>
+          </item>
+          <item id="di984699593988099549" cid="ELEM058" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:20:44" from="di805343526940341428" to="di496897628207437361">
+            <style class="default" />
+            <transition guard="" behaviourExpression="" />
+          </item>
+          <item id="di870976331718793122" cid="ELEM059" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:20:55" from="di496897628207437361" to="di646022900886014774">
+            <style class="default" />
+            <transition guard="" behaviourExpression="" />
+          </item>
+          <item id="di981934657706732133" cid="ELEM061" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:22:17" from="di646022900886014774" to="di496897628207437361">
+            <style class="default" />
+            <transition guard="" behaviourExpression="" />
           </item>
         </abstract-items>
         <layer id="f04a2530b4b74aefad9aba59c22bc5a6" name="Default" visible="true" enabled="true" locked="false">
           <item id="di268387692688260931" iid="f388dc225e854b62831b89932062c8e9" creation-date="10/27/2017 14:11:46" order-index="0" type="entity">
-            <layout ax="500" ay="340" awidth="20" aheight="20" x="500" y="340" width="20" height="20" name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" />
+            <layout ax="190" ay="291" awidth="20" aheight="20" x="190" y="291" width="20" height="20" name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" />
           </item>
-          <item id="di643435699870677956" iid="4aafc67622794d7b84d433a8a7044e20" creation-date="10/27/2017 14:14:29" order-index="1" type="entity">
-            <layout ax="600" ay="320" awidth="100" aheight="60" x="600" y="320" width="100" height="60" />
+          <item id="di165878865870702918" iid="b49e75f53fe840028c9d0dd5a9486e2d" creation-date="11/07/2017 17:02:33" order-index="3" type="entity">
+            <layout ax="450" ay="80" awidth="740" aheight="530" x="450" y="80" width="740" height="530" />
           </item>
           <item id="di296082094114536898" iid="2f6081ea9a4b4ea4a41540b4156efa4c" creation-date="10/27/2017 14:14:33" order-index="2" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="520" y1="350" x2="600" y2="350" start-border-pos="0.375" end-border-pos="0.875" name-position="-10,-20">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="210" y1="301" x2="450" y2="310" start-border-pos="0.379499816894531" end-border-pos="0.886792452830189" name-position="-10,-20">
               <points>
-                <point x="520" y="350" />
-                <point x="600" y="350" />
+                <point x="210" y="301" />
+                <point x="450" y="310" />
               </points>
             </layout>
-            <relation from="di268387692688260931" from-iid="f388dc225e854b62831b89932062c8e9" to="di643435699870677956" to-iid="4aafc67622794d7b84d433a8a7044e20" />
+            <relation from="di268387692688260931" from-iid="f388dc225e854b62831b89932062c8e9" />
           </item>
-          <item id="di340312726287338369" iid="579007bf75c54e0899620288fdd2a958" creation-date="10/27/2017 14:22:15" order-index="3" type="entity">
-            <layout ax="600" ay="470" awidth="100" aheight="65" x="600" y="470" width="100" height="65" />
+          <item id="di356208893764313227" iid="3b1de36a80b842538746d0fc06b1cb66" container="di165878865870702918" container-iid="b49e75f53fe840028c9d0dd5a9486e2d" creation-date="11/07/2017 17:03:45" order-index="4" type="entity">
+            <layout ax="660" ay="150" awidth="410" aheight="81" x="660" y="150" width="410" height="81" />
           </item>
-          <item id="di435371594221018204" iid="96e98ae85230470a8bbee66ce6eab6ea" creation-date="10/27/2017 14:24:38" order-index="4" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="620" y1="380" x2="620" y2="470" start-border-pos="0.7" end-border-pos="0.05" name-position="-30,-10">
+          <item id="di169226367108134679" iid="52e759b97f464be188b238f94bf07e63" creation-date="11/07/2017 17:08:11" order-index="7" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="550" y1="200" x2="660" y2="196" start-border-pos="0.370833396911621" end-border-pos="0.858024694025517" name-position="0,0">
               <points>
-                <point x="620" y="380" />
-                <point x="620" y="470" />
+                <point x="550" y="200" />
+                <point x="660" y="196" />
               </points>
             </layout>
-            <relation from="di643435699870677956" from-iid="4aafc67622794d7b84d433a8a7044e20" to="di340312726287338369" to-iid="579007bf75c54e0899620288fdd2a958" />
+            <relation from="di149522321139518391" from-iid="becc2d27a6a44e3f8f427b630e2ad09e" to="di356208893764313227" to-iid="3b1de36a80b842538746d0fc06b1cb66" />
           </item>
-          <item id="di727259560895618855" iid="c764f40debd04c7d924ac8b7e3c8d4a2" creation-date="10/27/2017 14:27:43" order-index="5" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="670" y1="470" x2="670" y2="380" start-border-pos="0.175" end-border-pos="0.575" name-position="30,-10" name-width="70">
+          <item id="di149522321139518391" iid="becc2d27a6a44e3f8f427b630e2ad09e" container="di165878865870702918" container-iid="b49e75f53fe840028c9d0dd5a9486e2d" creation-date="11/07/2017 17:08:06" order-index="6" type="entity">
+            <layout ax="530" ay="190" awidth="20" aheight="20" x="530" y="190" width="20" height="20" name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" />
+          </item>
+          <item id="di805343526940341428" iid="84e522b9e893461e8b114bc3f33675cf" creation-date="11/07/2017 17:08:24" order-index="8" type="entity">
+            <layout ax="530" ay="380" awidth="20" aheight="20" x="530" y="380" width="20" height="20" name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" />
+          </item>
+          <item id="di496897628207437361" iid="e40b2f8efd6149798667efe0f85d703c" creation-date="11/07/2017 17:04:13" order-index="5" type="entity">
+            <layout ax="620" ay="360" awidth="190" aheight="50" x="620" y="360" width="190" height="50" />
+          </item>
+          <item id="di984699593988099549" iid="838de0f18b2b432d963beb2bbc246725" creation-date="11/07/2017 17:20:44" order-index="10" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="550" y1="390" x2="620" y2="388" start-border-pos="0.371428680419922" end-border-pos="0.861428527832031" name-position="0,0">
               <points>
-                <point x="670" y="470" />
-                <point x="670" y="380" />
+                <point x="550" y="390" />
+                <point x="620" y="388" />
               </points>
             </layout>
-            <relation from="di340312726287338369" from-iid="579007bf75c54e0899620288fdd2a958" to="di643435699870677956" to-iid="4aafc67622794d7b84d433a8a7044e20" />
+            <relation from="di805343526940341428" from-iid="84e522b9e893461e8b114bc3f33675cf" to="di496897628207437361" to-iid="e40b2f8efd6149798667efe0f85d703c" />
+          </item>
+          <item id="di646022900886014774" iid="bb18dfa9cd4849f1b3e0c6e8480cea20" creation-date="11/07/2017 17:13:03" order-index="9" type="entity">
+            <layout ax="910" ay="360" awidth="190" aheight="60" x="910" y="360" width="190" height="60" />
+          </item>
+          <item id="di870976331718793122" iid="efec7b2effa747a2a33a3a4809149607" creation-date="11/07/2017 17:20:55" order-index="11" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="810" y1="385" x2="910" y2="388" start-border-pos="0.375" end-border-pos="0.885149510701497" name-position="0,0">
+              <points>
+                <point x="810" y="385" />
+                <point x="910" y="388" />
+              </points>
+            </layout>
+            <relation from="di496897628207437361" from-iid="e40b2f8efd6149798667efe0f85d703c" to="di646022900886014774" to-iid="bb18dfa9cd4849f1b3e0c6e8480cea20" />
+          </item>
+          <item id="di981934657706732133" iid="9176d22126e6420d9926ca38b62223d4" creation-date="11/07/2017 17:22:17" order-index="12" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1010" y1="420" x2="714" y2="410" start-border-pos="0.619078947368421" end-border-pos="0.62656643516139" name-position="0,0">
+              <points>
+                <point x="1010" y="420" />
+                <point x="1020" y="490" />
+                <point x="710" y="490" />
+                <point x="714" y="410" />
+              </points>
+            </layout>
+            <relation from="di646022900886014774" from-iid="bb18dfa9cd4849f1b3e0c6e8480cea20" to="di496897628207437361" to-iid="e40b2f8efd6149798667efe0f85d703c" />
+          </item>
+          <item id="di223771455555249930" iid="2c3459e1a8af4cfe9fcf781d3e66cc9b" name="Element5" container="di165878865870702918" container-iid="b49e75f53fe840028c9d0dd5a9486e2d" creation-date="11/07/2017 17:22:52" order-index="13" type="drawing-line">
+            <layout ax="454" ay="272" awidth="739" aheight="3" x="454" y="272" width="738" height="2" />
+            <drawing-line start-point="454,272" end-point="1192,274" />
+            <style class="default" />
           </item>
         </layer>
       </diagram>
@@ -3238,6 +3276,211 @@
               </points>
             </layout>
             <relation from="di491172838986474318" from-iid="f8d24703e46c4c4582106d621001a74d" to="di829550637788167987" to-iid="17f993ec0cfb47c7a9a2a3a0bfd14cbc" />
+          </item>
+        </layer>
+      </diagram>
+      <diagram type="uml-statechart" id="pa2fc0f994f424ed89c94cc9042512314_767536266" name="StateMachineDiagram ButtonTask" order-index="10" overview-order-index="8" uid="" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" show-frame="false" view-location="0,-30">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author />
+          </authors>
+          <description />
+          <creation-date>11/07/2017 17:50:31</creation-date>
+          <change-date>11/07/2017 17:57:52</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="di297155169553766877" cid="IS013" type="initial-state" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:50:35">
+            <style class="default" />
+          </item>
+          <item id="di800732037590557826" cid="ST038" type="state" name="WaitingForClock" style-class="" owner="di541715142281889295" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:50:43">
+            <style class="default" />
+            <state-invariant />
+            <actions />
+          </item>
+          <item id="di472004873546053413" cid="IS014" type="initial-state" name="" style-class="" owner="di541715142281889295" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:50:46">
+            <style class="default" />
+          </item>
+          <item id="di541715142281889295" cid="CS013" type="composite-state" name="ButtonTask" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:50:50">
+            <style class="default" />
+            <state-invariant />
+            <actions />
+          </item>
+          <item id="di302853927719196526" cid="ST039" type="state" name="CheckingButton" style-class="" owner="di541715142281889295" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:51:34">
+            <style class="default" />
+            <state-invariant />
+            <actions />
+          </item>
+          <item id="di754699290340390161" cid="ST040" type="state" name="ReportingButton" style-class="" owner="di541715142281889295" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:55:55">
+            <style class="default" />
+            <state-invariant />
+            <actions>
+              <action id="sa-fa9a9d6b-59cc-42ce-894e-5988f3079a79" name="entry" behavior="setShootingFlag()" />
+              <action id="sa-a76fa78d-512f-4460-9c1b-da4bcf1d6009" name="Entry1" behavior="fireSet" />
+              <action id="sa-2ece69eb-a1bd-47f9-b0b1-398259852d09" name="Entry1" behavior="setFlag" />
+            </actions>
+            <source-codes>
+              <source-code language="ActionScript" uid="scs-fc223c78-2e10-47ca-85c8-835cfd6ba3d1" />
+            </source-codes>
+          </item>
+          <item id="di591612029895696342" cid="ELEM066" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:56:57" from="di800732037590557826" to="di302853927719196526">
+            <style class="default" />
+            <transition guard="" behaviourExpression=" ">
+              <trigger />
+            </transition>
+          </item>
+          <item id="di432678034369881019" cid="ELEM067" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:57:02" from="di302853927719196526" to="di754699290340390161">
+            <style class="default" />
+            <transition guard="" behaviourExpression=" ">
+              <trigger />
+            </transition>
+          </item>
+          <item id="di529424231427948627" cid="ELEM068" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:57:46" from="di472004873546053413" to="di800732037590557826">
+            <style class="default" />
+            <transition guard="" behaviourExpression=" ">
+              <trigger />
+            </transition>
+          </item>
+          <item id="di928939272365268566" cid="ELEM069" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 17:57:52" from="di297155169553766877" to="di541715142281889295">
+            <style class="default" />
+            <transition guard="" behaviourExpression=" ">
+              <trigger>main()</trigger>
+            </transition>
+          </item>
+        </abstract-items>
+        <layer id="04a3c077b78f478d9fc235371fa39d32" name="Default" visible="true" enabled="true" locked="false">
+          <item id="di541715142281889295" iid="0038a528c2be4c2ba01eb71489acfc2a" creation-date="11/07/2017 17:50:50" order-index="3" type="entity">
+            <layout ax="210" ay="30" awidth="790" aheight="460" x="210" y="30" width="790" height="460" />
+          </item>
+          <item id="di297155169553766877" iid="172654c53d5747739c063f4563ecd35c" creation-date="11/07/2017 17:50:35" order-index="0" type="entity">
+            <layout ax="120" ay="160" awidth="20" aheight="20" x="120" y="160" width="20" height="20" name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" />
+          </item>
+          <item id="di591612029895696342" iid="bf344d3c477a4589b0b7ee5f1284fb8c" creation-date="11/07/2017 17:56:57" order-index="6" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="440" y1="245" x2="560" y2="245" start-border-pos="0.375" end-border-pos="0.875" name-position="0,0">
+              <points>
+                <point x="440" y="245" />
+                <point x="560" y="245" />
+              </points>
+            </layout>
+            <relation from="di800732037590557826" from-iid="36a0fd7d6c0a43e691df09803df7319c" to="di302853927719196526" to-iid="9cd49a9603714864bafbda2203988ea4" />
+          </item>
+          <item id="di432678034369881019" iid="716ebcfff84e404caf92f2def2275042" creation-date="11/07/2017 17:57:02" order-index="7" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="660" y1="250" x2="780" y2="261" start-border-pos="0.400000005960464" end-border-pos="0.897499993443489" name-position="0,0">
+              <points>
+                <point x="660" y="250" />
+                <point x="780" y="261" />
+              </points>
+            </layout>
+            <relation from="di302853927719196526" from-iid="9cd49a9603714864bafbda2203988ea4" to="di754699290340390161" to-iid="6c1895c45fb241d38d5d37909fcd7a9b" />
+          </item>
+          <item id="di800732037590557826" iid="36a0fd7d6c0a43e691df09803df7319c" container="di541715142281889295" container-iid="0038a528c2be4c2ba01eb71489acfc2a" creation-date="11/07/2017 17:50:43" order-index="1" type="entity">
+            <layout ax="340" ay="220" awidth="100" aheight="50" x="340" y="220" width="100" height="50" />
+          </item>
+          <item id="di472004873546053413" iid="42019bb17fe747f7a91ca4c4f1628095" container="di541715142281889295" container-iid="0038a528c2be4c2ba01eb71489acfc2a" creation-date="11/07/2017 17:50:46" order-index="2" type="entity">
+            <layout ax="240" ay="230" awidth="20" aheight="20" x="240" y="230" width="20" height="20" name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" />
+          </item>
+          <item id="di302853927719196526" iid="9cd49a9603714864bafbda2203988ea4" container="di541715142281889295" container-iid="0038a528c2be4c2ba01eb71489acfc2a" creation-date="11/07/2017 17:51:34" order-index="4" type="entity">
+            <layout ax="560" ay="220" awidth="100" aheight="50" x="560" y="220" width="100" height="50" />
+          </item>
+          <item id="di754699290340390161" iid="6c1895c45fb241d38d5d37909fcd7a9b" container="di541715142281889295" container-iid="0038a528c2be4c2ba01eb71489acfc2a" creation-date="11/07/2017 17:55:55" order-index="5" type="entity">
+            <layout ax="780" ay="220" awidth="200" aheight="100" x="780" y="220" width="200" height="100" />
+          </item>
+          <item id="di529424231427948627" iid="a4563d0e705346a780ac2c8a4daea620" creation-date="11/07/2017 17:57:46" order-index="8" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="260" y1="240" x2="340" y2="243" start-border-pos="0.379464340209961" end-border-pos="0.883928604125977" name-position="0,0">
+              <points>
+                <point x="260" y="240" />
+                <point x="340" y="243" />
+              </points>
+            </layout>
+            <relation from="di472004873546053413" from-iid="42019bb17fe747f7a91ca4c4f1628095" to="di800732037590557826" to-iid="36a0fd7d6c0a43e691df09803df7319c" />
+          </item>
+          <item id="di928939272365268566" iid="ca91348d7faf4e0eadc22391de04ddad" creation-date="11/07/2017 17:57:52" order-index="9" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="140" y1="172" x2="210" y2="185" start-border-pos="0.398684120178223" end-border-pos="0.915675055462381" name-position="0,0">
+              <points>
+                <point x="140" y="172" />
+                <point x="210" y="185" />
+              </points>
+            </layout>
+            <relation from="di297155169553766877" from-iid="172654c53d5747739c063f4563ecd35c" to="di541715142281889295" to-iid="0038a528c2be4c2ba01eb71489acfc2a" />
+          </item>
+        </layer>
+      </diagram>
+      <diagram type="uml-statechart" id="pe8af73834e9e443c83b6a24c7b40bfd4_239841749" name="StateMachineDiagram speakerTask" order-index="11" overview-order-index="9" uid="" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>11/07/2017 18:13:57</creation-date>
+          <change-date>11/07/2017 18:18:33</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="di348352649576964778" cid="IS015" type="initial-state" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 18:16:14">
+            <style class="default" />
+          </item>
+          <item id="di582053447412213430" cid="CS014" type="composite-state" name="SpeakerTask" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 18:16:22">
+            <style class="default" />
+            <state-invariant />
+            <actions />
+          </item>
+          <item id="di415352187867635227" cid="ST041" type="state" name="IDLE_STATE" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 18:16:35">
+            <style class="default" />
+            <state-invariant />
+            <actions />
+          </item>
+          <item id="di541012230286795065" cid="ST042" type="state" name="HIT_STATE" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 18:16:36">
+            <style class="default" />
+            <state-invariant />
+            <actions />
+          </item>
+          <item id="di133729925430712248" cid="ST043" type="state" name="SHOOTING_STATE" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 18:16:38">
+            <style class="default" />
+            <state-invariant />
+            <actions />
+          </item>
+          <item id="di775110458963201207" cid="ST044" type="state" name="Interface" style-class="" visibility="package" change-tracking-state="added" creation-date="11/07/2017 18:18:33">
+            <style class="default" />
+            <state-invariant />
+            <actions>
+              <action id="sa-1008b7a9-16b4-441e-8447-188ae62c693c" name="setHitFlag()" behavior="hitFlag.set()" />
+              <action id="sa-91e7bf8b-b12a-4399-ace8-b3d9d7ae8db2" name="setShootingFlag()" behavior="firingFlag.set()" />
+            </actions>
+            <source-codes>
+              <source-code language="ActionScript" uid="scs-07c62c40-b063-4ebe-a6ed-06773971f2bb" />
+            </source-codes>
+          </item>
+        </abstract-items>
+        <layer id="9b15d911a50b4882b0ab3b27cdcbde0e" name="Default" visible="true" enabled="true" locked="false">
+          <item id="di348352649576964778" iid="47942b8fc7354529a264a72103f279d5" creation-date="11/07/2017 18:16:14" order-index="0" type="entity">
+            <layout ax="120" ay="190" awidth="20" aheight="20" x="120" y="190" width="20" height="20" name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" />
+          </item>
+          <item id="di582053447412213430" iid="3242537d42a54feabcede9ecff7633da" creation-date="11/07/2017 18:16:22" order-index="1" type="entity">
+            <layout ax="260" ay="40" awidth="830" aheight="70" x="260" y="40" width="830" height="70" />
+          </item>
+          <item id="di775110458963201207" iid="85d42195d4654a6ab3da6980412a9169" creation-date="11/07/2017 18:18:33" order-index="5" type="entity">
+            <layout ax="460" ay="160" awidth="500" aheight="70" x="460" y="160" width="500" height="70" />
+          </item>
+          <item id="di415352187867635227" iid="86ade5f4799943269522880b48aa4ca5" creation-date="11/07/2017 18:16:35" order-index="2" type="entity">
+            <layout ax="390" ay="320" awidth="140" aheight="50" x="390" y="320" width="140" height="50" />
+          </item>
+          <item id="di541012230286795065" iid="ae9809e7db6048898bcc71f8242344fd" creation-date="11/07/2017 18:16:36" order-index="3" type="entity">
+            <layout ax="600" ay="320" awidth="100" aheight="50" x="600" y="320" width="100" height="50" />
+          </item>
+          <item id="di133729925430712248" iid="789e9177279049688de477ea01865c70" creation-date="11/07/2017 18:16:38" order-index="4" type="entity">
+            <layout ax="780" ay="320" awidth="180" aheight="50" x="780" y="320" width="180" height="50" />
           </item>
         </layer>
       </diagram>
