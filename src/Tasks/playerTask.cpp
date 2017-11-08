@@ -99,7 +99,7 @@ void PlayerTask::initialState() {
     irWeaponTask.writeToPool({player.id, 1, player.damage});
 
     // Wait for fire flag, to start the game
-    hwlib::cout << "Press the fire button to start" << (int)timeTillStart << hwlib::endl;
+    hwlib::cout << "Press the fire button to start" << hwlib::endl;
     wait(fireButtonFlag);
     
     hwlib::cout << "Time to start: " << (int)timeTillStart << hwlib::endl;

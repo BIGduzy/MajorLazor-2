@@ -32,6 +32,8 @@ void GameLeaderTask::main() {
                         // We do commandId - 2 because the commands start at 0
                         irWeaponTask.writeToPool(Message(0, 1, command.commandId - 2 ));
                         irWeaponTask.startShooting();
+                        // Small cooldown
+                        hwlib::wait_ms(100);
                         // Set field value
                         irWeaponTask.writeToPool(Message(0, 1, command.value ));
                 }

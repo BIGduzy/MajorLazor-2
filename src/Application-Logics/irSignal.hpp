@@ -20,12 +20,12 @@ public:
      * |11 - 15     | Control bits        |
      */
     uint16_t encode(uint8_t playerId, bool commandBit, uint8_t data) {
+        data |= (int)commandBit << 4;
         auto signal = 0;
         signal |= 1 << 15;
         signal |= playerId << 10;
-        signal |= (int)commandBit << 9;
         signal |= data << 5;
-        signal |= playerId ^ (data | (commandBit << 5));
+        signal |= playerId ^ data;
         return signal;
     };
 

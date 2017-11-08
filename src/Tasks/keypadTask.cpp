@@ -8,7 +8,7 @@ KeypadTask::KeypadTask(GameLeaderTask& gameLeaderTask, hwlib::keypad<16>& keypad
 {}
 
 void KeypadTask::main() {
-    for(;;) {
+    while(true) {
         if(keypad.char_available()) {
             keyPressed(keypad.getc());
         }
@@ -28,7 +28,7 @@ void KeypadTask::keyPressed(char c){
         valueSet = false;
     }
     else if(c == '#') { // End command
-        if(!valueSet && value != 0) {
+        if(!valueSet) {
             valueSet = true;
         }
         else if(valueSet) {
@@ -45,7 +45,7 @@ void KeypadTask::keyPressed(char c){
         valueSet = true;
     }
     else if(c == 'A') { // Send command ID
-        if(!commandSet && commandId != 0) {
+        if(!commandSet) {
             commandSet = true;
         }
         else {
