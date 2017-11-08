@@ -29,7 +29,7 @@ private:
     rtos::timer gameTimer;
 
     uint8_t timeTillStart = 0; // Time in seconds
-    unsigned long gameTime = 60 * 1000 * 1000; // 1 minute (timer in micro sec)
+    const unsigned long gameTime = 60 * 1000 * 1000; // 1 minute (timer in micro sec)
 
 public:
     /**

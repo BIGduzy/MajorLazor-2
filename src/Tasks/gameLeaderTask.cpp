@@ -9,6 +9,7 @@ GameLeaderTask::GameLeaderTask(IrWeaponTask& irWeaponTask, OledDisplayTask& disp
 {}
 
 void GameLeaderTask::main() {
+    hwlib::cout << "Game leader" << hwlib::endl;
     while(true) {
         auto evt = wait(commandChannel + messageChannel);
 

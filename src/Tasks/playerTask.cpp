@@ -9,6 +9,7 @@ PlayerTask::PlayerTask(OledDisplayTask& display):
 {}
 
 void PlayerTask::main() {
+    hwlib::cout << "Player" << hwlib::endl;
     while(true) {
         switch(state) {
             case INITIAL_STATE:
