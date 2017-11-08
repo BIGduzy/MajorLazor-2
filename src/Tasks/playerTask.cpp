@@ -1,7 +1,8 @@
 #include "playerTask.hpp"
 
-PlayerTask::PlayerTask(OledDisplayTask& display):
+PlayerTask::PlayerTask(IrWeaponTask& irWeaponTask, OledDisplayTask& display):
     task("IrPlayerTask"),
+    irWeaponTask(irWeaponTask),
     display(display),
     fireButtonFlag(this, "fireButtonFlag"),
     messageChannel(this, "messageChannel"),
@@ -91,7 +92,8 @@ void PlayerTask::initialState() {
         message = messageChannel.read();
     }
     
-    // TODO: Write to pool
+    // Write weapon info to pool
+    irWeaponTask.writeToPool({player.id, 1, player.damage});
 
     // Wait for fire flag, to start the game
     wait(fireButtonFlag);

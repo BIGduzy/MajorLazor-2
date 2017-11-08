@@ -45,7 +45,7 @@ int main() {
         rtos::run();
     } else if (ROLE == 1) {
         // Player
-        PlayerTask playerTask(oledDisplay);
+        PlayerTask playerTask(irWeaponTask, oledDisplay);
 
         //Speaker Stuff ~
         auto lsp_pin = hwlib::target::pin_out( hwlib::target::pins::d8 );
