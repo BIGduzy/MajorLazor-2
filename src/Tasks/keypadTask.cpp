@@ -1,7 +1,7 @@
 #include "keypadTask.hpp"
 
 KeypadTask::KeypadTask(GameLeaderTask& gameLeaderTask, hwlib::keypad<16>& keypad):
-    task("KeypadTask"),
+    task(2, "KeypadTask"),
     gameLeaderTask(gameLeaderTask),
     hundred_ms_clock(this, 100'000, "100 ms clock"),
     keypad(keypad)

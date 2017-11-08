@@ -57,7 +57,7 @@ class OledDisplayTask: public rtos::task<> {
     OledDisplay display;
 public:
     OledDisplayTask():
-        task("OledDisplayTask"),
+        task(4, "OledDisplayTask"),
         oledChannel(this, "oledChannel")
     {}
 

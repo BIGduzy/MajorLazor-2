@@ -1,7 +1,7 @@
 #include "speakerTask.hpp"
 
 SpeakerTask::SpeakerTask(hwlib::pin_out& lsp):
-    task("SpeakerTask"),
+    task(5, "SpeakerTask"),
     beepTimer(this, "BeepTimer"),
     hitFlag(this, "HitFlag"),
     firingFlag(this, "FiringFlag"),

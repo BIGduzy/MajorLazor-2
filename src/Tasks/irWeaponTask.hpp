@@ -33,7 +33,7 @@ public:
      * @brief Constructor
      */
     IrWeaponTask():
-        task("IrWeaponTask"),
+        task(1, "IrWeaponTask"),
         weaponInfoPool("weaponInfoPool"),
         weaponMutex("weaponMutex"),
         fireButtonFlag(this, "fireButtonFlag")
@@ -56,10 +56,6 @@ public:
      * @brief Start shooting using the current weaponInfo.
      */
     void startShooting();
-    /**
-     * @brief Sets fireButtonFlag
-     */
-    void fireSet();
 };
 
 #endif // IRWEAPONTASK_HPP

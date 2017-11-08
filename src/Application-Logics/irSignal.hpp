@@ -25,7 +25,7 @@ public:
         signal |= playerId << 10;
         signal |= (int)commandBit << 9;
         signal |= data << 5;
-        signal |= playerId ^ data;
+        signal |= playerId ^ (data || ((int)commandBit << 5));
         return signal;
     };
 

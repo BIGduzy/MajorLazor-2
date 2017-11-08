@@ -85,7 +85,7 @@ void OledDisplay::layoutLeaderstate() {
     for(int i = 0; i < 64; i++){
         display.write( hwlib::location( 127, i ), hwlib::black );
     }
-    displayOstream 
+    displayOstream
     << "\t0101" << "Command:"
     << "\t0102" << "Value:"
     << hwlib::flush;
@@ -106,13 +106,13 @@ void OledDisplay::dataPlaystate(int time, int playerId, int lives, int power) {
 
 void OledDisplay::dataLeaderstate(bool validInput, int commandId, int value, bool send) {
     displayOstream
-    << "\t0701" << commandId
-    << "\t0702" << value
+    << "\t0901" << commandId
+    << "\t0902" << value
     << hwlib::flush;
     if(!validInput) {
         displayOstream << "\t0103" << "Invalid input" << hwlib::flush;
     }
-    if(!validInput) {
+    if(send) {
         displayOstream << "\t0104" << "Send" << hwlib::flush;
     }
 }

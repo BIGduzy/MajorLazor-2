@@ -1,7 +1,8 @@
 #include "playerTask.hpp"
 
-PlayerTask::PlayerTask(OledDisplayTask& display):
-    task("IrPlayerTask"),
+PlayerTask::PlayerTask(IrWeaponTask& irWeaponTask, OledDisplayTask& display):
+    task(3, "IrPlayerTask"),
+    irWeaponTask(irWeaponTask),
     display(display),
     fireButtonFlag(this, "fireButtonFlag"),
     messageChannel(this, "messageChannel"),
@@ -9,6 +10,7 @@ PlayerTask::PlayerTask(OledDisplayTask& display):
 {}
 
 void PlayerTask::main() {
+    hwlib::cout << "Player" << hwlib::endl;
     while(true) {
         switch(state) {
             case INITIAL_STATE:
@@ -36,6 +38,7 @@ void PlayerTask::setMessage(uint8_t playerId, bool commandId, uint8_t data) {
     // hwlib::cout << "ID: " << (int)playerId << " Command: " << (int)commandId << " Data: " << (int)data << hwlib::endl << hwlib::endl;
     auto message = Message(playerId, commandId, data);
     messageChannel.write(message);
+    hwlib::cout << (int)playerId << ", " << (int)commandId << ", " << (int)data << hwlib::endl;
 }
 
 void PlayerTask::setFlag() {
@@ -90,7 +93,8 @@ void PlayerTask::initialState() {
         message = messageChannel.read();
     }
     
-    // TODO: Write to pool
+    // Write weapon info to pool
+    irWeaponTask.writeToPool({player.id, 1, player.damage});
 
     // Wait for fire flag, to start the game
     wait(fireButtonFlag);

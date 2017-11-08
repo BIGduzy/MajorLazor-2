@@ -3,6 +3,7 @@
 
 #include <hwlib.hpp>
 #include <rtos.hpp>
+#include "irWeaponTask.hpp"
 #include "oledDisplayTask.hpp"
 #include "message.hpp"
 
@@ -22,21 +23,23 @@ private:
         uint8_t hitsByCounter = 0;
     };
     Player player;
+    IrWeaponTask& irWeaponTask;
     OledDisplayTask& display;
-
+    
     rtos::flag fireButtonFlag;
     rtos::channel<Message, 5> messageChannel;
     rtos::timer gameTimer;
 
     uint8_t timeTillStart = 0; // Time in seconds
-    unsigned long gameTime = 60 * 1000 * 1000; // 1 minute (timer in micro sec)
+    const unsigned long gameTime = 60 * 1000 * 1000; // 1 minute (timer in micro sec)
 
 public:
     /**
     * @brief Constructor
     * @param display The task for the OledDisplay
+    * @param irWeaponTask The task for the weapon
     */
-    PlayerTask(OledDisplayTask& display);
+    PlayerTask(IrWeaponTask& irWeaponTask, OledDisplayTask& display);
 
     /**
     * @brief rtos main override
