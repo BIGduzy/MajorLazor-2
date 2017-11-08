@@ -1,7 +1,7 @@
 #include "playerTask.hpp"
 
 PlayerTask::PlayerTask(IrWeaponTask& irWeaponTask, OledDisplayTask& display):
-    task(3, "IrPlayerTask"),
+    task(0, "IrPlayerTask"),
     irWeaponTask(irWeaponTask),
     display(display),
     fireButtonFlag(this, "fireButtonFlag"),
@@ -38,7 +38,6 @@ void PlayerTask::setMessage(uint8_t playerId, bool commandId, uint8_t data) {
     // hwlib::cout << "ID: " << (int)playerId << " Command: " << (int)commandId << " Data: " << (int)data << hwlib::endl << hwlib::endl;
     auto message = Message(playerId, commandId, data);
     messageChannel.write(message);
-    hwlib::cout << (int)playerId << ", " << (int)commandId << ", " << (int)data << hwlib::endl;
 }
 
 void PlayerTask::setFlag() {
@@ -54,6 +53,9 @@ void PlayerTask::initialState() {
 
     // Wait for fire flag, so the gameleader knows which player to initialize
     wait(fireButtonFlag);
+    hwlib::cout << "Ready for init" << hwlib::endl;
+    messageChannel.clear(); // Clear unwanted data
+
 
     auto evt = wait(messageChannel);
     auto message = messageChannel.read();
@@ -97,6 +99,7 @@ void PlayerTask::initialState() {
     irWeaponTask.writeToPool({player.id, 1, player.damage});
 
     // Wait for fire flag, to start the game
+    hwlib::cout << "Press the fire button to start" << (int)timeTillStart << hwlib::endl;
     wait(fireButtonFlag);
     
     hwlib::cout << "Time to start: " << (int)timeTillStart << hwlib::endl;

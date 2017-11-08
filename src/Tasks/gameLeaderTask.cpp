@@ -1,7 +1,7 @@
 #include "gameLeaderTask.hpp"
 
 GameLeaderTask::GameLeaderTask(IrWeaponTask& irWeaponTask, OledDisplayTask& display):
-    task(3, "ButtonTask"),
+    task(0, "ButtonTask"),
     irWeaponTask(irWeaponTask),
     display(display),
     messageChannel(this, "messageChannel"),

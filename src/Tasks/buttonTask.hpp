@@ -21,7 +21,7 @@ public:
      * @brief Constructor
      */
     ButtonTask(IrWeaponTask& irWeaponTask, PlayerTask& playerTask, SpeakerTask& speakerTask, Button& fireButton): 
-        task(2, "ButtonTask"),
+        task(1, "ButtonTask"),
         irWeaponTask(irWeaponTask),
         playerTask(playerTask),
         speakerTask(speakerTask),

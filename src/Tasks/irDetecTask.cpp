@@ -7,7 +7,7 @@ IrDetecTask::IrDetecTask(
     hwlib::pin_out& groundPin,
     hwlib::pin_out& vccPin
 ):
-    task(0, "IrDetecTask"),
+    task(2, "IrDetecTask"),
     playerTask(playerTask),
     speakerTask(speakerTask),
     irReceiver(dataPin, groundPin, vccPin),
@@ -71,6 +71,10 @@ void IrDetecTask::main() {
                         speakerTask.setHitFlag();
                     } else {
                         hwlib::cout << "Signal corrupted" << hwlib::endl;
+                        for (int i = 15; i >= 0; --i) {
+                            hwlib::cout << int((signal1 >> i) & 0x01);
+                        }
+                        hwlib::cout << hwlib::endl;
                     }
                 } else {
                     hwlib::cout << "Invalid signal" << hwlib::endl;
