@@ -60,8 +60,9 @@ namespace due
 
 			for(size_t i = 0; i < n; ++i) {
 				status = TWI0->TWI_SR;
-				if (status & TWI_SR_NACK)
+				if (status & TWI_SR_NACK) {
 					// hwlib::cout << "status & NACK" << hwlib::endl;
+				}
 				
 				if (status & TWI_SR_TXRDY) {
 					write_byte(*(data + i));
