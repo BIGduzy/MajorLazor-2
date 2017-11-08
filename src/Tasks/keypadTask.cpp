@@ -1,8 +1,11 @@
-#include <hwlib.hpp>
-#include <rtos.hpp>
-
 #include "keypadTask.hpp"
-#include "command.hpp"
+
+KeypadTask::KeypadTask(GameLeaderTask& gameLeaderTask, hwlib::keypad<16>& keypad):
+    task("KeypadTask"),
+    gameLeaderTask(gameLeaderTask),
+    hundred_ms_clock(this, 100'000, "100 ms clock"),
+    keypad(keypad)
+{}
 
 void KeypadTask::main() {
     for(;;) {
@@ -15,7 +18,7 @@ void KeypadTask::main() {
 }
 
 void KeypadTask::keyPressed(char c){
-    //hwlib::cout << "Key: " << c << hwlib::endl;
+    // hwlib::cout << "Key: " << c << hwlib::endl;
     validInput = true;
     send = false;
     if(c == 'C') { // Clear all
@@ -66,6 +69,6 @@ void KeypadTask::keyPressed(char c){
         validInput = false;
     }
     Command command(validInput, commandId, value, send);
-    // TODO: Send via channel
+    gameLeaderTask.addCommand(command);
     hwlib::cout << "ValidInput: " << command.validInput << " CommandId: " << command.commandId << " Value: " << command.value << " Send: " << command.send << hwlib::endl;
 }

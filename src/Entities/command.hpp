@@ -4,14 +4,14 @@
 #include <hwlib.hpp>
 
 struct Command {
-    bool validInput = false;
-    int commandId = 0;
-    int value = 0;
-    bool send = false;
+    bool validInput;
+    int commandId;
+    int value;
+    bool send;
     
     Command() {}
     
-    Command(bool validInput, int commandId = 0, int value = 0, bool send = false ):
+    Command(bool validInput, int commandId, int value, bool send):
         validInput(validInput),
         commandId(commandId),
         value(value),

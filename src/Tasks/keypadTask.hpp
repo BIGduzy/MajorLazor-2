@@ -5,13 +5,15 @@
 #include <rtos.hpp>
 
 #include "command.hpp"
+#include "gameLeaderTask.hpp"
 //#include "keypad.hpp"   Legacy
 
 class KeypadTask : public rtos::task<> {
 private:
+    GameLeaderTask& gameLeaderTask;
     rtos::clock hundred_ms_clock;
 
-    hwlib::keypad< 16 > keypad;
+    hwlib::keypad<16> keypad;
     
     bool validInput;
     
@@ -24,11 +26,7 @@ private:
     //Keypad& keypad;   Legacy
 
 public:
-    KeypadTask( hwlib::keypad<16>& keypad):
-        task("KeypadTask"),
-        hundred_ms_clock(this, 100000, "100 ms clock"),
-        keypad(keypad)
-    {}
+    KeypadTask(GameLeaderTask& gameLeaderTask, hwlib::keypad<16>& keypad);
 
     void main() override;
     

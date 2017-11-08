@@ -6,11 +6,13 @@
 #include "button.hpp"
 #include "irWeaponTask.hpp"
 #include "playerTask.hpp"
+#include "speakerTask.hpp"
 
 class ButtonTask: public rtos::task<> {
 private:
     IrWeaponTask& irWeaponTask;
     PlayerTask& playerTask;
+    SpeakerTask& speakerTask;
     Button& fireButton;
 
     rtos::clock clock;
@@ -18,10 +20,11 @@ public:
     /**
      * @brief Constructor
      */
-    ButtonTask(IrWeaponTask& irWeaponTask, PlayerTask& playerTask, Button& fireButton): 
+    ButtonTask(IrWeaponTask& irWeaponTask, PlayerTask& playerTask, SpeakerTask& speakerTask, Button& fireButton): 
         task("ButtonTask"),
         irWeaponTask(irWeaponTask),
         playerTask(playerTask),
+        speakerTask(speakerTask),
         fireButton(fireButton),
         clock(this, 1000)
     {};
