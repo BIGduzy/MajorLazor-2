@@ -1,7 +1,7 @@
 #include "gameLeaderTask.hpp"
 
 GameLeaderTask::GameLeaderTask(IrWeaponTask& irWeaponTask, OledDisplayTask& display):
-    task("ButtonTask"),
+    task(3, "ButtonTask"),
     irWeaponTask(irWeaponTask),
     display(display),
     messageChannel(this, "messageChannel"),
@@ -26,7 +26,7 @@ void GameLeaderTask::main() {
                         irWeaponTask.writeToPool(Message(0, 0, command.value));
                         break;
                     case 1: // Start game
-                        irWeaponTask.writeToPool(Message(0, 0, 0 ));
+                        irWeaponTask.writeToPool(Message(0, 0, 0));
                     default: // Other commands
                         // Tell player what field we want to edit
                         // We do commandId - 2 because the commands start at 0

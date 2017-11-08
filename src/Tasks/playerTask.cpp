@@ -1,7 +1,7 @@
 #include "playerTask.hpp"
 
 PlayerTask::PlayerTask(IrWeaponTask& irWeaponTask, OledDisplayTask& display):
-    task("IrPlayerTask"),
+    task(3, "IrPlayerTask"),
     irWeaponTask(irWeaponTask),
     display(display),
     fireButtonFlag(this, "fireButtonFlag"),
@@ -38,6 +38,7 @@ void PlayerTask::setMessage(uint8_t playerId, bool commandId, uint8_t data) {
     // hwlib::cout << "ID: " << (int)playerId << " Command: " << (int)commandId << " Data: " << (int)data << hwlib::endl << hwlib::endl;
     auto message = Message(playerId, commandId, data);
     messageChannel.write(message);
+    hwlib::cout << (int)playerId << ", " << (int)commandId << ", " << (int)data << hwlib::endl;
 }
 
 void PlayerTask::setFlag() {

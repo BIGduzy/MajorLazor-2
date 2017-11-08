@@ -33,7 +33,7 @@ public:
      * @brief Constructor
      */
     IrWeaponTask():
-        task("IrWeaponTask"),
+        task(1, "IrWeaponTask"),
         weaponInfoPool("weaponInfoPool"),
         weaponMutex("weaponMutex"),
         fireButtonFlag(this, "fireButtonFlag")

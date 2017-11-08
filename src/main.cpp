@@ -59,8 +59,8 @@ int main() {
         
         // Detector
         auto dataPin   = hwlib::target::pin_in(hwlib::target::pins::a8);
-        auto groundPin = hwlib::target::pin_out(hwlib::target::pins::a8);
-        auto vccPin    = hwlib::target::pin_out(hwlib::target::pins::a8);
+        auto groundPin = hwlib::target::pin_out(hwlib::target::pins::a9);
+        auto vccPin    = hwlib::target::pin_out(hwlib::target::pins::a10);
         IrDetecTask irDetecTask(playerTask, speakerTask, dataPin, groundPin, vccPin);
         
         // Startup rtos
