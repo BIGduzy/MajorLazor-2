@@ -136,11 +136,14 @@ void PlayerTask::playState() {
             if (message.playerId != 0 && message.playerId != player.id) {
                 doDamage(message);
                 hwlib::cout << "Lives left: " << (int)player.lives << hwlib::endl;
+                hwlib::wait_ms(1000); // Wait 1 second after hit
+                messageChannel.clear(); // Clear channel after you got hit (to remove hits after hit)
             }
         } else if (evt == fireButtonFlag) {
             // Fire!
             hwlib::cout << "Piew!" << hwlib::endl;
             irWeaponTask.startShooting();
+            hwlib::wait_ms(1000); // Wait 1 second after fire
         }
 
         uint64_t newTime = hwlib::now_us();
