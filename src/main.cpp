@@ -19,7 +19,7 @@ int main() {
     OledDisplayTask oledDisplay;
     IrWeaponTask irWeaponTask;
 
-    constexpr const bool ROLE = 1; // 0 = gameLeader / 1 = player
+    constexpr const bool ROLE = 0; // 0 = gameLeader / 1 = player
 
     // ROLE variations
     if (ROLE == 0) {

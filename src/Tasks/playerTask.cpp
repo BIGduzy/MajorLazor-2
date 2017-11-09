@@ -56,7 +56,6 @@ void PlayerTask::initialState() {
     hwlib::cout << "Ready for init" << hwlib::endl;
     messageChannel.clear(); // Clear unwanted data
 
-
     auto evt = wait(messageChannel);
     auto message = messageChannel.read();
     
@@ -93,6 +92,7 @@ void PlayerTask::initialState() {
         // Get new message
         evt = wait(messageChannel);
         message = messageChannel.read();
+        display.setDisplay(player.id, player.lives, player.damage, timeTillStart, (gameTime / 1000 / 1000));
     }
     
     // Write weapon info to pool
@@ -104,8 +104,7 @@ void PlayerTask::initialState() {
     
     hwlib::cout << "Time to start: " << (int)timeTillStart << hwlib::endl;
 
-    // Display countdown
-    display.setDisplay(timeTillStart);
+    //TODO: Display countdown
 
     state = PLAY_STATE;
 }

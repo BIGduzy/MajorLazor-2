@@ -24,7 +24,7 @@ public:
     void layoutDonestate();
     void layoutLeaderstate();
     
-    void dataInitialstate(int time);
+    void dataInitialstate(int id, int damage, int lives, int startTime, int gameTime);
     void dataPlaystate(int time, int playerId, int lives, int power);
     void dataDonestate();
     void dataLeaderstate(bool validInput, int commandId, int value, bool send);

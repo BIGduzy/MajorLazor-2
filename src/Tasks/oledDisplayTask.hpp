@@ -8,11 +8,13 @@
 #include "command.hpp"
 
 struct displayData {
-    uint8_t time     = 0;
-    uint8_t playerId = 0;
-    uint8_t lives    = 0;
+    uint8_t time      = 0;
+    uint8_t playerId  = 0;
+    uint8_t lives     = 0;
     uint8_t damage    = 0;
-    uint8_t power    = 0;
+    uint8_t power     = 0;
+    uint8_t startTime = 0;
+    uint8_t gameTime  = 0;
 
     bool validInput = false;
     int commandId = 0;
@@ -22,8 +24,12 @@ struct displayData {
     enum States { INITIAL_STATE, PLAY_STATE, DONE_STATE, LEADER_STATE };
     States state;
     
-    displayData(uint8_t time):
-        time(time),
+    displayData(uint8_t playerId, uint8_t lives, uint8_t damage, uint8_t startTime, uint8_t gameTime):
+        playerId(playerId),
+        lives(lives),
+        damage(damage),
+        startTime(startTime),
+        gameTime(gameTime),
         state(INITIAL_STATE)
     {}
     
@@ -59,11 +65,13 @@ public:
     OledDisplayTask():
         task(4, "OledDisplayTask"),
         oledChannel(this, "oledChannel")
-    {}
+    {
+        display.clear(true);
+    }
 
     void main() override;
     
-    void setDisplay(uint8_t time);
+    void setDisplay(uint8_t id, uint8_t lives, uint8_t damage, uint8_t startTime, uint8_t gameTime);
     void setDisplay(uint8_t time, uint8_t playerId, uint8_t lives, uint8_t damage);
     void setDisplay();
     void setDisplay(const Command& command);

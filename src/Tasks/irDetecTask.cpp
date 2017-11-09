@@ -11,7 +11,7 @@ IrDetecTask::IrDetecTask(
     playerTask(playerTask),
     speakerTask(speakerTask),
     irReceiver(dataPin, groundPin, vccPin),
-    ten_us_clock(this, 10, "Ten us clock")
+    ten_us_clock(this, 30, "Ten us clock")
 {}
 
 void IrDetecTask::main() {
