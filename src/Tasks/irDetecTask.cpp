@@ -7,7 +7,7 @@ IrDetecTask::IrDetecTask(
     hwlib::pin_out& groundPin,
     hwlib::pin_out& vccPin
 ):
-    task(2, "IrDetecTask"),
+    task(3, "IrDetecTask"),
     playerTask(playerTask),
     speakerTask(speakerTask),
     irReceiver(dataPin, groundPin, vccPin),

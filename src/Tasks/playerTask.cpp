@@ -100,6 +100,7 @@ void PlayerTask::initialState() {
     irWeaponTask.writeToPool({player.id, 1, player.damage});
 
     // Wait for fire flag, to start the game
+    fireButtonFlag.clear();
     hwlib::cout << "Press the fire button to start" << hwlib::endl;
     wait(fireButtonFlag);
     
@@ -122,19 +123,24 @@ void PlayerTask::playState() {
 
     gameTimer.set(gameTime);
     while (player.lives > 0) {
-        auto evt = wait(messageChannel + gameTimer);
+        auto evt = wait(messageChannel + gameTimer + fireButtonFlag);
         if (evt == gameTimer) {
             // Game time over
             hwlib::cout << "Time up!" << hwlib::endl;
             break;
-        }
+        } else if (evt == messageChannel) {
+            // Got hit!
+            auto message = messageChannel.read();
 
-        auto message = messageChannel.read();
-
-        // If message is from a player other than yourself its a damage hit
-        if (message.playerId != 0 && message.playerId != player.id) {
-            doDamage(message);
-            hwlib::cout << "Lives left: " << (int)player.lives << hwlib::endl;
+            // If message is from a player other than yourself its a damage hit
+            if (message.playerId != 0 && message.playerId != player.id) {
+                doDamage(message);
+                hwlib::cout << "Lives left: " << (int)player.lives << hwlib::endl;
+            }
+        } else if (evt == fireButtonFlag) {
+            // Fire!
+            hwlib::cout << "Piew!" << hwlib::endl;
+            irWeaponTask.startShooting();
         }
 
         uint64_t newTime = hwlib::now_us();

@@ -13,9 +13,9 @@ private:
     States state = INITIAL_STATE;
 
     struct Player {
-        uint8_t id;
-        uint8_t damage;
-        int8_t lives;
+        uint8_t id = 0;
+        uint8_t damage = 0;
+        int8_t lives = 0;
     
         // other stuff...
         uint8_t hitsBy[200];
