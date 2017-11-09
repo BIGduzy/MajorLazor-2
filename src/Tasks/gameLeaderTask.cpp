@@ -27,6 +27,7 @@ void GameLeaderTask::main() {
                         break;
                     case 1: // Start game
                         irWeaponTask.writeToPool(Message(0, 0, 0));
+                        break;
                     default: // Other commands
                         // Tell player what field we want to edit
                         // We do commandId - 2 because the commands start at 0
@@ -36,6 +37,7 @@ void GameLeaderTask::main() {
                         hwlib::wait_ms(100);
                         // Set field value
                         irWeaponTask.writeToPool(Message(0, 1, command.value ));
+                        break;
                 }
 
                 irWeaponTask.startShooting();
