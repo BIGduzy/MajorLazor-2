@@ -70,5 +70,5 @@ void KeypadTask::keyPressed(char c){
     }
     Command command(validInput, commandId, value, send);
     gameLeaderTask.addCommand(command);
-    hwlib::cout << "ValidInput: " << command.validInput << " CommandId: " << command.commandId << " Value: " << command.value << " Send: " << command.send << hwlib::endl;
+    //hwlib::cout << "ValidInput: " << command.validInput << " CommandId: " << command.commandId << " Value: " << command.value << " Send: " << command.send << hwlib::endl;
 }

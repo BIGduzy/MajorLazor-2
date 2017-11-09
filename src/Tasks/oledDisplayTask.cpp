@@ -8,7 +8,7 @@ void OledDisplayTask::main() {
             case data.INITIAL_STATE:
                 display.clear();
                 display.layoutInitialstate();
-                display.dataInitialstate(data.time);
+                display.dataInitialstate(data.playerId, data.lives, data.damage, data.startTime, data.gameTime);
                 break;
             case data.PLAY_STATE:
                 display.clear();
@@ -28,8 +28,8 @@ void OledDisplayTask::main() {
     }
 }
 
-void OledDisplayTask::setDisplay(uint8_t time) { // Data for initial state
-    auto data = displayData(time);
+void OledDisplayTask::setDisplay(uint8_t id, uint8_t lives, uint8_t damage, uint8_t startTime, uint8_t gameTime) { // Data for initial state
+    auto data = displayData(id, lives, damage, startTime, gameTime);
     oledChannel.write(data);
 }
 

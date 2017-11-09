@@ -14,7 +14,7 @@ private:
     rtos::clock clock;
 
 public:
-    TmpTask(PlayerTask& plyerTask): plyerTask(plyerTask), clock(this, 1'000'000, "clock") {};
+    TmpTask(PlayerTask& plyerTask): task(6, "tmpTask"), plyerTask(plyerTask), clock(this, 1'000'000, "clock") {};
 
     void main() override {
         while(true) {

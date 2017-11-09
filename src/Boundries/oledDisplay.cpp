@@ -17,7 +17,11 @@ void OledDisplay::layoutInitialstate() {
         display.write( hwlib::location( 127, i ), hwlib::black );
     }
     displayOstream 
-    << "\t0303" << "Time:"
+    << "\t0001" << "ID:"
+    << "\t0002" << "Damage:"
+    << "\t0003" << "Lives:"
+    << "\t0004" << "StartTime:"
+    << "\t0005" << "GameTime:"
     << hwlib::flush;
 }
 
@@ -91,9 +95,13 @@ void OledDisplay::layoutLeaderstate() {
     << hwlib::flush;
 }
 
-void OledDisplay::dataInitialstate(int time) {
-    displayOstream
-    << "\t0903" << time
+void OledDisplay::dataInitialstate(int id, int damage, int lives, int startTime, int gameTime) {
+    displayOstream 
+    << "\t0301" << id
+    << "\t0702" << damage
+    << "\t0603" << lives
+    << "\t1004" << startTime
+    << "\t0905" << gameTime
     << hwlib::flush;
 }
 

@@ -9,7 +9,6 @@ void ButtonTask::main() {
             //Makes a beep
             speakerTask.setShootingFlag();
             
-            irWeaponTask.startShooting();
             playerTask.setFlag();
         }
     }

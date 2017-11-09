@@ -56,9 +56,9 @@ void PlayerTask::initialState() {
     hwlib::cout << "Ready for init" << hwlib::endl;
     messageChannel.clear(); // Clear unwanted data
 
-
     auto evt = wait(messageChannel);
     auto message = messageChannel.read();
+    display.setDisplay(player.id, player.lives, player.damage, timeTillStart, (gameTime / 1000 / 1000));
     
     while(message.commandId != 0 || message.data != 0) {
         if (message.playerId != 0) continue; // Skip non gameleader messages
@@ -93,19 +93,20 @@ void PlayerTask::initialState() {
         // Get new message
         evt = wait(messageChannel);
         message = messageChannel.read();
+        display.setDisplay(player.id, player.lives, player.damage, timeTillStart, (gameTime / 1000 / 1000));
     }
     
     // Write weapon info to pool
     irWeaponTask.writeToPool({player.id, 1, player.damage});
 
     // Wait for fire flag, to start the game
+    fireButtonFlag.clear();
     hwlib::cout << "Press the fire button to start" << hwlib::endl;
     wait(fireButtonFlag);
     
     hwlib::cout << "Time to start: " << (int)timeTillStart << hwlib::endl;
 
-    // Display countdown
-    display.setDisplay(timeTillStart);
+    //TODO: Display countdown
 
     state = PLAY_STATE;
 }
@@ -122,19 +123,27 @@ void PlayerTask::playState() {
 
     gameTimer.set(gameTime);
     while (player.lives > 0) {
-        auto evt = wait(messageChannel + gameTimer);
+        auto evt = wait(messageChannel + gameTimer + fireButtonFlag);
         if (evt == gameTimer) {
             // Game time over
             hwlib::cout << "Time up!" << hwlib::endl;
             break;
-        }
+        } else if (evt == messageChannel) {
+            // Got hit!
+            auto message = messageChannel.read();
 
-        auto message = messageChannel.read();
-
-        // If message is from a player other than yourself its a damage hit
-        if (message.playerId != 0 && message.playerId != player.id) {
-            doDamage(message);
-            hwlib::cout << "Lives left: " << (int)player.lives << hwlib::endl;
+            // If message is from a player other than yourself its a damage hit
+            if (message.playerId != 0 && message.playerId != player.id) {
+                doDamage(message);
+                hwlib::cout << "Lives left: " << (int)player.lives << hwlib::endl;
+                hwlib::wait_ms(1000); // Wait 1 second after hit
+                messageChannel.clear(); // Clear channel after you got hit (to remove hits after hit)
+            }
+        } else if (evt == fireButtonFlag) {
+            // Fire!
+            hwlib::cout << "Piew!" << hwlib::endl;
+            irWeaponTask.startShooting();
+            hwlib::wait_ms(1000); // Wait 1 second after fire
         }
 
         uint64_t newTime = hwlib::now_us();

@@ -7,11 +7,11 @@ IrDetecTask::IrDetecTask(
     hwlib::pin_out& groundPin,
     hwlib::pin_out& vccPin
 ):
-    task(2, "IrDetecTask"),
+    task(3, "IrDetecTask"),
     playerTask(playerTask),
     speakerTask(speakerTask),
     irReceiver(dataPin, groundPin, vccPin),
-    ten_us_clock(this, 10, "Ten us clock")
+    ten_us_clock(this, 25, "Ten us clock")
 {}
 
 void IrDetecTask::main() {
