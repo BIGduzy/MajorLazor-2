@@ -12,8 +12,7 @@ IrDetecTask::IrDetecTask(
     speakerTask(speakerTask),
     irReceiver(dataPin, groundPin, vccPin),
     irDetecClock(this, 100, "irDetecClock"),
-    irDetecTimer(this, "irDetecTimer"),
-    irDetecTimeoutTimer(this, "irDetecTimeoutTimer")
+    irDetecTimer(this, "irDetecTimer")
 {}
 
 void IrDetecTask::main() {
@@ -22,17 +21,7 @@ void IrDetecTask::main() {
     bool checking = false;
 
     while(true) {
-        auto evt = wait(irDetecClock + irDetecTimeoutTimer);
-
-        // Time out
-        if (evt == irDetecTimeoutTimer) {
-            // Reset
-            // signal1 = 0;
-            // signal2 = 0;
-            // count = 15;
-            // checking = false;
-            // hwlib::cout << "Time out: " << hwlib::endl; 
-        }
+        auto evt = wait(irDetecClock);
 
         if(irReceiver.get() == 0) {
             hwlib::wait_us(1200);
@@ -83,7 +72,6 @@ void IrDetecTask::main() {
                 }
             }
             wait(irDetecTimer); // Wait the remainig us of the 1200us timer
-            irDetecTimeoutTimer.set(40 * 1000); // 4 ms for timeout
         }
     }
 }

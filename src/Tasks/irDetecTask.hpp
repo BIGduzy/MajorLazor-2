@@ -17,7 +17,7 @@ private:
     IrSignal irSignal;
 
     rtos::clock irDetecClock;
-    rtos::timer irDetecTimer, irDetecTimeoutTimer;
+    rtos::timer irDetecTimer;
 
 public:
     /**
