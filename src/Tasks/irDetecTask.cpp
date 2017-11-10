@@ -7,12 +7,13 @@ IrDetecTask::IrDetecTask(
     hwlib::pin_out& groundPin,
     hwlib::pin_out& vccPin
 ):
-    task(3, "IrDetecTask"),
+    task(0, "IrDetecTask"),
     playerTask(playerTask),
     speakerTask(speakerTask),
     irReceiver(dataPin, groundPin, vccPin),
     irDetecClock(this, 100, "irDetecClock"),
-    irDetecTimer(this, "irDetecTimer")
+    irDetecTimer(this, "irDetecTimer"),
+    irDetecTimeoutTimer(this, "irDetecTimeoutTimer")
 {}
 
 void IrDetecTask::main() {
@@ -21,15 +22,16 @@ void IrDetecTask::main() {
     bool checking = false;
 
     while(true) {
-        auto evt = wait(irDetecClock + irDetecTimer);
+        auto evt = wait(irDetecClock + irDetecTimeoutTimer);
 
         // Time out
-        if (evt == irDetecTimer) {
+        if (evt == irDetecTimeoutTimer) {
             // Reset
-            signal1 = 0;
-            signal2 = 0;
-            count = 15;
-            checking = false;
+            // signal1 = 0;
+            // signal2 = 0;
+            // count = 15;
+            // checking = false;
+            // hwlib::cout << "Time out: " << hwlib::endl; 
         }
 
         if(irReceiver.get() == 0) {
@@ -81,7 +83,7 @@ void IrDetecTask::main() {
                 }
             }
             wait(irDetecTimer); // Wait the remainig us of the 1200us timer
-            irDetecTimer.set(4 * 1000); // 4 ms for timeout
+            irDetecTimeoutTimer.set(40 * 1000); // 4 ms for timeout
         }
     }
 }

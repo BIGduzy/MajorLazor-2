@@ -1,7 +1,7 @@
 #include "playerTask.hpp"
 
 PlayerTask::PlayerTask(IrWeaponTask& irWeaponTask, OledDisplayTask& display):
-    task(0, "IrPlayerTask"),
+    task(3, "IrPlayerTask"),
     irWeaponTask(irWeaponTask),
     display(display),
     fireButtonFlag(this, "fireButtonFlag"),
@@ -59,7 +59,7 @@ void PlayerTask::initialState() {
     auto evt = wait(messageChannel);
     auto message = messageChannel.read();
     display.setDisplay(player.id, player.lives, player.damage, timeTillStart, (gameTime / 1000 / 1000));
-    
+
     while(message.commandId != 0 || message.data != 0) {
         if (message.playerId != 0) continue; // Skip non gameleader messages
 

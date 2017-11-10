@@ -95,7 +95,7 @@ void OledDisplay::layoutLeaderstate() {
     << hwlib::flush;
 }
 
-void OledDisplay::dataInitialstate(int id, int damage, int lives, int startTime, int gameTime) {
+void OledDisplay::dataInitialstate(int id, int lives, int damage, int startTime, int gameTime) {
     displayOstream 
     << "\t0301" << id
     << "\t0702" << damage
