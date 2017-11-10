@@ -91,9 +91,9 @@ void PlayerTask::initialState() {
             }
         }        
         // Get new message
+        display.setDisplay(player.id, player.lives, player.damage, timeTillStart, (gameTime / 1000 / 1000));
         evt = wait(messageChannel);
         message = messageChannel.read();
-        display.setDisplay(player.id, player.lives, player.damage, timeTillStart, (gameTime / 1000 / 1000));
     }
     
     // Write weapon info to pool
